@@ -14,7 +14,7 @@ Wie genau soll "Mime Type" aussehen/ veraendert werden? Screenshot
 
 
 
-![Image inf](./Screenshot-mimeType.png)
+![Image inf](images/Screenshot-mimeType.png)
 
 -Wiki ausbauen?
 
