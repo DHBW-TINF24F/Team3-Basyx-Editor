@@ -14,7 +14,7 @@ Wie genau soll "Mime Type" aussehen/ veraendert werden? Screenshot
 
 
 
-!\[Image inf](c:\\Users\\Martin\\Desktop\\DHBW\\SoftwareEngineering\\Anforderungen\\Screenshot-mimeType.png)
+![Image inf](c:\\Users\\Martin\\Desktop\\DHBW\\SoftwareEngineering\\Anforderungen\\Screenshot-mimeType.png)
 
 -Wiki ausbauen?
 
