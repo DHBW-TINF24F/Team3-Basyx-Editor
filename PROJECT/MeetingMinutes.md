@@ -3,11 +3,11 @@
 
 Meetings were hold between September 2025 and June 2026.
 
-# Table of contents
+## Table of contents
 1. [Meeting 23.09.](#23_09)
-2. [Meeting 06.10.2023](#06_10)
-3. [Meeting 13.10.2023](#13_10)
-4. [Meeting 20.10.2023](#20_10)
+2. [Meeting 02.10.](#02_10)
+3. [Meeting 06.10.](#06_10)
+4. [Meeting 09.10.](#09_10)
 5. [Meeting 27.10.2023](#27_10)
 6. [Meeting 03.11.2023](#03_11)
 7. [Meeting 08.03.2024](#08_03)
@@ -16,7 +16,50 @@ Meetings were hold between September 2025 and June 2026.
 10. [Meeting 12.04.2024](#12_04)
 11. [Meeting 03.05.2024](#03_05)
 
-# Meeting  Protocol  of 23.09.2025  <a name="23_09"></a>
+## Meeting  Protocol  of 23.09.  <a name="23_09"></a>
+
+## Type of Meeting
+This meeting was a ```Weekly```.
+
+## Protocol Writer
+This protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Leonardo Risatti
+
+## Meeting Duration
+This meeting took ```1 hour```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|First steps|Get an overview of the project|
+|Weeklys|Thursdays 10:30 to 11:00 AM|
+|Assign Jobs| <ul><li>Project Director: Martin Böhm</li><li>Project Manager: Florian Zahn</li><li>Test Manager: Daniel Ziegler</li><li>System Architect: Federico DiBenedetto/ Felix Bandl</li><li>Technical Documentation: Leonardo Risatti/ Morten Haase</li></ul>|
+
+## Work Progress
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |Inspect Project, Inform Stakeholders about Team|
+|Florian Zahn|Inspect Project, Preparation of GitHUb Introduction|
+|Federico DiBenedetto|Inspect Project|
+|Felix Bandl|Inspect Project|
+|Daniel Ziegler|Inspect Project|
+|Leonardo Risatti|Inspect Project|
+|Morten Haase|Inspect Project|
+
+## Further Informations
+---
+
+# Meeting  Protocol  of 02.10. <a name="02_10"></a>
 
 ## Type of Meeting
 This meeting was a ```Weekly```.
@@ -35,46 +78,49 @@ This protocol was written by ```Martin Böhm```.
 * Morten Haase
 
 ## Meeting Duration
-This meeting took ```1 hour```.
+This meeting took ```30 Minutes```.
 
 ## Agenda and Summary
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|First steps|Get an overview of the project|
-|Assign Jobs| <ul><li>Project Director: Martin Böhm</li><li>Project Manager: Florian Zahn</li><li>Test Manager: Daniel Ziegler</li><li>System Architect: Federico DiBenedetto/ Felix Bandl</li><li>Technical Documentation: Leonardo Risatti/ Morten Haase</li></ul>|
+|Introduction GitHub (Florian)|Use of Issues, Test-Branches, Pull Requests, Git Desktop|
+|Concrete Requirements|Martin asks for Meeting with Stakeholders|
+|Start Documentation|Additional Meeting in Small Group (9.10.)
 
-## Problems
-No problems to mention.
-
-
-## Work Progress
+## Work Progress <a name="02_10_WP"></a>
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |Inspect Project, Inform Stakeholders about Team|
-|Florian Zahn|Inspect Project, Preparation of GitHUb Introduction|
+|Martin Böhm |Inspect Project, Inquiry: Meeting with Stakeholders|
+|Florian Zahn|Inspect Project|
 |Federico DiBenedetto|Inspect Project|
 |Felix Bandl|Inspect Project|
 |Daniel Ziegler|Inspect Project|
 |Leonardo Risatti|Inspect Project|
 |Morten Haase|Inspect Project|
 
-# Meeting  Protocol  of 06.10.2023 <a name="06_10"></a>
+## Further Informations
+---
+
+
+# Meeting  Protocol  of 06.10.  <a name="06_10"></a>
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+This meeting was a ```Ad-hoc```.
 
 ## Protocol Writer
-This protocol was written by ```Tristan Kopp```.
+This protocol was written by ```Felix Bandl```.
 
 ## Meeting Participants
 
-* Florian Dörr
-* Simon Lutz 
-* Robin Ernst
-* Thomas Ekhardt
-* Tristan Kopp 
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Leonardo Risatti
+* Morten Haase
 
 ## Meeting Duration
 This meeting took ```1 hour```.
@@ -83,65 +129,21 @@ This meeting took ```1 hour```.
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|Progress since 29.09.2023|CRS is finished|
-|Does somebody change his job?|No everyone still aggrees with his job|
-
-## Problems
-No problems to mention.
+|Basyx Starter Kit|Each Team Member has fully developed Environment|
+|UI User Test|UI Test with Test Samples|
+|Requirements|Collections of Questions for Stakeholders|
 
 
-## Work Progress
+## Work Progress 
+see [Work Progress Last MeetingMeeting 23.09.](#02_10_WP)
 
-|Name            |Task                              |
-|----------------|----------------------------------|
-|Florian Dörr |Write project plan|
-|Simon Lutz|Wait for SRS & prepare SAS|
-|Robin Ernst|Business Cases|
-|Thomas Ekhardt|Wiki|
-|Tristan Kopp|write SRS|
-
-
-# Meeting  Protocol  of 13.10.2023  <a name="13_10"></a>
-
-## Type of Meeting
-This meeting was a ```Weekly```.
-
-## Protocol Writer
-This protocol was written by ```Tristan Kopp```.
-
-## Meeting Participants
-
-* Florian Dörr
-* Simon Lutz 
-* Robin Ernst
-* Thomas Ekhardt
-* Tristan Kopp 
-
-## Meeting Duration
-This meeting took ```1 hour```.
-
-## Agenda and Summary
-
-|Agenda          |Summary                      |
-|----------------|-----------------------------|
-|Progress since 06.10.2023|CRS is finished & some of the wrong wiki links are fixed|
-|Feedback from Customer| Implement changes|
-|New Tasks|see [Work Progress](#13_10_WP)|
+## Further Informations/Problems
+-Issues with Docker and Server-Setup
+-Understanding of Requirements is problematic
+-Basyx/ AAS-Environment hard to understand
+-What is KBL/VEC?
 
 
-## Problems
-Some wiki Links refer to the wrong project & some names aren't updated.
-
-
-## Work Progress <a name="13_10_WP"></a>
-
-|Name            |Task                              |
-|----------------|----------------------------------|
-|Florian Dörr |Write project plan|
-|Simon Lutz|Wait for SRS & prepare SAS|
-|Robin Ernst|Buisness Cases|
-|Thomas Ekhardt|Wiki|
-|Tristan Kopp|Write SRS|
 # Meeting  Protocol  of 20.10.2023  <a name="20_10"></a>
 
 ## Type of Meeting
