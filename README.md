@@ -1,6 +1,6 @@
 # Team3-Basyx-Editor
 
-![Image inf](PROJECTS/images/basyx_logo.png)
+![Image inf](PROJECT/images/basyx_logo.png)     
 
 ## Project Description
 https://github.com/DHBW-TINF24F/.github/blob/main/project3_basyx_editor_extension.md
