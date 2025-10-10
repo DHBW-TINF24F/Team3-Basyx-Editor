@@ -88,7 +88,8 @@ This meeting took ```30 Minutes```.
 |Concrete Requirements|Martin asks for Meeting with Stakeholders|
 |Start Documentation|Additional Meeting in Small Group (9.10.)
 
-## Work Progress <a name="02_10_WP"></a>
+<a name="02_10_WP"></a>
+## Work Progress 
 
 |Name            |Task                              |
 |----------------|----------------------------------|
