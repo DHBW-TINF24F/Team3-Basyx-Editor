@@ -145,21 +145,19 @@ see [Work Progress Last Meeting](#02_10_WP)
 -What is KBL/VEC?
 
 
-# Meeting  Protocol  of 20.10.2023  <a name="20_10"></a>
+# Meeting  Protocol  of 09.10.  <a name="09_10"></a>
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+This meeting was a ```Special Meeting```.
 
 ## Protocol Writer
-This protocol was written by ```Tristan Kopp```.
+This protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
-* Florian Dörr
-* Simon Lutz 
-* Robin Ernst
-* Thomas Ekhardt
-* Tristan Kopp 
+* Martin Böhm
+* Felix Bandl
+* Daniel Ziegler
 
 ## Meeting Duration
 This meeting took ```1 hour```.
@@ -168,23 +166,37 @@ This meeting took ```1 hour```.
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|Progress since 13.10.2023 |SRS and BC are complete & Wiki links are now correct|
-|New Tasks|see [Work Progress](#20_10_WP)|
+|Documentation |Responsibilities for CRS,SRS,SAS,BC,GANTT,PSP|
+|Information, Sources|TINF22, AI|
+|Starting Issues on GitHub|Martin initializes
 
-
-## Problems
-Some wiki info's aren't updated.
-
-
-## Work Progress <a name="20_10_WP"></a>
+## Work Progress
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Florian Dörr |Time schedule|
-|Simon Lutz|Planning architecture & writing SAS|
-|Robin Ernst|Buisness cases|
-|Thomas Ekhardt|Wiki & prepare Power Point|
-|Tristan Kopp|Write protocols|
+|Martin Böhm |Meeting Minutes, README 1.0|
+|Florian Zahn|SAS|
+|Federico DiBenedetto|SRS|
+|Felix Bandl|CRS, PSP|
+|Daniel Ziegler|STP, SRS Version 1.0|
+|Leonardo Risatti|PM|
+|Morten Haase|BC, GANTT|
+
+## Further Information/Problems
+-Deadline 16.10. for first versions of several documents
+-Collection of Feedback concerning Basyx Wiki
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Meeting  Protocol  of  27.10.2023 <a name="27_10"></a>
 
