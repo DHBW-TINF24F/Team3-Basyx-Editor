@@ -16,7 +16,7 @@ Meetings were hold between September 2025 and June 2026.
 10. [Meeting 12.04.2024](#12_04)
 11. [Meeting 03.05.2024](#03_05)
 
-## Meeting  Protocol  of 23.09.  <a name="23_09"></a>
+# Meeting  Protocol  of 23.09.  <a name="23_09"></a>
 
 ## Type of Meeting
 This meeting was a ```Weekly```.
@@ -56,7 +56,7 @@ This meeting took ```1 hour```.
 |Leonardo Risatti|Inspect Project|
 |Morten Haase|Inspect Project|
 
-## Further Informations
+## Further Information
 ---
 
 # Meeting  Protocol  of 02.10. <a name="02_10"></a>
@@ -100,7 +100,7 @@ This meeting took ```30 Minutes```.
 |Leonardo Risatti|Inspect Project|
 |Morten Haase|Inspect Project|
 
-## Further Informations
+## Further Information
 ---
 
 
@@ -137,7 +137,7 @@ This meeting took ```1 hour```.
 ## Work Progress 
 see [Work Progress Last Meeting](#02_10_WP)
 
-## Further Informations/Problems
+## Further Information/Problems
 -Issues with Docker and Server-Setup
 -Understanding of Requirements is problematic
 -Basyx/ AAS-Environment hard to understand
