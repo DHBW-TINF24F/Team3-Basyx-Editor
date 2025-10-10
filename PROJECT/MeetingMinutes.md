@@ -139,10 +139,10 @@ This meeting took ```1 hour```.
 see [Work Progress Last Meeting](#02_10_WP)
 
 ## Further Information/Problems
--Issues with Docker and Server-Setup
--Understanding of Requirements is problematic
--Basyx/ AAS-Environment hard to understand
--What is KBL/VEC?
+* Issues with Docker and Server-Setup
+* Understanding of Requirements is problematic
+* Basyx/ AAS-Environment hard to understand
+* What is KBL/VEC?
 
 
 # Meeting  Protocol  of 09.10.  <a name="09_10"></a>
@@ -183,8 +183,8 @@ This meeting took ```1 hour```.
 |Morten Haase|BC, GANTT|
 
 ## Further Information/Problems
--Deadline 16.10. for first versions of several documents
--Collection of Feedback concerning Basyx Wiki
+* Deadline 16.10. for first versions of several documents
+* Collection of Feedback concerning Basyx Wiki
 
 
 
