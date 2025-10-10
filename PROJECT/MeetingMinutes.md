@@ -135,7 +135,7 @@ This meeting took ```1 hour```.
 
 
 ## Work Progress 
-see [Work Progress Last MeetingMeeting 23.09.](#02_10_WP)
+see [Work Progress Last Meeting](#02_10_WP)
 
 ## Further Informations/Problems
 -Issues with Docker and Server-Setup
