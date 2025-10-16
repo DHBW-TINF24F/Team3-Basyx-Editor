@@ -1,4 +1,4 @@
-# CRS
+# Customer Requirement Specification (CRS)
 ## Team3-Basyx-Editor
 
 ## Version Control
