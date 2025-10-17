@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/eclipse-basyx/basyx-aas-web-ui)
 
-
+ 
 # Team3-Basyx-Editor
 
 ![Image inf](PROJECT/images/basyx_logo.png)     
