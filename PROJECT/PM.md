@@ -90,7 +90,7 @@ The project automates these steps and provides a more intelligent and user-frien
 ---
 
 ## 6. Gantt Chart
-![Gantt Chart](images/GGanntScreenshot.png)
+![Gantt Chart](images/GanntScreenshot.png.png)
 
 ---
 
@@ -108,5 +108,6 @@ The project automates these steps and provides a more intelligent and user-frien
 | Knowledge | Limited prior experience with BaSyx APIs | Internal workshops and shared technical notes |
 
 ---
+
 
 
