@@ -5,7 +5,6 @@
 **Class:** TINF24C  
 **Professors:** Markus Rentschler, Pawel Wojcik  
 
-
 ---
 
 ## Version History
@@ -13,8 +12,7 @@
 | Version | Date | Author | Comment |
 |:--|:--|:--|:--|
 | 0.1 | 01.10.2025 | Leonardo Risatti | Initial structure/Prototype |
-
-
+| 0.2 | 01.10.2025 | Leonardo Risatti | Added content |
 
 ---
 
@@ -42,10 +40,11 @@ The system performs automated plausibility checks, linking, and data extraction 
 - Testing  
 - Documentation  
 
-## Deadlines
- - Introductory lecture: 21.09.2025  
-- End of project: tbdV
-- Final presentation and project delivery: tbd
+### Deadlines
+- Introductory lecture: 21.09.2025  
+- End of project: *tbd*  
+- Final presentation and project delivery: *tbd*  
+
 ---
 
 ## 2. Project Context
@@ -54,6 +53,20 @@ The system performs automated plausibility checks, linking, and data extraction 
 The current BaSyx UI lacks direct integration of engineering data (e.g., KBL/VEC files) into the AAS.  
 Users must manually process and link such files.  
 The project automates these steps and provides a more intelligent and user-friendly workflow within the BaSyx environment.
+
+### Temporal Context
+| Phase | Description |
+|:--|:--|
+| Pre-project | Familiarization with BaSyx and AAS concepts during lectures |
+| Project phase | Development and integration of editor and viewer plugins |
+| Post-project | tbd/optional |
+
+### Social Context optional?
+| Stakeholder | Chance | Risk | Action |
+|:--|:--|:--|:--|
+| Customer | Improved BaSyx usability | Change requests late in project | Regular feedback loops |
+| Supplier | Successful delivery | Resource overload | Clear task division |
+| User | Better AAS visualization | Misunderstanding of functions | Provide user manual and demos |
 
 ### Goals / Non-Goals
 | Goals | Non-Goals |
@@ -85,7 +98,21 @@ The project automates these steps and provides a more intelligent and user-frien
 ---
 
 ## 5. Milestones
-*tbd, based on Gannt* 
+
+| Milestone | Planned Start | Duration (weeks) | Planned End |
+|:--|:--|:--|:--|
+| Project Setup & Analysis Start | Week 1 | 6 | Week 6 |
+| Design Phase Start | Week 7 | 5 | Week 12 |
+| Implementation (Coding) Start | Week 12 | 13 | Week 25 |
+| Testing Phase Start | Week 26 | 4 | Week 30 |
+| Final Phase & Presentation Preparation | Week 31 | 1 | Week 32 |
+
+**Overview of Main Phases:**
+- **Analysis:** Requirements, CRS, Business Case  
+- **Design:** Wireframes, SRS, SAS, Code Examples  
+- **Coding:** Environment setup, XML integration, API & submodel logic  
+- **Testing:** Unit Tests, Black-Box / White-Box Tests, Error documentation  
+- **End Phase:** Presentation & Handover
 
 ---
 
@@ -109,6 +136,27 @@ The project automates these steps and provides a more intelligent and user-frien
 
 ---
 
+## 8. Software and Hardware Requirements
+*tbd* / optional
+
+---
+
+## 9. Communication and Reporting
+
+### Within the Team
+- Weekly sync meetings (online or in person)  
+- Coordination via Microsoft Teams and GitHub Issues  
+- Quick updates via WhatsApp  
+
+### With the Customer 
+- tbd/optional
+
+---
+
+## 10. End of Project
+*tbd* / optional
+
+---
 
 
 
