@@ -102,11 +102,11 @@ The project automates these steps and provides a more intelligent and user-frien
 
 | Milestone | Planned Start | Duration (weeks) | Planned End |
 |:--|:--|:--|:--|
-| Project Setup & Analysis Start | Week 0 | 6 | Week 6 |
-| Design Phase Start | Week 7 | 5 | Week 12 |
-| Implementation (Coding) Start | Week 13 | 12 | Week 25 |
-| Testing Phase Start | Week 26 | 13 | Week 39 |
-| Final Phase & Presentation Preparation | Week 39 | 1 | Week 40 |
+| Project Setup & Analysis | Week 0 | 6 | Week 6 |
+| Design Phase | Week 7 | 5 | Week 12 |
+| Implementation (Coding) | Week 13 | 12 | Week 25 |
+| Testing Phase | Week 26 | 13 | Week 39 |
+| Final Phase & Presentation | Week 39 | 1 | Week 40 |
 
 **Overview of Main Phases:**
 - **Analysis:** Requirements, CRS, Business Case  
