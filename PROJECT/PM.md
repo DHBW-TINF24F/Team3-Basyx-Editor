@@ -2,7 +2,7 @@
 
 **Project:** BaSyx Editor Plugin Extension  
 **Course:** Software Engineering  
-**Class:** TINF24C  
+**Class:** TINF24F 
 **Professors:** Markus Rentschler, Pawel Wojcik  
 
 ---
@@ -11,8 +11,9 @@
 
 | Version | Date | Author | Comment |
 |:--|:--|:--|:--|
-| 0.1 | 01.10.2025 | Leonardo Risatti | Initial structure/Prototype |
-| 0.2 | 01.10.2025 | Leonardo Risatti | Added content |
+| 0.1 | 21.10.2025 | Leonardo Risatti | Initial structure/Prototype |
+| 0.2 | 21.10.2025 | Leonardo Risatti | Added content |
+| 0.3 | 23.10.2025 | Leonardo Risatti | Small Changes |
 
 ---
 
@@ -85,7 +86,7 @@ The project automates these steps and provides a more intelligent and user-frien
 | Project Director | **Martin Böhm** |
 | Project Manager | **Florian Zahn** |
 | Test Manager | **Daniel Ziegler** |
-| System Architect | **Federico Di Benedetto / Felix Bandl** |
+| System Architect | **Federico Dibenedetto / Felix Bandl** |
 | Technical Documentation | **Leonardo Risatti / Morten Haase** |
 
 *All members contribute to development.*
@@ -149,7 +150,7 @@ The project automates these steps and provides a more intelligent and user-frien
 - Quick updates via WhatsApp  
 
 ### With the Customer 
-- tbd/optional
+- By Request
 
 ---
 
@@ -157,6 +158,7 @@ The project automates these steps and provides a more intelligent and user-frien
 *tbd* / optional
 
 ---
+
 
 
 
