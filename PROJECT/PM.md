@@ -94,7 +94,7 @@ The project automates these steps and provides a more intelligent and user-frien
 ---
 
 ## 4. Work Breakdown Structure (PSP)
-![PSP Diagram](images/PSP.jpg)
+![PSP Diagram](images/PM/PSP.jpg)
 
 ---
 
@@ -118,7 +118,7 @@ The project automates these steps and provides a more intelligent and user-frien
 ---
 
 ## 6. Gantt Chart
-![Gantt Chart](images/GanntScreenshot.png)
+![Gantt Chart](images/PM/GanntScreenshot.png)
 
 ---
 
