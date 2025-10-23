@@ -61,7 +61,7 @@ Additionally, the REST API will be enhanced to provide access to data points wit
 | **Triggering Event** | The user starts a file upload action within the editor plugin for a specific AAS or submodel. |
 
 ## Flowchart UC01
-![UC01 Flowchart](pictures/UC1.png)
+![UC01 Flowchart](images/UC1.png)
 
 ### 3.2 UC02: Extract and integrate data from specific model files (KBL/VEC)
 
@@ -76,7 +76,7 @@ Additionally, the REST API will be enhanced to provide access to data points wit
 | **Triggering Event** | The user uploads a file with the extension .kbl or .vec and presses the "Generate Technical Data" button, which triggers the specialized process of parsing and extracting the data. |
 
 ## Flowchart UC02
-![UC02 Flowchart](pictures/UC2.png)
+![UC02 Flowchart](images/UC2.png)
 
 ### 3.3 UC03: Display structured content of an attached XML file
 
@@ -91,7 +91,7 @@ Additionally, the REST API will be enhanced to provide access to data points wit
 | **Triggering Event** | The user selects or expands the linked XML file element in the viewer. |
 
 ## Flowchart UC03
-![UC03 Flowchart](pictures/UC3.png)
+![UC03 Flowchart](images/UC3.png)
 
 ## 4. Customer Requirements
 The requirements are described with an ID and an overview to enable the development team to understand and implement them in the development process.
