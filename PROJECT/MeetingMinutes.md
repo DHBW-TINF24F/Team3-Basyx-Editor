@@ -8,6 +8,8 @@ Meetings were hold between September 2025 and June 2026.
 2. [Meeting 02.10.](#02_10)
 3. [Meeting 06.10.](#06_10)
 4. [Meeting 09.10.](#09_10)
+5. [Meeting 16.10.](#16_10)
+5. [Meeting 23.10.](#23_10)
 
 
 # Meeting  Protocol  of 23.09.  <a name="23_09"></a>
@@ -179,3 +181,96 @@ This meeting took ```1 hour```.
 ## Further Information/Problems
 * Deadline 16.10. for first versions of several documents
 * Collection of Feedback concerning Basyx Wiki
+
+# Meeting  Protocol  of 16.10.  <a name="16_10"></a>
+
+## Type of Meeting
+This meeting was a ```Weekly```.
+
+## Protocol Writer
+This protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Leonardo Risatti
+* Morten Haase
+
+## Meeting Duration
+This meeting took ```45 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|CRS 1st Version|Felix presents, Feedback about Graphics and including UC04|
+|SRS 1st Version|Daniel presents, Feedback about Flowcharts and including UC04, further steps by Fede|
+|BC 1st Version|Morten presents, Overview und Viable obligatory?, Conversion Markdown|
+|GANTT 1st Version|Morten presents, keeps the Responsibility, Changes concerning GANTT to communicate to Morten|
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |Update Issues|
+|Florian Zahn|SAS (Deadline 30.10.), Small Group Development with Choose of Members|
+|Federico DiBenedetto|SRS, UC04 integration (dependent of Felix)|
+|Felix Bandl|UC04 Evaluation with Festo Employee, CRS Update|
+|Daniel Ziegler|Start STP and Test preliminary consideration|
+|Leonardo Risatti|PM 1st Version (Deadline 23.10.), Supervision of PSP (Felix) and GANTT (Morten)|
+|Morten Haase|BC to Markdown, Update GANTT, Research BC-Overview & BC-Viable |
+
+## Further Information
+Start Developer Environment by Flo: Cloning Repos, Starting Small Dev-Group, further Details next Meeting
+
+# Meeting  Protocol  of 23.10.  <a name="23_10"></a>
+
+## Type of Meeting
+This meeting was a ```Weekly```.
+
+## Protocol Writer
+This protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Leonardo Risatti
+* Morten Haase
+
+## Meeting Duration
+This meeting took ```30 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|PM 1st Version|Leo presents, Feedback about Structure/Necessary Chapters|
+|BC 2st Version|Morten presents, Including Profit|
+|UC04|Felix in contact with Festo employee, waiting for answer|
+|Start Implementation|Discussion: How much this Semester, Learning VUE -> Small Group Fede + Flo|
+|Presentation 21.11.|Template Creation (Morten+Martin), potentially Mockups/Wireframes, potentially first Implementation/Prototypes|
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |Update Issues, Presentation Template (Deadline 6.11.)|
+|Florian Zahn|SAS 1st Version (Deadline 30.10.), Strategy for Development/Implementation Start|
+|Federico DiBenedetto|Strategy for Development/Implementation Start, UC04 integration in SRS (dependent of Felix)|
+|Felix Bandl|UC04 Evaluation with Festo Employee, Mockup/Wireframe 1st Version (Deadline 6.11.)|
+|Daniel Ziegler|Start STP and Test preliminary consideration|
+|Leonardo Risatti|Supervision of PSP (Felix) and GANTT (Morten)|
+|Morten Haase|Presentation Template (6.11.), BC to Markdown/Github, Research BC-Overview & BC-Viable, Update GANTT, |
+
+## Further Information
+Group want to start Implementation Milestone in November 2025, Procedure will desgined by Flo/Fede
