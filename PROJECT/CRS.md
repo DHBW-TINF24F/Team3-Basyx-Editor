@@ -1,4 +1,4 @@
-# CRS
+# Customer Requirements Spec (CRS)
 ## Team3-Basyx-Editor
 
 ## Version Control
@@ -32,6 +32,8 @@
      - 4.2.3 [NFR.003 Maintainability and Contribution to the Open-Source Project](#423-nfr003-maintainability-and-contribution-to-the-open-source-project)
      - 4.2.4 [NFR.004 Documentation](#424-nfr004-documentation)
      - 4.2.5 [NFR.005 Compatibility](#425-nfr005-compatibility)
+     - 4.2.6 [NFR.006 Availability (Demo)](#426-nfr006-availability-demo)
+     
 
 
 ## 1. Scope
@@ -55,7 +57,7 @@ Furthermore, the REST API will be extended to allow direct access to data points
 | | |
 | :--- | :--- |
 | **Use Case ID** | UC01 |
-| **Description** | The user wants to add an external model file (e.g., CAD, PDF, XML) to an existing Asset Administration Shell (AAS). The user selects a file via the user interface. The application performs a plausibility check and links the file as a `File` element within the AAS, setting the correct MimeType. |
+| **Description** | The user wants to add an external model file (e.g. CAD, PDF, XML) to an existing Asset Administration Shell (AAS). The user selects a file via the user interface. The application performs a plausibility check and links the file as a `File` element within the AAS, setting the correct MimeType. |
 | **Precondition** | The user is in the BaSyx UI editor and has an AAS open for editing. The model file exists on the user's local system. |
 | **Postcondition on Success**| The external file is successfully uploaded and linked as a `File` submodel element in the AAS. The `mimeType` attribute of the element correctly reflects the file type. |
 | **Triggering Event** | The user starts a file upload action within the editor plugin for a specific AAS or submodel. |
@@ -160,7 +162,7 @@ The requirements are described with an ID and an overview to enable the developm
 | :--- | :--- |
 | **Requirement ID** | NFR.002 |
 | **Overview** | The parsing of the files and the data extraction should be efficient to ensure a responsive user experience. |
-| **Acceptance Criterion** | The server-side processing (parsing, extraction, populating the submodel) of a standard-sized model file (up to 5 MB) must be completed in under 5 seconds. The UI provides feedback (e.g., a loading indicator) during this process. |
+| **Acceptance Criterion** | The server-side processing (parsing, extraction, populating the submodel) of a standard-sized model file must be completed in under 5 seconds. The UI provides feedback (e.g., a loading indicator) during this process. |
 
 #### 4.2.3 NFR.003 Maintainability and Contribution to the Open-Source Project
 
@@ -185,3 +187,10 @@ The requirements are described with an ID and an overview to enable the developm
 | **Requirement ID** | NFR.005 |
 | **Overview** | The extensions must be fully compatible with the target version of the BaSyx UI and the backend infrastructure and must not negatively affect existing functionalities. |
 | **Acceptance Criterion** | All existing, unchanged functionalities of the BaSyx UI continue to function as expected after the integration of the new features. The solution can be built and run within the standard BaSyx build chain. |
+
+#### 4.2.6 NFR.006 Availability (Demo)
+| | |
+| :--- | :--- |
+| **Requirement ID** | NFR.006 |
+| **Overview** | The final functionalities must be hosted on a publicly accessible demo server and be executable. |
+| **Acceptance Criterion** | The Use Cases (UC01-UC03) implemented in the project can be tested live by project stakeholders via a provided URL without requiring a VPN or special software installations.|
