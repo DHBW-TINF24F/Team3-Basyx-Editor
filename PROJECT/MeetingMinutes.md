@@ -256,24 +256,24 @@ This meeting took ```30 Minutes```.
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|PM 1st Version|Leo presents, Feedback about Structure/Necessary Chapters|
-|BC 2st Version|Morten presents, Including Profit|
+|PM 1st Version|Leo presents, feedback about structure/necessary chapters|
+|BC 2st Version|Morten presents, including profit|
 |UC04|Felix in contact with Festo employee, waiting for answer|
-|Start Implementation|Discussion: How much this Semester, Learning VUE -> Small Group Fede + Flo|
-|Presentation 21.11.|Template Creation (Morten+Martin), potentially Mockups/Wireframes, potentially first Implementation/Prototypes|
+|Start Implementation|Discussion: How much this Semester, learning VUE -> Small Group Fede + Flo|
+|Presentation 21.11.|template creation (Morten+Martin), potentially Mockups/Wireframes, potentially first Implementation/Prototypes|
 
 
 ## Work Progress 
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |Update Issues, Presentation Template (Deadline 6.11.)|
-|Florian Zahn|SAS 1st Version (Deadline 30.10.), Strategy for Development/Implementation Start|
-|Federico DiBenedetto|Strategy for Development/Implementation Start, UC04 integration in SRS (dependent of Felix)|
-|Felix Bandl|UC04 Evaluation with Festo Employee, Mockup/Wireframe 1st Version (Deadline 6.11.)|
-|Daniel Ziegler|Start STP and Test preliminary consideration|
-|Leonardo Risatti|Supervision of PSP (Felix) and GANTT (Morten)|
-|Morten Haase|Presentation Template (6.11.), BC to Markdown/Github, Research BC-Overview & BC-Viable, Update GANTT, |
+|Martin Böhm |Update Issues, presentation template (Deadline 6.11.)|
+|Florian Zahn|SAS 1st Version (Deadline 30.10.), strategy for Development/Implementation start|
+|Federico DiBenedetto|strategy for Development/Implementation Start, UC04 integration in SRS (dependent of Felix)|
+|Felix Bandl|UC04 evaluation with Festo employee, Mockup/Wireframe 1st version (Deadline 6.11.)|
+|Daniel Ziegler|start STP and test preliminary consideration|
+|Leonardo Risatti|supervision of PSP (Felix) and GANTT (Morten)|
+|Morten Haase|presentation template (6.11.), BC to Markdown/Github, research BC-Overview & BC-Viable, update GANTT, |
 
 ## Further Information
 Group wants to start Implementation milestone in November 2025, procedure will be designed by Flo/Fede
@@ -302,22 +302,22 @@ This meeting took ```45 Minutes```.
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|SAS 1st Version|Flo presents, Tbd Chapter 7|
-|Wireframes|Felix presents, Feedback und Discussion about UC01,UC02|
-|Requirement Discussion|Deeper Understanding UC01,UC02,UC03
+|SAS 1st Version|Flo presents, tbd chapter 7|
+|Wireframes|Felix presents, feedback und discussion about UC01,UC02|
+|Requirement discussion|deeper understanding UC01,UC02,UC03
 
 
 ## Work Progress 
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |Update Issues, Presentation Template (Deadline 6.11.)|
-|Florian Zahn|Strategy for Development/Implementation Start, Vue-Learning|
-|Federico DiBenedetto|Strategy for Development/Implementation Start, UC04 integration in SRS (dependent of Felix), Vue-Learning, Update SRS (UC01,02)|
-|Felix Bandl|UC04 Evaluation with Festo Employee, Mockup/Wireframe 1st Version (Deadline 6.11.), Update CRS (UC01,02)|
-|Daniel Ziegler|Start STP and Test preliminary consideration|
-|Leonardo Risatti|Supervision of PSP (Felix) and GANTT (Morten)|
-|Morten Haase|Presentation Template (6.11.), BC to Markdown/Github, Update GANTT (Wireframes), |
+|Martin Böhm |update Issues, presentation template (Deadline 6.11.)|
+|Florian Zahn|strategy for Development/Implementation start, Vue-Learning|
+|Federico DiBenedetto|strategy for Development/Implementation start, UC04 integration in SRS (dependent of Felix), Vue-Learning, update SRS (UC01,02)|
+|Felix Bandl|UC04 evaluation with Festo employee, Mockup/Wireframe 1st version (Deadline 6.11.), update CRS (UC01,02)|
+|Daniel Ziegler|start STP and test preliminary consideration|
+|Leonardo Risatti|supervision of PSP (Felix) and GANTT (Morten)|
+|Morten Haase|presentation template (6.11.), BC to Markdown/Github, update GANTT (Wireframes), |
 
 ## Further Information
 Next meeting promptly for further discussion concerning Wireframes, UCs
