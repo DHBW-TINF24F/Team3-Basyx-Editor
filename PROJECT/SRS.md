@@ -6,7 +6,7 @@
 |Version|Date|Author|Comment|
 |-----|-----------|------------|---------------------|
 |1.0|23.10.25|Federico Dibenedetto|Initial creation|
-|1.1|30.10.25|Federico Dibenedetto|Changed UC1 Based off of weekly findings|
+|1.1|30.10.25|Federico Dibenedetto|Changed UC1 based off of weekly findings and updated flowcharts to use mermaid|
 |1.2|Date|Name|Comment2|
 |1.3|Date|Name|Comment3|
 |1.4|Date|Name|Comment4|
@@ -61,7 +61,15 @@ Additionally, the REST API will be enhanced to provide access to data points wit
 | **Triggering Event** | The user starts a file upload action within the editor plugin for a specific AAS or submodel. |
 
 ## Flowchart UC01
-![UC01 Flowchart](images/SRS/UC1.png)
+
+```mermaid
+flowchart TD
+    A[User adds a file via the UI] --> B{Is the context of the file readable?}
+   
+    B -- Yes --> D[Create File element]
+    D --> F[Check MimeType from IANA directories and apply to File]
+    B -- No --> C[Show an error]
+```
 
 ### 3.2 UC02: Extract and integrate data from specific model files (KBL/VEC)
 
@@ -76,7 +84,16 @@ Additionally, the REST API will be enhanced to provide access to data points wit
 | **Triggering Event** | The user uploads a file with the extension .kbl or .vec and presses the "Generate Technical Data" button, which triggers the specialized process of parsing and extracting the data. |
 
 ## Flowchart UC02
-![UC02 Flowchart](images/SRS/UC2.png)
+
+```mermaid
+flowchart TD
+  A[User uploads a KBL or VEC file] --> B[Extract key Information]
+  B --> C{General Technical Data present}
+  C -- No --> D[Create &quot;General Technical Data&quot; Submodel]
+  D --> E[Fill &quot;General Technical Data&quot; with gathered Information]
+  C -- Yes --> E[Fill &quot;General Technical Data&quot; with gathered Information]
+
+```
 
 ### 3.3 UC03: Display structured content of an attached XML file
 
@@ -91,7 +108,17 @@ Additionally, the REST API will be enhanced to provide access to data points wit
 | **Triggering Event** | The user selects or expands the linked XML file element in the viewer. |
 
 ## Flowchart UC03
-![UC03 Flowchart](images/SRS/UC3.png)
+
+```mermaid
+  flowchart TD
+
+    A[User navigated to an XML file] --> B[Call to REST-API]
+
+    B --> C[Parse the XML file]
+
+    C --> D[Display the Data in a structured format]
+
+```
 
 ## 4. Customer Requirements
 The requirements are described with an ID and an overview to enable the development team to understand and implement them in the development process.
