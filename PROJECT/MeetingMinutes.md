@@ -9,7 +9,9 @@ Meetings were hold between September 2025 and June 2026.
 3. [Meeting 06.10.](#06_10)
 4. [Meeting 09.10.](#09_10)
 5. [Meeting 16.10.](#16_10)
-5. [Meeting 23.10.](#23_10)
+6. [Meeting 23.10.](#23_10)
+7. [Meeting 30.10.](#30_10)
+
 
 
 # Meeting  Protocol  of 23.09.  <a name="23_09"></a>
@@ -228,6 +230,7 @@ This meeting took ```45 Minutes```.
 ## Further Information
 Start Developer Environment by Flo: Cloning Repos, Starting Small Dev-Group, further Details next Meeting
 
+
 # Meeting  Protocol  of 23.10.  <a name="23_10"></a>
 
 ## Type of Meeting
@@ -274,3 +277,48 @@ This meeting took ```30 Minutes```.
 
 ## Further Information
 Group want to start Implementation Milestone in November 2025, Procedure will desgined by Flo/Fede
+
+# Meeting  Protocol  of 30.10.  <a name="30_10"></a>
+
+## Type of Meeting
+This meeting was a ```Weekly```.
+
+## Protocol Writer
+This protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Leonardo Risatti
+
+## Meeting Duration
+This meeting took ```45 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|SAS 1st Version|Flo presents, Tbd Chapter 7|
+|Wireframes|Felix presents, Feedback und Discussion about UC01,UC02|
+|Requirement Discussion|Deeper Understanding UC01,UC02,UC03
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |Update Issues, Presentation Template (Deadline 6.11.)|
+|Florian Zahn|Strategy for Development/Implementation Start, Vue-Learning|
+|Federico DiBenedetto|Strategy for Development/Implementation Start, UC04 integration in SRS (dependent of Felix), Vue-Learning, Update SRS (UC01,02)|
+|Felix Bandl|UC04 Evaluation with Festo Employee, Mockup/Wireframe 1st Version (Deadline 6.11.), Update CRS (UC01,02)|
+|Daniel Ziegler|Start STP and Test preliminary consideration|
+|Leonardo Risatti|Supervision of PSP (Felix) and GANTT (Morten)|
+|Morten Haase|Presentation Template (6.11.), BC to Markdown/Github, Update GANTT (Wireframes), |
+
+## Further Information
+Next meeting promptly for further discussion concerning Wireframes, UCs
+
