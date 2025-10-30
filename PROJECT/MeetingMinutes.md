@@ -276,7 +276,7 @@ This meeting took ```30 Minutes```.
 |Morten Haase|Presentation Template (6.11.), BC to Markdown/Github, Research BC-Overview & BC-Viable, Update GANTT, |
 
 ## Further Information
-Group want to start Implementation Milestone in November 2025, Procedure will desgined by Flo/Fede
+Group wants to start Implementation milestone in November 2025, procedure will be designed by Flo/Fede
 
 # Meeting  Protocol  of 30.10.  <a name="30_10"></a>
 
