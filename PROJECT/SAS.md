@@ -1,6 +1,3 @@
-# Software Architecture Specification (SAS)
-## Project: BaSyx Editor Extension
-
 ## Version Control
 
 | Version | Date | Author | Comment |
@@ -169,6 +166,13 @@ The UI provides forms, trees, and visual editors for AAS structures.
 
 ## 7 Subsystem Specification <a name="ss"></a>
 
+### 7.1 MOD01 REST Api <a name="MOD01"></a>
+
+|Subsystem specification ID|MOD01|
+|-------------|--------------------|
+|System requirements covered| -|
+|Service|-|
+|Module documentation|-|
 
 ---
 
