@@ -6,7 +6,7 @@
 |Version|Date|Author|Comment|
 |-----|-----------|------------|---------------------|
 |1.0|23.10.25|Federico Dibenedetto|Initial creation|
-|1.1|Date|Name|Comment1|
+|1.1|30.10.25|Federico Dibenedetto|Changed UC1 Based off of weekly findings|
 |1.2|Date|Name|Comment2|
 |1.3|Date|Name|Comment3|
 |1.4|Date|Name|Comment4|
@@ -15,7 +15,7 @@
 1. [Scope](#1-scope)
 2. [Introduction](#2-introduction)
 3. [Use Cases](#3-use-cases)
-   - 3.1 [UC01: Add and link external model file to AAS](#31-uc01-add-and-link-external-model-file-to-aas)
+   - 3.1 [UC01: Set correct MimeType for uploaded Files](#31-set-correct-mimetype-for-uploaded-files)
    - 3.2 [UC02: Extract and integrate data from specific model files (KBL/VEC)](#32-uc02-extract-and-integrate-data-from-specific-model-files-kblvec)
    - 3.3 [UC03: Display structured content of an attached XML file](#33-uc03-display-structured-content-of-an-attached-xml-file)
 4. [Customer Requirements](#4-customer-requirements)
@@ -48,12 +48,12 @@ Additionally, the REST API will be enhanced to provide access to data points wit
 
 ## 3. Use Cases
 
-### 3.1 UC01: Add and link external model file to AAS
+### 3.1 UC01: Set correct MimeType for uploaded Files
 
 | | |
 | :--- | :--- |
 | **Use Case ID** | UC01 |
-| **Description** | The user wants to add an external model file (e.g., CAD, PDF, XML) to an existing Asset Administration Shell (AAS). The user selects a file via the user interface. The application performs a plausibility check and links the file as a `File` element within the AAS, setting the correct MimeType. |
+| **Description** | The user wants to add an external model file (e.g., CAD, PDF, XML, KBL, VEC) to an existing Asset Administration Shell (AAS). The user selects a file via the user interface. The application performs a plausibility check and links the file as a `File` element within the AAS. In this process the MimeType should be automatically determined and assigned. |
 | **Involved Roles** | User, BaSyx-UI (Editor-Plugin), AAS-Server |
 | **System Boundary** | BaSyx-UI, AAS-Server |
 | **Precondition** | The user is in the BaSyx UI editor and has an AAS open for editing. The model file exists on the user's local system. |
