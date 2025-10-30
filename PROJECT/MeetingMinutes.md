@@ -302,7 +302,7 @@ This meeting took ```45 Minutes```.
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|SAS 1st Version|Flo presents, tbd chapter 7|
+|SAS 1st Version|Flo presents, tbd chapter 7, introduction mermaid-graph|
 |Wireframes|Felix presents, feedback und discussion about UC01,UC02|
 |Requirement discussion|deeper understanding UC01,UC02,UC03
 
@@ -313,7 +313,7 @@ This meeting took ```45 Minutes```.
 |----------------|----------------------------------|
 |Martin Böhm |update Issues, presentation template (Deadline 6.11.)|
 |Florian Zahn|strategy for Development/Implementation start, Vue-Learning|
-|Federico DiBenedetto|strategy for Development/Implementation start, UC04 integration in SRS (dependent of Felix), Vue-Learning, update SRS (UC01,02)|
+|Federico DiBenedetto|strategy for Development/Implementation start, update graphes (mermaid), Vue-Learning, update SRS (UC01,02)|
 |Felix Bandl|UC04 evaluation with Festo employee, Mockup/Wireframe 1st version (Deadline 6.11.), update CRS (UC01,02)|
 |Daniel Ziegler|start STP and test preliminary consideration|
 |Leonardo Risatti|supervision of PSP (Felix) and GANTT (Morten)|
