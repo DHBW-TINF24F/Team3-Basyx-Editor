@@ -1,0 +1,8 @@
+{
+  "markdown-pdf.executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "markdown-pdf.type": "pdf",
+  "markdown-pdf.displayHeaderFooter": false,
+  "markdown-pdf.includeDefaultStyles": true,
+  "markdown-pdf.renderJavaScript": true,
+  "markdown-pdf.delay": 3000
+}
