@@ -11,6 +11,7 @@ Meetings were hold between September 2025 and June 2026.
 5. [Meeting 16.10.](#16_10)
 6. [Meeting 23.10.](#23_10)
 7. [Meeting 30.10.](#30_10)
+8. [Meeting 31.10.](#31_10)
 
 
 
@@ -321,4 +322,50 @@ This meeting took ```45 Minutes```.
 
 ## Further Information
 Next meeting promptly for further discussion concerning Wireframes, UCs
+
+
+# Meeting  Protocol  of 31.10.  <a name="31_10"></a>
+
+## Type of Meeting
+This meeting was a ```Stakeholder Meeting```.
+
+## Protocol Writer
+This protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Morten Haase
+
+## Meeting Duration
+This meeting took ```180 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|Requirement Understanding with Stakeholder|UC01: MimeType compatible with IANA + KBL/VEC to XML |
+||UC02: XML-Visualization with "table of contents" and single view of chapters/IDs|
+ | |UC03: AAS-Generator for KBL/VEC-Files with extraction of IDs as Properties, KBL/VEC as Assets|
+ ||low priority UC04: Backend extraction of single ID-Inputs out of XML (usage in visualization)|
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |update Issues, presentation template (Deadline 7.11.)|
+|Florian Zahn|SAS update submodels, strategy for Development/Implementation start, Vue-Learning|
+|Federico DiBenedetto|strategy for Development/Implementation start, Vue-Learning, update SRS UCs|
+|Felix Bandl|UC04 evaluation with Festo employee, Mockup/Wireframe 2nd version (Deadline 7.11.), update CRS UCs|
+|Daniel Ziegler|start STP and test preliminary consideration|
+|Leonardo Risatti|supervision of PSP (Felix) and GANTT (Morten)|
+|Morten Haase|presentation template (7.11.), BC to Markdown/Github, update GANTT (Wireframes)|
+
+## Further Information
+Task for Learning Vue, Manipulation of UI for Learning Vue
 
