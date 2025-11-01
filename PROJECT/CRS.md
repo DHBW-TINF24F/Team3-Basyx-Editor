@@ -58,9 +58,9 @@ Furthermore, the REST API will be extended to allow direct access to data points
 | | |
 | :--- | :--- |
 | **Use Case ID** | UC01 |
-| **Description** | The user wants to import an external model file with a specific format (KBL, VEC) or a general data format into the application. The application performs a plausibility check to ensure that the file extension and the actual content structure of the file match. After successful verification, the correct MIME type is set and the file is made available for further processing. |
+| **Description** | The user wants to import an external model file with a specific format (KBL, VEC) or a general data format into the application. The application performs a plausibility check to ensure that the file extension and the actual content structure of the file match. After successful verification, the correct MimeType is set and the file is made available for further processing. |
 | **Precondition** | The model file (e.g. KBL/VEC/XML/AML) exists on the user's local system. |
-| **Postcondition on Success**| The file has been successfully validated. The correct MIME type has been determined and stored. The file is now available for subsequent processing steps (e.g., AAS generation). |
+| **Postcondition on Success**| The file has been successfully validated. The correct MimeType has been determined and stored. The file is now available for subsequent processing steps (e.g., AAS generation). |
 | **Triggering Event** | The user selects the file using an import function and starts the upload process. |
 
 ### 3.2 UC02 XML viewer with navigation and display functions
@@ -128,6 +128,8 @@ The functional requirements are prioritized from 1 to 5 to indicate which requir
 | **Overview** | The Viewer plugin must display the data of an attached XML file in a structured table of contents to enable navigation through the document. | 
 | **Acceptance Criterion** | When a user opens an AAS and clicks on the Viewer, a new view displays the table of contents and the XML file. | 
 | **Priority** | 4 | 
+| **UI** |  ![FR001 XML Viewer Sketch](images/CRS/XMLViewer.png)|
+
 
 #### 4.1.4 FR.04 AAS Generator Wizard and Property Adoption
 
