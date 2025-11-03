@@ -7,7 +7,7 @@
 |-----|-----------|------------|---------------------|
 |1.0|27.10.2025|Felix Bandl|first version|
 |1.1|01.11.2025|Felix Bandl|adjusted after consultation with Mr. Rentschler|
-|1.2|Datum|Name|Kommentar2|
+|1.2|03.11.2025|Felix Bandl|minor change in point 2.2|
 |1.3|Datum|Name|Kommentar3|
 |1.4|Datum|Name|Kommentar4|
 
@@ -32,8 +32,9 @@
 ### 2.2 Generate ASS file
 1. Upload a KBL/VEC file with the button `UPLOAD`
 2. Click on `GENERATE TECHNICAL DATA` after the green checkmark is displayed (=validity check successfully completed).
-3. Choose the elements you want to have in the ASS.
-4. Generate an ASS using the button `GENERATE ASS`. A new AAS is then generated, in which all user-selected supported data from the model file are mapped as sub-model elements. The created AAS is stored on the VWS server.
+3. The information entered in the document is automatically filled into the fields. The user can change the information or add missing details.
+4. Choose the elements you want to have in the ASS.
+5. Generate an ASS using the button `GENERATE ASS`. A new AAS is then generated, in which all user-selected supported data from the model file are mapped as sub-model elements. The created AAS is stored on the VWS server.
 
 ![Generate ASS file](images/wireframes/GenerateASSFile.png)
  
