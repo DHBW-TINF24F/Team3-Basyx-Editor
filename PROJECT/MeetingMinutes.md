@@ -12,6 +12,7 @@ Meetings were hold between September 2025 and June 2026.
 6. [Meeting 23.10.](#23_10)
 7. [Meeting 30.10.](#30_10)
 8. [Meeting 31.10.](#31_10)
+9. [Meeting 31.10.](#07_11)
 
 
 
@@ -369,3 +370,47 @@ This meeting took ```180 Minutes```.
 ## Further Information
 Task for Learning Vue, Manipulation of UI for Learning Vue
 
+# Meeting  Protocol  of 07.11.  <a name="07_11"></a>
+
+## Type of Meeting
+This meeting was a ```Weekly```.
+
+## Protocol Writer
+This protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Morten Haase
+* Leonardo Risatti
+
+## Meeting Duration
+This meeting took ```60 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|Update UCs in CRS,SRS and SAS|Felix presents, discussion and result on current version|
+|Update Wireframes|Felix presents, discussion and result on current version|
+ |Template Presentation |Morten/Martin present, changes on visual design, allocation of chapters to team members|
+ |
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |update Issues, preparation of presentation (Deadline 14.11.)|
+|Florian Zahn|preparation of presentation (Deadline 14.11.), SAS update submodels, strategy for Development/Implementation start, Vue-Learning|
+|Federico DiBenedetto|preparation of presentation (Deadline 14.11.), Vue-Learning, update SRS UCs|
+|Felix Bandl|preparation of presentation (Deadline 14.11.), Wireframes correction of typo|
+|Daniel Ziegler|preparation of presentation (Deadline 14.11.), start STP and test preliminary consideration|
+|Leonardo Risatti|preparation of presentation (Deadline 14.11.), supervision of PSP (Felix) and GANTT (Morten)|
+|Morten Haase|preparation of presentation (Deadline 14.11.), BC to Markdown/Github, update GANTT (Wireframes)|
+
+## Further Information
