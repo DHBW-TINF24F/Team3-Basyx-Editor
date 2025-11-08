@@ -3,7 +3,7 @@
 | Version | Date | Author | Comment |
 |----------|------------|----------|----------------------------------|
 | 1.0 | 29.10.2025 | Florian Zahn | Initialize a first draft of the SAS |
-|1.1|Datum|Name|Kommentar1|
+| 1.1 | 05.11.2025 | Florian Zahn | Added subsystem specifications (MOD01–MOD04) derived from SRS/CRS use cases.|
 |1.2|Datum|Name|Kommentar2|
 |1.3|Datum|Name|Kommentar3|
 
@@ -166,13 +166,61 @@ The UI provides forms, trees, and visual editors for AAS structures.
 
 ## 7 Subsystem Specification <a name="ss"></a>
 
-### 7.1 MOD01 REST Api <a name="MOD01"></a>
 
-|Subsystem specification ID|MOD01|
-|-------------|--------------------|
-|System requirements covered| -|
-|Service|-|
-|Module documentation|-|
+### 7.1 MOD01 – File Import and Validation Subsystem <a name="MOD01"></a>
+
+| Field | Description |
+|:--|:--|
+| **Subsystem ID** | MOD01 |
+| **Related Use Cases** | UC01 |
+| **Covered Requirements** | FR.001 (File Upload & Linking), FR.002 (KBL/VEC Data Extraction – pre-validation), NFR.001, NFR.005 |
+| **Service** | Performs import of external model files (XML/KBL/VEC/AML). Executes file-content plausibility check and MimeType detection based on IANA registry. Stores validated files as `File` elements inside the AAS. |
+| **Interfaces** | UI → REST endpoint `/upload`; AAS REST API `/shells/{id}/submodels/*` |
+| **Postcondition** | Validated file is linked to AAS and available for further processing (UC03). |
+| **Module Documentation** | [MOD01-File-Import](./MOD01-File-Import.md) |
+
+---
+
+### 7.2 MOD02 – XML Viewer and Navigation Subsystem <a name="MOD02"></a>
+
+| Field | Description |
+|:--|:--|
+| **Subsystem ID** | MOD02 |
+| **Related Use Cases** | UC02 |
+| **Covered Requirements** | FR.005 (Visualization of structured data), FR.003 (Table of Contents Visualization), NFR.001, NFR.002 |
+| **Service** | Provides a Vue-based viewer component for visualizing XML data attached to AAS objects. Generates a navigable table of contents and renders node hierarchies based on DOM. |
+| **Interfaces** | REST API endpoint `/files/{id}/content`; UI component `XMLViewer.vue` |
+| **Postcondition** | User can navigate and inspect XML content in a structured tree view. |
+| **Module Documentation** | [MOD02-XML-Viewer](./MOD02-XML-Viewer.md) |
+
+---
+
+### 7.3 MOD03 – AAS Generation and Submodel Mapping Subsystem <a name="MOD03"></a>
+
+| Field | Description |
+|:--|:--|
+| **Subsystem ID** | MOD03 |
+| **Related Use Cases** | UC03 |
+| **Covered Requirements** | FR.002 (KBL/VEC Extraction), FR.003 (Automated Population of Submodels), NFR.002, NFR.003 |
+| **Service** | Implements wizard-driven generation of AAS from engineering files (KBL/VEC). Parses data, maps properties into “General Technical Data” submodel and other standardized submodels (e.g., Nameplate, Electrical Characteristics). |
+| **Interfaces** | REST API endpoint `/aas/generate`; internal service `AasGenerationService` |
+| **Postcondition** | AAS instance created with fully populated submodels and registered in BaSyx repository. |
+| **Module Documentation** | [MOD03-AAS-Generation](./MOD03-AAS-Generation.md) |
+
+---
+
+### 7.4 MOD04 – Targeted Data Retrieval Subsystem <a name="MOD04"></a>
+
+| Field | Description |
+|:--|:--|
+| **Subsystem ID** | MOD04 |
+| **Related Use Cases** | UC04 |
+| **Covered Requirements** | FR.004 (REST API Extension for data retrieval), FR.006 (Error Handling), NFR.002 |
+| **Service** | Provides backend API for querying specific entries inside stored XML/AAS data structures. Accepts a path or ID parameter and returns only the requested values as JSON. Implements error handling (400/404) and validation. |
+| **Interfaces** | REST API endpoint `/api/query`; uses BaSyx AAS Repository Service |
+| **Postcondition** | External systems receive accurate data points from the AAS without overhead. |
+| **Module Documentation** | [MOD04-Data-Retrieval](./MOD04-Data-Retrieval.md) |
+
 
 ---
 

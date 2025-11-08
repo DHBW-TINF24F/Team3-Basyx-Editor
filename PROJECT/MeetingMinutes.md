@@ -4,19 +4,22 @@
 Meetings were hold between September 2025 and June 2026.
 
 ## Table of contents
-1. [Meeting 23.09.](#23_09)
-2. [Meeting 02.10.](#02_10)
-3. [Meeting 06.10.](#06_10)
-4. [Meeting 09.10.](#09_10)
-5. [Meeting 16.10.](#16_10)
-6. [Meeting 23.10.](#23_10)
-7. [Meeting 30.10.](#30_10)
-8. [Meeting 31.10.](#31_10)
+1. [Meeting 23.09.](#meeting-protocol-2309)
+2. [Meeting 02.10.](#meeting-protocol-0210)
+3. [Meeting 06.10.](#meeting-protocol-0610)
+4. [Meeting 09.10.](#meeting-protocol-0910)
+5. [Meeting 16.10.](#meeting-protocol-1610)
+6. [Meeting 23.10.](#meeting-protocol-2310)
+7. [Meeting 30.10.](#meeting-protocol-3010)
+8. [Meeting 31.10.](#meeting-protocol-3110)
+9. [Meeting 07.11.](#meeting-protocol-0711)
 
 
 
-# Meeting  Protocol  of 23.09.  <a name="23_09"></a>
 
+## Meeting Protocol 23.09.
+ 
+## 3. Error message design
 ## Type of Meeting
 This meeting was a ```Weekly```.
 
@@ -58,7 +61,7 @@ This meeting took ```1 hour```.
 ## Further Information
 ---
 
-# Meeting  Protocol  of 02.10. <a name="02_10"></a>
+# Meeting Protocol 02.10.
 
 ## Type of Meeting
 This meeting was a ```Weekly```.
@@ -104,7 +107,7 @@ This meeting took ```30 Minutes```.
 ---
 
 
-# Meeting  Protocol  of 06.10.  <a name="06_10"></a>
+# Meeting Protocol 06.10.  
 
 ## Type of Meeting
 This meeting was a ```Ad-hoc```.
@@ -144,7 +147,7 @@ see [Work Progress Last Meeting](#02_10_WP)
 * What is KBL/VEC?
 
 
-# Meeting  Protocol  of 09.10.  <a name="09_10"></a>
+# Meeting Protocol 09.10.
 
 ## Type of Meeting
 This meeting was a ```Special Meeting```.
@@ -185,7 +188,7 @@ This meeting took ```1 hour```.
 * Deadline 16.10. for first versions of several documents
 * Collection of Feedback concerning Basyx Wiki
 
-# Meeting  Protocol  of 16.10.  <a name="16_10"></a>
+# Meeting Protocol 16.10.
 
 ## Type of Meeting
 This meeting was a ```Weekly```.
@@ -232,7 +235,7 @@ This meeting took ```45 Minutes```.
 Start Developer Environment by Flo: Cloning Repos, Starting Small Dev-Group, further Details next Meeting
 
 
-# Meeting  Protocol  of 23.10.  <a name="23_10"></a>
+# Meeting Protocol 23.10.
 
 ## Type of Meeting
 This meeting was a ```Weekly```.
@@ -279,7 +282,7 @@ This meeting took ```30 Minutes```.
 ## Further Information
 Group wants to start Implementation milestone in November 2025, procedure will be designed by Flo/Fede
 
-# Meeting  Protocol  of 30.10.  <a name="30_10"></a>
+# Meeting Protocol 30.10.
 
 ## Type of Meeting
 This meeting was a ```Weekly```.
@@ -324,7 +327,7 @@ This meeting took ```45 Minutes```.
 Next meeting promptly for further discussion concerning Wireframes, UCs
 
 
-# Meeting  Protocol  of 31.10.  <a name="31_10"></a>
+# Meeting Protocol 31.10.
 
 ## Type of Meeting
 This meeting was a ```Stakeholder Meeting```.
@@ -369,3 +372,47 @@ This meeting took ```180 Minutes```.
 ## Further Information
 Task for Learning Vue, Manipulation of UI for Learning Vue
 
+# Meeting Protocol 07.11.
+
+## Type of Meeting
+This meeting was a ```Weekly```.
+
+## Protocol Writer
+This protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Morten Haase
+* Leonardo Risatti
+
+## Meeting Duration
+This meeting took ```60 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|Update UCs in CRS,SRS and SAS|Felix presents, discussion and result on current version|
+|Update Wireframes|Felix presents, discussion and result on current version|
+ |Template Presentation |Morten/Martin present, changes on visual design, allocation of chapters to team members|
+ |
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |update Issues, preparation of presentation (Deadline 14.11.)|
+|Florian Zahn|preparation of presentation (Deadline 14.11.), SAS update submodels, strategy for Development/Implementation start, Vue-Learning|
+|Federico DiBenedetto|preparation of presentation (Deadline 14.11.), Vue-Learning, update SRS UCs|
+|Felix Bandl|preparation of presentation (Deadline 14.11.), Wireframes correction of typo|
+|Daniel Ziegler|preparation of presentation (Deadline 14.11.), start STP and test preliminary consideration|
+|Leonardo Risatti|preparation of presentation (Deadline 14.11.), supervision of PSP (Felix) and GANTT (Morten)|
+|Morten Haase|preparation of presentation (Deadline 14.11.), BC to Markdown/Github, update GANTT (Wireframes)|
+
+## Further Information
