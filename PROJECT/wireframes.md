@@ -15,7 +15,7 @@
 1. [UC02 XML viewer with navigation and display functions](#1-uc02-xml-viewer-with-navigation-and-display-functions)
 2. [UC03 AAS generator from KBL/VEC](#2-uc03-aas-generator-from-kblvec)
     - 2.1 [Select Upload](#21-select-upload)
-    - 2.2 [Generate ASS file](#22-generate-ass-file)
+    - 2.2 [Generate AAS file](#22-generate-aas-file)
 3. [Error message design](#3-error-message-design)
 
 ## 1. UC02 XML viewer with navigation and display functions:
@@ -25,18 +25,18 @@
 ## 2. UC03 AAS generator from KBL/VEC
 ### 2.1 Select Upload
 1. Click on the 3-dot menu
-2. Choose `Create ASS from File`
+2. Choose `Create AAS from File`
 
-![uploaded files](images/wireframes/GenerateASS.png)
+![uploaded files](images/wireframes/GenerateAAS.png)
 
-### 2.2 Generate ASS file
+### 2.2 Generate AAS file
 1. Upload a KBL/VEC file with the button `UPLOAD`
 2. Click on `GENERATE TECHNICAL DATA` after the green checkmark is displayed (=validity check successfully completed).
 3. The information entered in the document is automatically filled into the fields. The user can change the information or add missing details.
 4. Choose the elements you want to have in the ASS.
-5. Generate an ASS using the button `GENERATE ASS`. A new AAS is then generated, in which all user-selected supported data from the model file are mapped as sub-model elements. The created AAS is stored on the VWS server.
+5. Generate an AS using the button `GENERATE AAS`. A new AAS is then generated, in which all user-selected supported data from the model file are mapped as sub-model elements. The created AAS is stored on the VWS server.
 
-![Generate ASS file](images/wireframes/GenerateASSFile.png)
+![Generate AAS file](images/wireframes/GenerateASSFile.png)
  
 ## 3. Error message design
 - should appear in the same place as before
