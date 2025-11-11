@@ -16,7 +16,7 @@ https://github.com/DHBW-TINF24F/.github/blob/main/project3_basyx_editor_extensio
 * Project Director: Martin Böhm
 * Project Manager: Florian Zahn
 * Test Manager: Daniel Ziegler
-* System Architect: Federico DiBenedetto/ Felix Bandl
+* System Architect: Federico Dibenedetto/ Felix Bandl
 * Technical Documentation: Leonardo Risatti/ Morten Haase
     
 
