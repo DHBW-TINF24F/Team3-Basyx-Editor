@@ -7,7 +7,7 @@
 |-----|-----------|------------|---------------------|
 |1.0|23.10.25|Federico Dibenedetto|Initial creation|
 |1.1|30.10.25|Federico Dibenedetto|Changed UC1 based off of weekly findings and updated flowcharts to use mermaid|
-|1.2|Date|Name|Comment2|
+|1.2|11.11.25|Federico Dibenedetto|Changed Use Cases based off of meeting with Mr. Rentschler|
 |1.3|Date|Name|Comment3|
 |1.4|Date|Name|Comment4|
 
@@ -15,23 +15,24 @@
 1. [Scope](#1-scope)
 2. [Introduction](#2-introduction)
 3. [Use Cases](#3-use-cases)
-   - 3.1 [UC01: Set correct MimeType for uploaded Files](#31-set-correct-mimetype-for-uploaded-files)
-   - 3.2 [UC02: Extract and integrate data from specific model files (KBL/VEC)](#32-uc02-extract-and-integrate-data-from-specific-model-files-kblvec)
-   - 3.3 [UC03: Display structured content of an attached XML file](#33-uc03-display-structured-content-of-an-attached-xml-file)
+  - 3.1 [UC01: Import with plausibility check and MimeType detection](#31-uc01-import-with-plausibility-check-and-mimetype-detection)
+  - 3.2 [UC02: XML viewer with navigation and display functions](#32-uc02-xml-viewer-with-navigation-and-display-functions)
+  - 3.3 [UC03: AAS generator from KBL/VEC](#33-uc03-aas-generator-from-kblvec)
+  - 3.4 [UC04: Automated extraction of specific XML entries from the AAS](#34-uc04-automated-extraction-of-specific-xml-entries-from-the-aas)
 4. [Customer Requirements](#4-customer-requirements)
-   - 4.1 [Functional Requirements](#41-functional-requirements)
-     - 4.1.1 [FR.001 File Upload and Linking](#411-fr001-file-upload-and-linking)
-     - 4.1.2 [FR.002 KBL/VEC Data Extraction](#412-fr002-kblvec-data-extraction)
-     - 4.1.3 [FR.003 Automated Population of Submodels](#413-fr003-automated-population-of-submodels)
-     - 4.1.4 [FR.004 REST API Extension](#414-fr004-rest-api-extension)
-     - 4.1.5 [FR.005 Visualization of structured data](#415-fr005-visualization-of-structured-data)
-     - 4.1.6 [FR.006 Error Handling](#416-fr006-error-handling)
-   - 4.2 [Non-functional Requirements](#42-non-functional-requirements)
-     - 4.2.1 [NFR.001 Usability](#421-nfr001-usability)
-     - 4.2.2 [NFR.002 Performance](#422-nfr002-performance)
-     - 4.2.3 [NFR.003 Maintainability and Contribution to the Open-Source Project](#423-nfr003-maintainability-and-contribution-to-the-open-source-project)
-     - 4.2.4 [NFR.004 Documentation](#424-nfr004-documentation)
-     - 4.2.5 [NFR.005 Compatibility](#425-nfr005-compatibility)
+    - 4.1 [Functional Requirements](#41-functional-requirements)
+    - 4.1.1 [FR.001 File Upload and Linking](#411-fr001-file-upload-and-linking)
+    - 4.1.2 [FR.002 KBL/VEC Data Extraction](#412-fr002-kblvec-data-extraction)
+    - 4.1.3 [FR.003 Automated Population of Submodels](#413-fr003-automated-population-of-submodels)
+    - 4.1.4 [FR.004 REST API Extension](#414-fr004-rest-api-extension)
+    - 4.1.5 [FR.005 Visualization of structured data](#415-fr005-visualization-of-structured-data)
+    - 4.1.6 [FR.006 Error Handling](#416-fr006-error-handling)
+    - 4.2 [Non-functional Requirements](#42-non-functional-requirements)
+    - 4.2.1 [NFR.001 Usability](#421-nfr001-usability)
+    - 4.2.2 [NFR.002 Performance](#422-nfr002-performance)
+    - 4.2.3 [NFR.003 Maintainability and Contribution to the Open-Source Project](#423-nfr003-maintainability-and-contribution-to-the-open-source-project)
+    - 4.2.4 [NFR.004 Documentation](#424-nfr004-documentation)
+    - 4.2.5 [NFR.005 Compatibility](#425-nfr005-compatibility)
 
 
 ## 1. Scope
@@ -48,17 +49,17 @@ Additionally, the REST API will be enhanced to provide access to data points wit
 
 ## 3. Use Cases
 
-### 3.1 UC01: Set correct MimeType for uploaded Files
+### 3.1 UC01 Import with plausibility check and MimeType detection
 
 | | |
 | :--- | :--- |
 | **Use Case ID** | UC01 |
-| **Description** | The user wants to add an external model file (e.g., CAD, PDF, XML, KBL, VEC) to an existing Asset Administration Shell (AAS). The user selects a file via the user interface. The application performs a plausibility check and links the file as a `File` element within the AAS. In this process the MimeType should be automatically determined and assigned. |
+| **Description** | The user wants to import an external model file with a specific format (KBL, VEC) or a general data format into the application. The application performs a plausibility check to ensure that the file extension and the actual content structure of the file match. After successful verification, the correct MimeType is set and the file is made available for further processing. |
 | **Involved Roles** | User, BaSyx-UI (Editor-Plugin), AAS-Server |
 | **System Boundary** | BaSyx-UI, AAS-Server |
 | **Precondition** | The user is in the BaSyx UI editor and has an AAS open for editing. The model file exists on the user's local system. |
-| **Postcondition on Success**| The external file is successfully uploaded and linked as a `File` submodel element in the AAS. The `mimeType` attribute of the element correctly reflects the file type. |
-| **Triggering Event** | The user starts a file upload action within the editor plugin for a specific AAS or submodel. |
+| **Postcondition on Success**| The file has been successfully validated. The correct MimeType has been determined and stored. The file is now available for subsequent processing steps (e.g., AAS generation). |
+| **Triggering Event** | The user selects the file using an import function and starts the upload process. |
 
 ## Flowchart UC01
 
@@ -71,19 +72,70 @@ flowchart TD
     B -- No --> C[Show an error]
 ```
 
-### 3.2 UC02: Extract and integrate data from specific model files (KBL/VEC)
+### 3.2 UC02 XML viewer with navigation and display functions
 
 | | |
 | :--- | :--- |
 | **Use Case ID** | UC02 |
-| **Description** | The user wants to add a KBL or VEC file to an AAS. The application analyzes the file content, extracts key information (e.g., nameplate data, weight, technical features) and automatically populates the "General Technical Data" submodel of the AAS with this information. An additional "Generate Technical Data" button is available to start this transfer. |
-| **Involved Roles** | User, BaSyx-UI (Editor-Plugin), AAS-Server |
+| **Description** | The user wants to view the contents of an XML file (e.g., imported KBL/VEC or AML data). The application provides an XML viewer that displays a table of contents for the XML document to facilitate navigation. The user can navigate to the appropriate section of the document using the table of contents. |
+| **Involved Roles** | User, BaSyx-UI (XML viewer component) |
 | **System Boundary** | BaSyx-UI, AAS-Server |
-| **Precondition** | The user has a valid KBL or VEC file. The target AAS exists and can host the "General Technical Data" submodel (or the submodel can be created by the application). |
-| **Postcondition on Success**| The KBL/VEC file is linked in the AAS (as in UC01) and the "General Technical Data" submodel is created or updated with the correctly mapped, extracted data points. |
-| **Triggering Event** | The user uploads a file with the extension .kbl or .vec and presses the "Generate Technical Data" button, which triggers the specialized process of parsing and extracting the data. |
+| **Precondition** | A valid XML file has already been successfully imported. |
+| **Postcondition on Success**| The XML content is displayed clearly. Users can navigate to the relevant section of the XML file using the table of contents and view the details (including IDs) of the individual nodes. |
+| **Triggering Event** | The user opens the viewer of an asset. |
 
 ## Flowchart UC02
+
+```mermaid
+flowchart TD
+  A[User clicks on a KBL or VEC file] --> B[Show table of content of file]
+  B -- Click on table entry--> C[Show corresponding XML view of clicked entry]
+```
+
+### 3.3 UC03 AAS generator from KBL/VEC
+
+| | |
+| :--- | :--- |
+| **Use Case ID** | UC03 |
+| **Description** | The user wants to automatically generate an Asset Administration Shell (AAS) from prepared model files. The application provides a wizard that analyzes the KBL/VEC data and generates the AAS structure (submodels and submodel elements). All properties selected by the user in the wizard are transferred to the AAS. Generation is performed via the API of the AAS generator. |
+| **Involved Roles** | User, BaSyx-UI (XML viewer component), AAS-Server |
+| **System Boundary** | BaSyx-UI, AAS-Server |
+| **Precondition** | A valid model file (e.g., KBL file) is available. The connection to the AAS generator (REST API) is active. |
+| **Postcondition on Success**| A new AAS has been successfully generated, in which all supported data selected by the user is mapped from the model file as submodel elements. The created AAS is stored on the AAS-Server. |
+| **Triggering Event** | The user selects or expands the linked XML file element in the viewer. |
+
+## Flowchart UC03
+
+```mermaid
+  flowchart TD
+
+    A[User clicks new Button to create AAS from File] --> B[KBL/VEC file gets analyzed]
+
+    B --> C{Valid File?}
+
+    C --Yes--> D[AAS creation wizard starts]
+
+    C --No--> E[Show error]
+
+    D --> F[User selects contents from File to convert to submodel and submodel elements]
+
+    F --> G[AAS gets created by caling the AAS generator API]
+
+```
+
+### 3.4 UC04 Automated extraction of specific XML entries from the AAS
+
+| | |
+| :--- | :--- |
+| **Use Case ID** | UC04 |
+| **Description** | An external system or internal backend service wants to retrieve specific, individual XML entries from the AAS model previously generated by UC03. The application provides a backend interface (REST API) that enables targeted data queries by transmitting a specific query point (e.g., the ID of an element or a path in the XML/AAS model). The interface then returns only the desired information (e.g., the value of a specific property). |
+| **Involved Roles** | BaSyx-UI (Editor-Plugin), AAS-Server |
+| **System Boundary** | BaSyx-UI, AAS-Server |
+| **Precondition** | An AAS model was successfully generated by UC03 and is available on the AAS-Server. The requesting system knows the ID or path of the desired XML/AAS entry. |
+| **Postcondition on Success**| The backend interface automatically and accurately returns the requested specific XML/AAS information to the requesting system. |
+| **Triggering Event** | The external system/backend service sends an API request to the interface containing the desired query point (path/ID). |
+
+## Flowchart UC04
 
 ```mermaid
 flowchart TD
@@ -92,31 +144,6 @@ flowchart TD
   C -- No --> D[Create &quot;General Technical Data&quot; Submodel]
   D --> E[Fill &quot;General Technical Data&quot; with gathered Information]
   C -- Yes --> E[Fill &quot;General Technical Data&quot; with gathered Information]
-
-```
-
-### 3.3 UC03: Display structured content of an attached XML file
-
-| | |
-| :--- | :--- |
-| **Use Case ID** | UC03 |
-| **Description** | The user wants to inspect the content of an XML file that is already attached to an AAS. The user navigates to the file within the BaSyx Viewer. The system uses the extended REST API to parse the XML file and displays its internal data points in a structured, human-readable format (e.g., similar to Notepad++). |
-| **Involved Roles** | User, BaSyx-UI (Viewer-Plugin), AAS-Server |
-| **System Boundary** | BaSyx-UI, AAS-Server |
-| **Precondition** | An AAS with a linked XML file exists on the server. The user is currently viewing this AAS in the BaSyx Viewer plugin. |
-| **Postcondition on Success**| The structured content of the XML file is displayed clearly and concisely to the user in the viewer interface. |
-| **Triggering Event** | The user selects or expands the linked XML file element in the viewer. |
-
-## Flowchart UC03
-
-```mermaid
-  flowchart TD
-
-    A[User navigated to an XML file] --> B[Call to REST-API]
-
-    B --> C[Parse the XML file]
-
-    C --> D[Display the Data in a structured format]
 
 ```
 
