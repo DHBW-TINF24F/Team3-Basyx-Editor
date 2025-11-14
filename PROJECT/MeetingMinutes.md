@@ -13,13 +13,13 @@ Meetings were hold between September 2025 and June 2026.
 7. [Meeting 30.10.](#meeting-protocol-3010)
 8. [Meeting 31.10.](#meeting-protocol-3110)
 9. [Meeting 07.11.](#meeting-protocol-0711)
+10. [Meeting 14.11.](#meeting-protocol-1411)
 
 
 
 
 ## Meeting Protocol 23.09.
  
-## 3. Error message design
 ## Type of Meeting
 This meeting was a ```Weekly```.
 
@@ -414,5 +414,47 @@ This meeting took ```60 Minutes```.
 |Daniel Ziegler|preparation of presentation (Deadline 14.11.), start STP and test preliminary consideration|
 |Leonardo Risatti|preparation of presentation (Deadline 14.11.), supervision of PSP (Felix) and GANTT (Morten)|
 |Morten Haase|preparation of presentation (Deadline 14.11.), BC to Markdown/Github, update GANTT (Wireframes)|
+
+## Further Information
+
+# Meeting Protocol 14.11.
+
+## Type of Meeting
+This meeting was a ```Weekly```.
+
+## Protocol Writer
+This protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Morten Haase
+* Leonardo Risatti
+
+## Meeting Duration
+This meeting took ```90 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|Briefing Presentation|Layout, Design und Content Discussion|
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |preparation of presentation|
+|Florian Zahn|preparation of presentation (Enumeration of graphics, Graph Updates)|
+|Federico DiBenedetto|preparation of presentation (Enumeration of graphics, Graph Updates)|
+|Felix Bandl|preparation of presentation (UCs & FR in Graph)|
+|Daniel Ziegler|preparation of presentation|
+|Leonardo Risatti|preparation of presentation|
+|Morten Haase|preparation of presentation (Update Corporate Design)|
 
 ## Further Information
