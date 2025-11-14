@@ -23,18 +23,18 @@
   - 5.4 [UC04: Automated extraction of specific XML entries from the AAS](#54-uc04-automated-extraction-of-specific-xml-entries-from-the-aas)
 6. [Customer Requirements](#6-customer-requirements)
     - 6.1 [Functional Requirements](#61-functional-requirements)
-    - 6.1.1 [FR.001 File Upload and Linking](#611-fr001-file-upload-and-linking)
-    - 6.1.2 [FR.002 KBL/VEC Data Extraction](#612-fr002-kblvec-data-extraction)
-    - 6.1.3 [FR.003 Automated Population of Submodels](#613-fr003-automated-population-of-submodels)
-    - 6.1.4 [FR.004 REST API Extension](#614-fr004-rest-api-extension)
-    - 6.1.5 [FR.005 Visualization of structured data](#615-fr005-visualization-of-structured-data)
-    - 6.1.6 [FR.006 Error Handling](#616-fr006-error-handling)
+    - 6.1.1 [FR.01 File Upload and Linking](#611-fr01-file-upload-and-linking)
+    - 6.1.2 [FR.02 KBL/VEC Data Extraction](#612-fr02-kblvec-data-extraction)
+    - 6.1.3 [FR.03 Automated Population of Submodels](#613-fr03-automated-population-of-submodels)
+    - 6.1.4 [FR.04 REST API Extension](#614-fr04-rest-api-extension)
+    - 6.1.5 [FR.05 Visualization of structured data](#615-fr05-visualization-of-structured-data)
+    - 6.1.6 [FR.06 Error Handling](#616-fr06-error-handling)
     - 6.2 [Non-functional Requirements](#62-non-functional-requirements)
-    - 6.2.1 [NFR.001 Usability](#621-nfr001-usability)
-    - 6.2.2 [NFR.002 Performance](#622-nfr002-performance)
-    - 6.2.3 [NFR.003 Maintainability and Contribution to the Open-Source Project](#623-nfr003-maintainability-and-contribution-to-the-open-source-project)
-    - 6.2.4 [NFR.004 Documentation](#624-nfr004-documentation)
-    - 6.2.5 [NFR.005 Compatibility](#625-nfr005-compatibility)
+    - 6.2.1 [NFR.01 Usability](#621-nfr01-usability)
+    - 6.2.2 [NFR.02 Performance](#622-nfr02-performance)
+    - 6.2.3 [NFR.03 Maintainability and Contribution to the Open-Source Project](#623-nfr03-maintainability-and-contribution-to-the-open-source-project)
+    - 6.2.4 [NFR.04 Documentation](#624-nfr04-documentation)
+    - 6.2.5 [NFR.05 Compatibility](#625-nfr05-compatibility)
 
 
 ## 1. Glossary
@@ -207,7 +207,7 @@ The requirements are described with an ID and an overview to enable the developm
 
 ### 6.1 Functional Requirements
 
-#### 6.1.1 FR.001 File Upload and Linking
+#### 6.1.1 FR.01 File Upload and Linking
 
 | | |
 | :--- | :--- |
@@ -215,7 +215,7 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The application must provide a UI component that allows users to upload external model files. After a successful upload, the file must be linked as a `File` element in the AAS and the correct `mimeType` must be set automatically. |
 | **Acceptance Criterion** | A user can select a local file via the UI. The file is uploaded and appears in the AAS structure. The `mimeType` property corresponds to the actual file type. The process handles common file types correctly. |
 
-#### 6.1.2 FR.002 KBL/VEC Data Extraction
+#### 6.1.2 FR.02 KBL/VEC Data Extraction
 
 | | |
 | :--- | :--- |
@@ -223,7 +223,7 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The application must be able to parse uploaded KBL and VEC files to extract predefined information, including nameplate data and important technical specifications (e.g., weight, features). |
 | **Acceptance Criterion** | When a valid KBL or VEC file is entered, the application correctly extracts the specified data points. The extracted data can be compared with the source file. The process must be able to handle the defined file schemas. |
 
-#### 6.1.3 FR.003 Automated Population of Submodels
+#### 6.1.3 FR.03 Automated Population of Submodels
 
 | | |
 | :--- | :--- |
@@ -231,7 +231,7 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The data extracted from the KBL/VEC files must be automatically used to create or update the "General Technical Data" AAS submodel after pressing the "Generate Technical Data" button. |
 | **Acceptance Criterion** | After a KBL/VEC file has been processed, the corresponding AAS contains a "General Technical Data" submodel whose elements (e.g., Weight, Dimensions) are filled with the values from the file. |
 
-#### 6.1.4 FR.004 REST API Extension
+#### 6.1.4 FR.04 REST API Extension
 
 | | |
 | :--- | :--- |
@@ -239,7 +239,7 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The BaSyx REST API must be extended to provide a mechanism for accessing and retrieving structured data from an XML file stored as a `File` element in an AAS. |
 | **Acceptance Criterion** | A new API endpoint exists according to the specification in the corresponding GitHub issue. When called with the correct path to an XML file within an AAS, the API returns the file content in a structured format (e.g., JSON). The endpoint can be verified by automated tests. |
 
-#### 6.1.5 FR.005 Visualization of structured data
+#### 6.1.5 FR.05 Visualization of structured data
 
 | | |
 | :--- | :--- |
@@ -247,7 +247,7 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The viewer plugin must be able to display the internal data points of an attached XML file in a structured, hierarchical view. |
 | **Acceptance Criterion** | When a user clicks on a linked XML file in the viewer, a new panel or a new view displays the content of the XML file as a tree structure (similar to Notepad++). The displayed structure correctly reflects the Document Object Model (DOM) of the XML file. |
 
-#### 6.1.6 FR.006 Error Handling
+#### 6.1.6 FR.06 Error Handling
 
 | | |
 | :--- | :--- |
@@ -257,7 +257,7 @@ The requirements are described with an ID and an overview to enable the developm
 
 ### 6.2 Non-functional Requirements
 
-#### 6.2.1 NFR.001 Usability
+#### 6.2.1 NFR.01 Usability
 
 | | |
 | :--- | :--- |
@@ -265,7 +265,7 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The new functionalities in the editor and viewer must be intuitive and well integrated into the existing workflow of the BaSyx UI. |
 | **Acceptance Criterion** | A user who is familiar with the BaSyx UI can perform the main use cases (uploading a file, viewing XML content) without consulting the documentation. The workflow for each use case is clear and logical. |
 
-#### 6.2.2 NFR.002 Performance
+#### 6.2.2 NFR.02 Performance
 
 | | |
 | :--- | :--- |
@@ -273,7 +273,7 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The parsing of the files and the data extraction should be efficient to ensure a responsive user experience. |
 | **Acceptance Criterion** | The server-side processing (parsing, extraction, populating the submodel) of a standard-sized model file (up to 5 MB) must be completed in under 5 seconds. The UI provides feedback (e.g., a loading indicator) during this process. |
 
-#### 6.2.3 NFR.003 Maintainability and Contribution to the Open-Source Project
+#### 6.2.3 NFR.03 Maintainability and Contribution to the Open-Source Project
 
 | | |
 | :--- | :--- |
@@ -281,7 +281,7 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The developed code must comply with the coding standards of the Eclipse BaSyx project and be well documented to facilitate maintenance and future contributions from the open source community. |
 | **Acceptance Criterion** | The code follows existing project conventions. All new public classes and methods are documented. The implementation is covered by unit tests. A pull request for the new features is created and submitted to the official BaSyx repositories. |
 
-#### 6.2.4 NFR.004 Documentation
+#### 6.2.4 NFR.04 Documentation
 
 | | |
 | :--- | :--- |
@@ -289,10 +289,11 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | Clear and structured user documentation for the new functionalities must be created. |
 | **Acceptance Criterion** | An online user documentation is created. It explains the new functions with step-by-step instructions and screenshots. The tutorials for setting up the BaSyx infrastructure are evaluated and improved where gaps have been identified. |
 
-#### 6.2.5 NFR.005 Compatibility
+#### 6.2.5 NFR.05 Compatibility
 
 | | |
 | :--- | :--- |
 | **Requirement ID** | NFR.005 |
 | **Overview** | The extensions must be fully compatible with the target version of the BaSyx UI and the backend infrastructure and must not negatively affect existing functionalities. |
+
 | **Acceptance Criterion** | All existing, unchanged functionalities of the BaSyx UI continue to function as expected after the integration of the new features. The solution can be built and run within the standard BaSyx build chain. |
