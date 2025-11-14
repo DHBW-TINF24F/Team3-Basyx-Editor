@@ -55,10 +55,8 @@ This document explains the customer's problem and defines the essential project 
 
 ## 2. Introduction
 
-<figure>
-  <img src="images/CRS/Introduction.png" alt="overview image">
-    <br><sub>Figure 1: overview image</sub>
-</figure>
+
+![overview image](images/CRS/Introduction.png)<br><sub>Figure 1: overview image</sub>
 
 The central goal of this project is the functional extension of the Eclipse BaSyx user interface, particularly the editor and viewer plugins and the corresponding REST API backend. The extension is aimed at users who need a seamless and automated integration of existing engineering data, such as that available in KBL or VEC files, into the Asset Administration Shell (AAS).
 
