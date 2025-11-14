@@ -9,7 +9,7 @@
 |1.1|13.10.2025|Felix Bandl|priority added|
 |1.2|31.10.2025|Felix Bandl|CRS adjusted after consultation with Mr. Rentschler|
 |1.3|08.11.2025|Felix Bandl|added images, prioritized use cases, and fixed bugs.|
-|1.4|Date|Name|Comment4|
+|1.4|14.11.2025|Felix Bandl|improved format|
 
 ## Table of contents
 1. [Scope](#1-scope)
@@ -26,14 +26,14 @@
         - 4.1.3 [FR.03 Table of Contents in XML Visualization](#413-fr03-table-of-contents-in-xml-visualization)
         - 4.1.4 [FR.04 AAS Generator Wizard and Property Adoption](#414-fr04-aas-generator-wizard-and-property-adoption)
         - 4.1.5 [FR.05 REST API for Targeted Data Retrieval](#415-fr05-rest-api-for-targeted-data-retrieval)
-        - 4.1.6 [FR.06 Error Handling](#416-fr06-error-handling)
     - 4.2 [Non-functional Requirements](#42-non-functional-requirements)
-        - 4.2.1 [NFR.001 Usability](#421-nfr001-usability)
-        - 4.2.2 [NFR.002 Performance](#422-nfr002-performance)
-        - 4.2.3 [NFR.003 Maintainability and Contribution to the Open-Source Project](#423-nfr003-maintainability-and-contribution-to-the-open-source-project)
-        - 4.2.4 [NFR.004 Documentation](#424-nfr004-documentation)
-        - 4.2.5 [NFR.005 Compatibility](#425-nfr005-compatibility)
-        - 4.2.6 [NFR.006 Availability (Demo)](#426-nfr006-availability-demo)
+        - 4.2.1 [NFR.01 Usability](#421-nfr01-usability)
+        - 4.2.2 [NFR.02 Performance](#422-nfr02-performance)
+        - 4.2.3 [NFR.03 Maintainability and Contribution to the Open-Source Project](#423-nfr03-maintainability-and-contribution-to-the-open-source-project)
+        - 4.2.4 [NFR.04 Documentation](#424-nfr04-documentation)
+        - 4.2.5 [NFR.05 Compatibility](#425-nfr05-compatibility)
+        - 4.1.6 [NFR.06 Error Handling](#426-nfr06-error-handling)
+        - 4.2.7 [NFR.07 Availability (Demo)](#427-nfr07-availability-demo)
      
 
 ## List of Abbreviations
@@ -57,9 +57,7 @@ This document explains the customer's problem and defines the essential project 
 
 <figure>
   <img src="images/CRS/Introduction.png" alt="overview image">
-  <figcaption>
-    Figure 1: overview image
-  </figcaption>
+    <br><sub>Figure 1: overview image</sub>
 </figure>
 
 The central goal of this project is the functional extension of the Eclipse BaSyx user interface, particularly the editor and viewer plugins and the corresponding REST API backend. The extension is aimed at users who need a seamless and automated integration of existing engineering data, such as that available in KBL or VEC files, into the Asset Administration Shell (AAS).
@@ -149,7 +147,7 @@ The functional requirements are prioritized from 1 to 5 to indicate which requir
 | **Requirement ID** | FR.02 | 
 | **Overview** | Before further processing, the application must perform a plausibility check that verifies the file extension against the actual content (start line/structure) of the file for agreement. | 
 | **Fit Criterion** | In case of a conflict between extension and content (e.g., an .xml file starting with PK), the upload is aborted, and an informative error message (see FR.06) is issued. | 
-| **Priority** | 4 | 
+| **Priority** | 5 | 
 
 #### 4.1.3 FR.03 Table of Contents in XML Visualization
 
@@ -159,7 +157,7 @@ The functional requirements are prioritized from 1 to 5 to indicate which requir
 | **Overview** | The Viewer plugin must display the data of an attached XML file in a structured table of contents to enable navigation through the document. | 
 | **Fit Criterion** | When a user opens an AAS and clicks on the Viewer, a new view displays the table of contents and the XML file. | 
 | **Priority** | 4 | 
-| **UI** |  ![FR003 XML Viewer Sketch](images/CRS/XMLViewer.png)<br><sub>Figure 2: XML Viewer Sketch</sub>|
+| **UI** |  ![FR03 XML Viewer Sketch](images/CRS/XMLViewer.png)<br><sub>Figure 2: XML Viewer Sketch</sub>|
 
 
 #### 4.1.4 FR.04 AAS Generator Wizard and Property Adoption
@@ -170,7 +168,7 @@ The functional requirements are prioritized from 1 to 5 to indicate which requir
 | **Overview** | The application must provide a Wizard that uses the data extracted from the KBL/VEC files for the automatic generation of the AAS model and the associated Submodel Elements. All properties selected by the user must be adopted. | 
 | **Fit Criterion** | The Wizard guides the user through the generation process. Upon completion, the generated AAS model contains all selected KBL/VEC data as Submodel Elements. | 
 | **Priority** | 4 | 
-|**UI**|![FR004 AAS Generator Wizard](images/CRS/GenerateASSFileO.png)<br><sub>Figure 3: Generator Wizard</sub>|
+|**UI**|![FR04 AAS Generator Wizard](images/CRS/GenerateASSFileO.png)<br><sub>Figure 3: Generator Wizard</sub>|
 
 #### 4.1.5 FR.05 REST API for Targeted Data Retrieval
 
@@ -181,62 +179,61 @@ The functional requirements are prioritized from 1 to 5 to indicate which requir
 | **Fit Criterion** | A new API endpoint exists. Upon a correct request, the API returns only the values of the specified Properties/Elements, not the entire Submodel content. | 
 | **Priority** | 1 | 
 
-#### 4.1.6 FR.06 Error Handling
-
-| Field | Content | 
-| :--- | :--- | 
-| **Requirement ID** | FR.06 | 
-| **Overview** | The system must correctly handle errors (e.g., corrupt files, API failures, invalid query paths) and return clear, informative error messages (UI) or correct HTTP status codes (API). | 
-| **Fit Criterion** | A message is displayed upon invalid file (UC01); no crash occurs upon generation error (UC03); a 404 Not Found or 400 Bad Request is returned upon invalid API path (UC04). | 
-| **Priority** | 4 |
-|**UI**|![FR006 File Error Sketch](images/CRS/FileError.png) <br><sub>Figure 4: File Error Sketch</sub>|
-
 
 ### 4.2 Non-functional Requirements
 
-#### 4.2.1 NFR.001 Usability
+#### 4.2.1 NFR.01 Usability
 
 | | |
 | :--- | :--- |
-| **Requirement ID** | NFR.001 |
+| **Requirement ID** | NFR.01 |
 | **Overview** | The new functionalities in the editor and viewer must be intuitive and well integrated into the existing workflow of the BaSyx-UI. |
 | **Fit Criterion** | A user who is familiar with the BaSyx-UI can perform the main use cases (uploading a file, viewing XML content) without consulting the documentation. The workflow for each use case is clear and logical. |
 
-#### 4.2.2 NFR.002 Performance
+#### 4.2.2 NFR.02 Performance
 
 | | |
 | :--- | :--- |
-| **Requirement ID** | NFR.002 |
+| **Requirement ID** | NFR.02 |
 | **Overview** | The parsing of the files and the data extraction should be efficient to ensure a responsive user experience. |
 | **Fit Criterion** | The server-side processing (parsing, extraction, populating the submodel) of a standard-sized model file must be completed in under 5 seconds. The UI provides feedback (e.g., a loading indicator) during this process. |
 
-#### 4.2.3 NFR.003 Maintainability and Contribution to the Open-Source Project
+#### 4.2.3 NFR.03 Maintainability and Contribution to the Open-Source Project
 
 | | |
 | :--- | :--- |
-| **Requirement ID** | NFR.003 |
+| **Requirement ID** | NFR.03 |
 | **Overview** | The developed code must comply with the coding standards of the Eclipse BaSyx project and be well documented to facilitate maintenance and future contributions from the open source community. |
 | **Fit Criterion** | The code follows existing project conventions. All new public classes and methods are documented. The implementation is covered by unit tests. A pull request for the new features is created and submitted to the official BaSyx repositories. |
 
-#### 4.2.4 NFR.004 Documentation
+#### 4.2.4 NFR.04 Documentation
 
 | | |
 | :--- | :--- |
-| **Requirement ID** | NFR.004 |
+| **Requirement ID** | NFR.04 |
 | **Overview** | Clear and structured user documentation for the new functionalities must be created. |
 | **Fit Criterion** | An online user documentation is created. It explains the new functions with step-by-step instructions and screenshots. The tutorials for setting up the BaSyx infrastructure are evaluated and improved where gaps have been identified. |
 
-#### 4.2.5 NFR.005 Compatibility
+#### 4.2.5 NFR.05 Compatibility
 
 | | |
 | :--- | :--- |
-| **Requirement ID** | NFR.005 |
+| **Requirement ID** | NFR.05 |
 | **Overview** | The extensions must be fully compatible with the target version of the BaSyx-UI and the backend infrastructure and must not negatively affect existing functionalities. |
 | **Fit Criterion** | All existing, unchanged functionalities of the BaSyx-UI continue to function as expected after the integration of the new features. The solution can be built and run within the standard BaSyx build chain. |
 
-#### 4.2.6 NFR.006 Availability (Demo)
+#### 4.2.6 NFR.06 Error Handling
+
+| Field | Content | 
+| :--- | :--- | 
+| **Requirement ID** | NFR.06 | 
+| **Overview** | The system must correctly handle errors (e.g., corrupt files, API failures, invalid query paths) and return clear, informative error messages (UI) or correct HTTP status codes (API). | 
+| **Fit Criterion** | A message is displayed upon invalid file (UC01); no crash occurs upon generation error (UC03); a 404 Not Found or 40 Bad Request is returned upon invalid API path (UC04). | 
+|**UI**|![FR06 File Error Sketch](images/CRS/FileError.png) <br><sub>Figure 4: File Error Sketch</sub>|
+
+#### 4.2.7 NFR.07 Availability (Demo)
 | | |
 | :--- | :--- |
-| **Requirement ID** | NFR.006 |
+| **Requirement ID** | NFR.07 |
 | **Overview** | The final functionalities must be hosted on a publicly accessible demo server and be executable. |
-| **Fit Criterion** | The Use Cases (UC01-UC04) implemented in the project can be tested live by project stakeholders via a provided URL without requiring a VPN or special software installations.|
+| **Fit Criterion** | The Use Cases implemented in the project can be tested live by project stakeholders via a provided URL without requiring a VPN or special software installations.|
