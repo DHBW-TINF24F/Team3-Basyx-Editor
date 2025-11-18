@@ -128,7 +128,7 @@ After careful consideration within the team we came to the conclusion that a mar
 ---
 
 ## Gantt Diagramm 
-![[Pasted image 20251118160147.png]]
+![GANTT](images/BC/GANTT.png)
 
 ---
 
