@@ -173,7 +173,7 @@ The UI provides forms, trees, and visual editors for AAS structures.
 |:--|:--|
 | **Subsystem ID** | MOD01 |
 | **Related Use Cases** | UC01 |
-| **Covered Requirements** | FR.001 (File Upload & Linking), FR.002 (KBL/VEC Data Extraction – pre-validation), NFR.001, NFR.005 |
+| **Covered Requirements** | FR.01 (File Upload & Linking), FR.02 (KBL/VEC Data Extraction – pre-validation), NFR.01, NFR.05 |
 | **Service** | Performs import of external model files (XML/KBL/VEC/AML). Executes file-content plausibility check and MimeType detection based on IANA registry. Stores validated files as `File` elements inside the AAS. |
 | **Interfaces** | UI → REST endpoint `/upload`; AAS REST API `/shells/{id}/submodels/*` |
 | **Postcondition** | Validated file is linked to AAS and available for further processing (UC03). |
@@ -187,7 +187,7 @@ The UI provides forms, trees, and visual editors for AAS structures.
 |:--|:--|
 | **Subsystem ID** | MOD02 |
 | **Related Use Cases** | UC02 |
-| **Covered Requirements** | FR.005 (Visualization of structured data), FR.003 (Table of Contents Visualization), NFR.001, NFR.002 |
+| **Covered Requirements** | FR.05 (Visualization of structured data), FR.03 (Table of Contents Visualization), NFR.01, NFR.02 |
 | **Service** | Provides a Vue-based viewer component for visualizing XML data attached to AAS objects. Generates a navigable table of contents and renders node hierarchies based on DOM. |
 | **Interfaces** | REST API endpoint `/files/{id}/content`; UI component `XMLViewer.vue` |
 | **Postcondition** | User can navigate and inspect XML content in a structured tree view. |
@@ -201,7 +201,7 @@ The UI provides forms, trees, and visual editors for AAS structures.
 |:--|:--|
 | **Subsystem ID** | MOD03 |
 | **Related Use Cases** | UC03 |
-| **Covered Requirements** | FR.002 (KBL/VEC Extraction), FR.003 (Automated Population of Submodels), NFR.002, NFR.003 |
+| **Covered Requirements** | FR.02 (KBL/VEC Extraction), FR.03 (Automated Population of Submodels), NFR.02, NFR.03 |
 | **Service** | Implements wizard-driven generation of AAS from engineering files (KBL/VEC). Parses data, maps properties into “General Technical Data” submodel and other standardized submodels (e.g., Nameplate, Electrical Characteristics). |
 | **Interfaces** | REST API endpoint `/aas/generate`; internal service `AasGenerationService` |
 | **Postcondition** | AAS instance created with fully populated submodels and registered in BaSyx repository. |
@@ -215,7 +215,7 @@ The UI provides forms, trees, and visual editors for AAS structures.
 |:--|:--|
 | **Subsystem ID** | MOD04 |
 | **Related Use Cases** | UC04 |
-| **Covered Requirements** | FR.004 (REST API Extension for data retrieval), FR.006 (Error Handling), NFR.002 |
+| **Covered Requirements** | FR.04 (REST API Extension for data retrieval), FR.06 (Error Handling), NFR.02 |
 | **Service** | Provides backend API for querying specific entries inside stored XML/AAS data structures. Accepts a path or ID parameter and returns only the requested values as JSON. Implements error handling (400/404) and validation. |
 | **Interfaces** | REST API endpoint `/api/query`; uses BaSyx AAS Repository Service |
 | **Postcondition** | External systems receive accurate data points from the AAS without overhead. |
