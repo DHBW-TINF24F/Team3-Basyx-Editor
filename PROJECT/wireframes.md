@@ -1,4 +1,4 @@
-# Wireframe
+# Wireframes
 ## Team3-Basyx-Editor
 
 ## Version Control
