@@ -15,6 +15,7 @@ Meetings were hold between September 2025 and June 2026.
 9. [Meeting 07.11.](#meeting-protocol-0711)
 10. [Meeting 14.11.](#meeting-protocol-1411)
 11. [Meeting 13.03.](#meeting-protocol-1303)
+12. [Meeting 20.03.](#meeting-protocol-2003)
 
 
 
@@ -499,6 +500,49 @@ This meeting took ```60 Minutes```.
 |Felix Bandl|Structure of Files (20.3.), Test Programming Web UI|
 |Daniel Ziegler|Structure of Files (20.3.), Test Programming Web UI|
 |Leonardo Risatti|UML UC02, Test Programming Web UI|
+|Morten Haase|Test Programming Web UI|
+
+## Further Information
+
+# Meeting Protocol 20.03.
+
+## Type of Meeting
+This meeting was a ```Weekly```.
+
+## Protocol Writer
+This protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Morten Haase
+* Leonardo Risatti
+
+## Meeting Duration
+This meeting took ```75 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|Integration UCs in Code Structure|Overview BasYx Code, Location for UCs
+|Allocation employees to UC|see Work Progress|
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |UC01 Deadline 27.3.|
+|Florian Zahn|UC02 Deadline 27.3.|
+|Federico DiBenedetto|UC03 Deadline 10.4.|
+|Felix Bandl|UC03 Deadline 10.4.|
+|Daniel Ziegler|UC01 Deadline 27.3.|
+|Leonardo Risatti|UC02 Deadline 27.3.|
 |Morten Haase|Test Programming Web UI|
 
 ## Further Information
