@@ -1,5 +1,11 @@
 # Business Case — BaSyx Editor Plugin Extension
 
+## Version History
+
+| Version | Date | Author | Comment |
+|:--|:--|:--|:--|
+| 1.0 | 19.11.2025 | Morten Haase | Initial structure / Prototype |  
+| 1.1 | 30.03.2026 | Martin Böhm | New Author |  
 
 
 ---
@@ -128,7 +134,10 @@ After careful consideration within the team we came to the conclusion that a mar
 ---
 
 ## Gantt Diagramm 
+See ./Gantt project planner.xlsx
+
 ![GANTT](images/BC/GANTT.png)
+
 
 ---
 
