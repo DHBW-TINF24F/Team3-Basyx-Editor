@@ -6,7 +6,7 @@
 |:--|:--|:--|:--|
 | 1.0 | 19.11.2025 | Morten Haase | Initial structure / Prototype |  
 | 1.1 | 30.03.2026 | Martin Böhm | New author |  
-| 1.2 | 08.04.2026 | Martin Böhm | Rephrasing, structural improvements, |  
+| 1.2 | 08.04.2026 | Martin Böhm | Rephrasing, structural improvements|  
 
 
 ---
