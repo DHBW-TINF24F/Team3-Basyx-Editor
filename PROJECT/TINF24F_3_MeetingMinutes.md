@@ -17,17 +17,18 @@ Meetings were hold between September 2025 and June 2026.
 11. [Meeting 13.03.](#meeting-protocol-1303)
 12. [Meeting 20.03.](#meeting-protocol-2003)
 13. [Meeting 27.03.](#meeting-protocol-2703)
+14. [Meeting 08.04.](#meeting-protocol-0804)
 
 
 
 
-## Meeting Protocol 23.09.
+# Meeting Protocol 23.09.
  
 ## Type of Meeting
-This meeting was a ```Weekly```.
+this meeting was a ```Weekly```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -39,27 +40,27 @@ This protocol was written by ```Martin Böhm```.
 * Leonardo Risatti
 
 ## Meeting Duration
-This meeting took ```1 hour```.
+this meeting took ```1 hour```.
 
 ## Agenda and Summary
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|First steps|Get an overview of the project|
-|Weeklys|Thursdays 10:30 to 11:00 AM|
-|Assign Jobs| <ul><li>Project Director: Martin Böhm</li><li>Project Manager: Florian Zahn</li><li>Test Manager: Daniel Ziegler</li><li>System Architect: Federico DiBenedetto/ Felix Bandl</li><li>Technical Documentation: Leonardo Risatti/ Morten Haase</li></ul>|
+|first steps|get an overview of the project|
+|weeklys|Thursdays 10:30 to 11:00 AM|
+|assign jobs| <ul><li>project director: Martin Böhm</li><li>project manager: Florian Zahn</li><li>test Manager: Daniel Ziegler</li><li>system architect: Federico DiBenedetto/ Felix Bandl</li><li>technical documentation: Leonardo Risatti/ Morten Haase</li></ul>|
 
 ## Work Progress
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |Inspect Project, Inform Stakeholders about Team|
-|Florian Zahn|Inspect Project, Preparation of GitHUb Introduction|
-|Federico DiBenedetto|Inspect Project|
-|Felix Bandl|Inspect Project|
-|Daniel Ziegler|Inspect Project|
-|Leonardo Risatti|Inspect Project|
-|Morten Haase|Inspect Project|
+|Martin Böhm |inspect project, inform stakeholders about Team|
+|Florian Zahn|inspect project, preparation of GitHUb introduction|
+|Federico DiBenedetto|inspect project|
+|Felix Bandl|inspect project|
+|Daniel Ziegler|inspect project|
+|Leonardo Risatti|inspect project|
+|Morten Haase|inspect project|
 
 ## Further Information
 ---
@@ -67,10 +68,10 @@ This meeting took ```1 hour```.
 # Meeting Protocol 02.10.
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+this meeting was a ```Weekly```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -83,14 +84,14 @@ This protocol was written by ```Martin Böhm```.
 * Morten Haase
 
 ## Meeting Duration
-This meeting took ```30 Minutes```.
+this meeting took ```30 Minutes```.
 
 ## Agenda and Summary
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|Introduction GitHub (Florian)|Use of Issues, Test-Branches, Pull Requests, Git Desktop|
-|Concrete Requirements|Martin asks for Meeting with Stakeholders|
+|introduction GitHub (Florian)|use of issues, test-Branches, Pull Requests, Git Desktop|
+|Concrete Requirements|Martin asks for Meeting with stakeholders|
 |Start Documentation|Additional Meeting in Small Group (9.10.)
 
 <a name="02_10_WP"></a>
@@ -98,13 +99,13 @@ This meeting took ```30 Minutes```.
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |Inspect Project, Inquiry: Meeting with Stakeholders|
-|Florian Zahn|Inspect Project|
-|Federico DiBenedetto|Inspect Project|
-|Felix Bandl|Inspect Project|
-|Daniel Ziegler|Inspect Project|
-|Leonardo Risatti|Inspect Project|
-|Morten Haase|Inspect Project|
+|Martin Böhm |inspect project, Inquiry: Meeting with stakeholders|
+|Florian Zahn|inspect project|
+|Federico DiBenedetto|inspect project|
+|Felix Bandl|inspect project|
+|Daniel Ziegler|inspect project|
+|Leonardo Risatti|inspect project|
+|Morten Haase|inspect project|
 
 ## Further Information
 ---
@@ -113,10 +114,10 @@ This meeting took ```30 Minutes```.
 # Meeting Protocol 06.10.  
 
 ## Type of Meeting
-This meeting was a ```Ad-hoc```.
+this meeting was a ```Ad-hoc```.
 
 ## Protocol Writer
-This protocol was written by ```Felix Bandl```.
+this protocol was written by ```Felix Bandl```.
 
 ## Meeting Participants
 
@@ -129,34 +130,34 @@ This protocol was written by ```Felix Bandl```.
 * Morten Haase
 
 ## Meeting Duration
-This meeting took ```1 hour```.
+this meeting took ```1 hour```.
 
 ## Agenda and Summary
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|Basyx Starter Kit|Each Team Member has fully developed Environment|
-|UI User Test|UI Test with Test Samples|
-|Requirements|Collections of Questions for Stakeholders|
+|Basyx Starter Kit|each team member has fully developed environment|
+|UI user test|UI test with test samples|
+|Requirements|collections of questions for stakeholders|
 
 
 ## Work Progress 
-see [Work Progress Last Meeting](#02_10_WP)
+see [Work Progress Last Meeting](#meeting-protocol-0210)
 
-## Further Information/Problems
-* Issues with Docker and Server-Setup
-* Understanding of Requirements is problematic
+## Further Information
+* issues with Docker and Server-Setup
+* understanding of requirements is problematic
 * Basyx/ AAS-Environment hard to understand
-* What is KBL/VEC?
+* what is KBL/VEC?
 
 
 # Meeting Protocol 09.10.
 
 ## Type of Meeting
-This meeting was a ```Special Meeting```.
+this meeting was a ```Special Meeting```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -165,7 +166,7 @@ This protocol was written by ```Martin Böhm```.
 * Daniel Ziegler
 
 ## Meeting Duration
-This meeting took ```1 hour```.
+this meeting took ```1 hour```.
 
 ## Agenda and Summary
 
@@ -173,7 +174,7 @@ This meeting took ```1 hour```.
 |----------------|-----------------------------|
 |Documentation |Responsibilities for CRS,SRS,SAS,BC,GANTT,PSP|
 |Information, Sources|TINF22, AI|
-|Starting Issues on GitHub|Martin initializes
+|Starting issues on GitHub|Martin initializes
 
 ## Work Progress
 
@@ -188,16 +189,16 @@ This meeting took ```1 hour```.
 |Morten Haase|BC, GANTT|
 
 ## Further Information/Problems
-* Deadline 16.10. for first versions of several documents
+* deadline 16.10. for first versions of several documents
 * Collection of Feedback concerning Basyx Wiki
 
 # Meeting Protocol 16.10.
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+this meeting was a ```Weekly```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -210,7 +211,7 @@ This protocol was written by ```Martin Böhm```.
 * Morten Haase
 
 ## Meeting Duration
-This meeting took ```45 Minutes```.
+this meeting took ```45 Minutes```.
 
 ## Agenda and Summary
 
@@ -226,13 +227,13 @@ This meeting took ```45 Minutes```.
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |Update Issues|
-|Florian Zahn|SAS (Deadline 30.10.), Small Group Development with Choose of Members|
+|Martin Böhm |update issues|
+|Florian Zahn|SAS (deadline 30.10.), Small Group Development with Choose of Members|
 |Federico DiBenedetto|SRS, UC04 integration (dependent of Felix)|
-|Felix Bandl|UC04 Evaluation with Festo Employee, CRS Update|
-|Daniel Ziegler|Start STP and Test preliminary consideration|
-|Leonardo Risatti|PM 1st Version (Deadline 23.10.), Supervision of PSP (Felix) and GANTT (Morten)|
-|Morten Haase|BC to Markdown, Update GANTT, Research BC-Overview & BC-Viable |
+|Felix Bandl|UC04 Evaluation with Festo Employee, CRS update|
+|Daniel Ziegler|Start STP and test preliminary consideration|
+|Leonardo Risatti|PM 1st Version (deadline 23.10.), Supervision of PSP (Felix) and GANTT (Morten)|
+|Morten Haase|BC to Markdown, update GANTT, Research BC-Overview & BC-Viable |
 
 ## Further Information
 Start Developer Environment by Flo: Cloning Repos, Starting Small Dev-Group, further Details next Meeting
@@ -241,10 +242,10 @@ Start Developer Environment by Flo: Cloning Repos, Starting Small Dev-Group, fur
 # Meeting Protocol 23.10.
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+this meeting was a ```Weekly```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -257,7 +258,7 @@ This protocol was written by ```Martin Böhm```.
 * Morten Haase
 
 ## Meeting Duration
-This meeting took ```30 Minutes```.
+this meeting took ```30 Minutes```.
 
 ## Agenda and Summary
 
@@ -274,10 +275,10 @@ This meeting took ```30 Minutes```.
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |Update Issues, presentation template (Deadline 6.11.)|
-|Florian Zahn|SAS 1st Version (Deadline 30.10.), strategy for Development/Implementation start|
+|Martin Böhm |update issues, presentation template (deadline 6.11.)|
+|Florian Zahn|SAS 1st Version (deadline 30.10.), strategy for Development/Implementation start|
 |Federico DiBenedetto|strategy for Development/Implementation Start, UC04 integration in SRS (dependent of Felix)|
-|Felix Bandl|UC04 evaluation with Festo employee, Mockup/Wireframe 1st version (Deadline 6.11.)|
+|Felix Bandl|UC04 evaluation with Festo employee, Mockup/Wireframe 1st version (deadline 6.11.)|
 |Daniel Ziegler|start STP and test preliminary consideration|
 |Leonardo Risatti|supervision of PSP (Felix) and GANTT (Morten)|
 |Morten Haase|presentation template (6.11.), BC to Markdown/Github, research BC-Overview & BC-Viable, update GANTT, |
@@ -288,10 +289,10 @@ Group wants to start Implementation milestone in November 2025, procedure will b
 # Meeting Protocol 30.10.
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+this meeting was a ```Weekly```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -303,7 +304,7 @@ This protocol was written by ```Martin Böhm```.
 * Leonardo Risatti
 
 ## Meeting Duration
-This meeting took ```45 Minutes```.
+this meeting took ```45 Minutes```.
 
 ## Agenda and Summary
 
@@ -318,10 +319,10 @@ This meeting took ```45 Minutes```.
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |update Issues, presentation template (Deadline 6.11.)|
+|Martin Böhm |update issues, presentation template (deadline 6.11.)|
 |Florian Zahn|strategy for Development/Implementation start, Vue-Learning|
 |Federico DiBenedetto|strategy for Development/Implementation start, update graphes (mermaid), Vue-Learning, update SRS (UC01,02)|
-|Felix Bandl|UC04 evaluation with Festo employee, Mockup/Wireframe 1st version (Deadline 6.11.), update CRS (UC01,02)|
+|Felix Bandl|UC04 evaluation with Festo employee, Mockup/Wireframe 1st version (deadline 6.11.), update CRS (UC01,02)|
 |Daniel Ziegler|start STP and test preliminary consideration|
 |Leonardo Risatti|supervision of PSP (Felix) and GANTT (Morten)|
 |Morten Haase|presentation template (6.11.), BC to Markdown/Github, update GANTT (Wireframes), |
@@ -333,10 +334,10 @@ Next meeting promptly for further discussion concerning Wireframes, UCs
 # Meeting Protocol 31.10.
 
 ## Type of Meeting
-This meeting was a ```Stakeholder Meeting```.
+this meeting was a ```stakeholder Meeting```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -348,13 +349,13 @@ This protocol was written by ```Martin Böhm```.
 * Morten Haase
 
 ## Meeting Duration
-This meeting took ```180 Minutes```.
+this meeting took ```180 Minutes```.
 
 ## Agenda and Summary
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|Requirement Understanding with Stakeholder|UC01: MimeType compatible with IANA + KBL/VEC to XML |
+|Requirement Understanding with stakeholder|UC01: MimeType compatible with IANA + KBL/VEC to XML |
 ||UC02: XML-Visualization with "table of contents" and single view of chapters/IDs|
  | |UC03: AAS-Generator for KBL/VEC-Files with extraction of IDs as Properties, KBL/VEC as Assets|
  ||low priority UC04: Backend extraction of single ID-Inputs out of XML (usage in visualization)|
@@ -364,10 +365,10 @@ This meeting took ```180 Minutes```.
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |update Issues, presentation template (Deadline 7.11.)|
+|Martin Böhm |update issues, presentation template (deadline 7.11.)|
 |Florian Zahn|SAS update submodels, strategy for Development/Implementation start, Vue-Learning|
 |Federico DiBenedetto|strategy for Development/Implementation start, Vue-Learning, update SRS UCs|
-|Felix Bandl|UC04 evaluation with Festo employee, Mockup/Wireframe 2nd version (Deadline 7.11.), update CRS UCs|
+|Felix Bandl|UC04 evaluation with Festo employee, Mockup/Wireframe 2nd version (deadline 7.11.), update CRS UCs|
 |Daniel Ziegler|start STP and test preliminary consideration|
 |Leonardo Risatti|supervision of PSP (Felix) and GANTT (Morten)|
 |Morten Haase|presentation template (7.11.), BC to Markdown/Github, update GANTT (Wireframes)|
@@ -378,10 +379,10 @@ Task for Learning Vue, Manipulation of UI for Learning Vue
 # Meeting Protocol 07.11.
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+this meeting was a ```Weekly```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -394,14 +395,14 @@ This protocol was written by ```Martin Böhm```.
 * Leonardo Risatti
 
 ## Meeting Duration
-This meeting took ```60 Minutes```.
+this meeting took ```60 Minutes```.
 
 ## Agenda and Summary
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|Update UCs in CRS,SRS and SAS|Felix presents, discussion and result on current version|
-|Update Wireframes|Felix presents, discussion and result on current version|
+|update UCs in CRS,SRS and SAS|Felix presents, discussion and result on current version|
+|update Wireframes|Felix presents, discussion and result on current version|
  |Template Presentation |Morten/Martin present, changes on visual design, allocation of chapters to team members|
  |
 
@@ -410,23 +411,23 @@ This meeting took ```60 Minutes```.
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |update Issues, preparation of presentation (Deadline 14.11.)|
-|Florian Zahn|preparation of presentation (Deadline 14.11.), SAS update submodels, strategy for Development/Implementation start, Vue-Learning|
-|Federico DiBenedetto|preparation of presentation (Deadline 14.11.), Vue-Learning, update SRS UCs|
-|Felix Bandl|preparation of presentation (Deadline 14.11.), Wireframes correction of typo|
-|Daniel Ziegler|preparation of presentation (Deadline 14.11.), start STP and test preliminary consideration|
-|Leonardo Risatti|preparation of presentation (Deadline 14.11.), supervision of PSP (Felix) and GANTT (Morten)|
-|Morten Haase|preparation of presentation (Deadline 14.11.), BC to Markdown/Github, update GANTT (Wireframes)|
+|Martin Böhm |update issues, preparation of presentation (deadline 14.11.)|
+|Florian Zahn|preparation of presentation (deadline 14.11.), SAS update submodels, strategy for Development/Implementation start, Vue-Learning|
+|Federico DiBenedetto|preparation of presentation (deadline 14.11.), Vue-Learning, update SRS UCs|
+|Felix Bandl|preparation of presentation (deadline 14.11.), Wireframes correction of typo|
+|Daniel Ziegler|preparation of presentation (deadline 14.11.), start STP and test preliminary consideration|
+|Leonardo Risatti|preparation of presentation (deadline 14.11.), supervision of PSP (Felix) and GANTT (Morten)|
+|Morten Haase|preparation of presentation (deadline 14.11.), BC to Markdown/Github, update GANTT (Wireframes)|
 
 ## Further Information
 
 # Meeting Protocol 14.11.
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+this meeting was a ```Weekly```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -439,7 +440,7 @@ This protocol was written by ```Martin Böhm```.
 * Leonardo Risatti
 
 ## Meeting Duration
-This meeting took ```90 Minutes```.
+this meeting took ```90 Minutes```.
 
 ## Agenda and Summary
 
@@ -453,22 +454,22 @@ This meeting took ```90 Minutes```.
 |Name            |Task                              |
 |----------------|----------------------------------|
 |Martin Böhm |preparation of presentation|
-|Florian Zahn|preparation of presentation (Enumeration of graphics, Graph Updates)|
-|Federico DiBenedetto|preparation of presentation (Enumeration of graphics, Graph Updates)|
+|Florian Zahn|preparation of presentation (Enumeration of graphics, Graph updates)|
+|Federico DiBenedetto|preparation of presentation (Enumeration of graphics, Graph updates)|
 |Felix Bandl|preparation of presentation (UCs & FR in Graph)|
 |Daniel Ziegler|preparation of presentation|
 |Leonardo Risatti|preparation of presentation|
-|Morten Haase|preparation of presentation (Update Corporate Design)|
+|Morten Haase|preparation of presentation (update Corporate Design)|
 
 ## Further Information
 
 # Meeting Protocol 13.03.
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+this meeting was a ```Weekly```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -481,37 +482,37 @@ This protocol was written by ```Martin Böhm```.
 * Leonardo Risatti
 
 ## Meeting Duration
-This meeting took ```60 Minutes```.
+this meeting took ```60 Minutes```.
 
 ## Agenda and Summary
 
 |Agenda          |Summary                      |
 |----------------|-----------------------------|
-|Recap Project|all up to date|
-|Next Steps|see Work Progress|
+|recap project|all up to date|
+|next steps|see Work Progress|
 
 
 ## Work Progress 
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |Contact Aaron Zielstorff, Mnestix Developer, Test Programming Web UI|
-|Florian Zahn|Structure of Files (20.3.), Test Programming Web UI|
-|Federico DiBenedetto|Structure of Files (20.3.), Test Programming Web UI|
-|Felix Bandl|Structure of Files (20.3.), Test Programming Web UI|
-|Daniel Ziegler|Structure of Files (20.3.), Test Programming Web UI|
-|Leonardo Risatti|UML UC02, Test Programming Web UI|
-|Morten Haase|Test Programming Web UI|
+|Martin Böhm |Contact Aaron Zielstorff, Mnestix developer, test programming web UI|
+|Florian Zahn|Structure of Files (20.3.), test programming web UI|
+|Federico DiBenedetto|Structure of Files (20.3.), test programming web UI|
+|Felix Bandl|Structure of Files (20.3.), test programming web UI|
+|Daniel Ziegler|Structure of Files (20.3.), test programming web UI|
+|Leonardo Risatti|UML UC02, test programming web UI|
+|Morten Haase|test programming web UI|
 
 ## Further Information
 
 # Meeting Protocol 20.03.
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+this meeting was a ```Weekly```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -524,7 +525,7 @@ This protocol was written by ```Martin Böhm```.
 * Leonardo Risatti
 
 ## Meeting Duration
-This meeting took ```75 Minutes```.
+this meeting took ```75 Minutes```.
 
 ## Agenda and Summary
 
@@ -538,23 +539,23 @@ This meeting took ```75 Minutes```.
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |UC01 Deadline 27.3.|
-|Florian Zahn|UC02 Deadline 27.3.|
-|Federico DiBenedetto|UC03 Deadline 10.4.|
-|Felix Bandl|UC03 Deadline 10.4.|
-|Daniel Ziegler|UC01 Deadline 27.3.|
-|Leonardo Risatti|UC02 Deadline 27.3.|
-|Morten Haase|Test Programming Web UI|
+|Martin Böhm |UC01 deadline 27.3.|
+|Florian Zahn|UC02 deadline 27.3.|
+|Federico DiBenedetto|UC03 deadline 10.4.|
+|Felix Bandl|UC03 deadline 10.4.|
+|Daniel Ziegler|UC01 deadline 27.3.|
+|Leonardo Risatti|UC02 deadline 27.3.|
+|Morten Haase|test programming web UI|
 
 ## Further Information
 
-# Meeting Protocol 20.03.
+# Meeting Protocol 27.03.
 
 ## Type of Meeting
-This meeting was a ```Weekly```.
+this meeting was a ```Weekly```.
 
 ## Protocol Writer
-This protocol was written by ```Martin Böhm```.
+this protocol was written by ```Martin Böhm```.
 
 ## Meeting Participants
 
@@ -566,7 +567,7 @@ This protocol was written by ```Martin Böhm```.
 * Leonardo Risatti
 
 ## Meeting Duration
-This meeting took ```45 Minutes```.
+this meeting took ```45 Minutes```.
 
 ## Agenda and Summary
 
@@ -581,13 +582,55 @@ This meeting took ```45 Minutes```.
 
 |Name            |Task                              |
 |----------------|----------------------------------|
-|Martin Böhm |UC01 feedback integration Deadline 10.4.|
-|Florian Zahn|UC02 feedback integration Deadline 10.4.|
-|Federico DiBenedetto|UC03 Deadline 10.4.|
-|Felix Bandl|UC03 Deadline 10.4.|
-|Daniel Ziegler|UC01 feedback integration Deadline 10.4.|
-|Leonardo Risatti|UC02 feedback integration Deadline 10.4.|
-|Morten Haase|Test Programming Web UI|
+|Martin Böhm |UC01 feedback integration deadline 10.4.|
+|Florian Zahn|UC02 feedback integration deadline 10.4.|
+|Federico DiBenedetto|UC03 deadline 10.4.|
+|Felix Bandl|UC03 deadline 10.4.|
+|Daniel Ziegler|UC01 feedback integration deadline 10.4.|
+|Leonardo Risatti|UC02 feedback integration deadline 10.4.|
+|Morten Haase|test programming web UI|
 
 ## Further Information
 Planned meeting with Aaron Zielstorff on 8th of April
+
+# Meeting Protocol 08.04
+
+## Type of Meeting
+this meeting was a ```Check-in ```.
+
+## Protocol Writer
+this protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Leonardo Risatti
+
+## Meeting Duration
+this meeting took ```60 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|Q&A with Aaron Zielstorff (Fraunhofer)|background information for UC03, UC04|
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |UC01 feedback integration deadline 10.4.|
+|Florian Zahn|UC02 feedback integration deadline 10.4.|
+|Federico DiBenedetto|UC03 deadline 10.4.|
+|Felix Bandl|UC03 deadline 10.4.|
+|Daniel Ziegler|UC01 feedback integration deadline 10.4.|
+|Leonardo Risatti|UC02 feedback integration deadline 10.4.|
+
+
+## Further Information
+Morten Haase had to leave the team after dropping out of university.
