@@ -18,6 +18,7 @@ Meetings were hold between September 2025 and June 2026.
 12. [Meeting 20.03.](#meeting-protocol-2003)
 13. [Meeting 27.03.](#meeting-protocol-2703)
 14. [Meeting 08.04.](#meeting-protocol-0804)
+15. [Meeting 10.04.](#meeting-protocol-0804)
 
 
 
@@ -634,3 +635,45 @@ this meeting took ```60 Minutes```.
 
 ## Further Information
 Morten Haase had to leave the team after dropping out of university.
+
+# Meeting Protocol 10.04
+
+## Type of Meeting
+this meeting was a ```Weekly ``` and a ```Stakeholder Meeting```.
+
+## Protocol Writer
+this protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+
+## Meeting Duration
+this meeting took ```90 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|Update UC01,UC02, UC03|ready for Stakeholder Meeting|
+|Feedback Stakeholder|next steps: Issues to BaSyx|
+|UC04|Issue to BaSyx, no implementation, but deeper problem analysis|
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |Issue UC01 to BaSyx, Update BC, Master Usecase, Gantt, deadline 17.04.|
+|Florian Zahn|Issue UC02 to BaSyx, Logistic GitHub/Repo, Update SAS, deadline 17.04.|
+|Federico DiBenedetto|Issue UC03, update UC03, update SRS; deadline 17.04.; starting MODs, first deadline 24.04.  |
+|Felix Bandl|update UC03, CRS, PSP deadline 17.04.|
+|Daniel Ziegler|STP deadline 24.04.|
+|Leonardo Risatti|UC04 problem analysis + Issue, update PM deadline 17.04.; User Manual deadline 24.04.|
+
+
+## Further Information
