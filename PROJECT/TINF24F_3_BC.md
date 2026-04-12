@@ -7,6 +7,7 @@
 | 1.0 | 19.11.2025 | Morten Haase | Initial structure / Prototype |  
 | 1.1 | 30.03.2026 | Martin Böhm | New author |  
 | 1.2 | 08.04.2026 | Martin Böhm | Rephrasing, structural improvements|  
+| 1.3 | 12.04.2026 | Martin Böhm | Updating costs|  
 
 
 ---
@@ -85,6 +86,7 @@ The BaSyx Editor Plugin Extension addresses a key need in the BaSyx ecosystem by
 
 Estimated personnel costs per 180 hours (as provided):
 
+
 | Role                    | Name                 | Hourly Wage (€) | Cost for 180 h (€) |
 | ----------------------- | -------------------- | --------------: | -----------------: |
 | Project Director        | Martin Böhm          |              30 |           5.400 |
@@ -93,37 +95,34 @@ Estimated personnel costs per 180 hours (as provided):
 | System Architect        | Federico Dibenedetto |              25 |           4.500 |
 | System Architect        | Felix Bandl          |              25 |           4.500 |
 | Technical Documentation | Leonardo Risatti     |              25 |           4.500 |
-| Technical Documentation | Morten Haase         |              25 |           4.500 |
-| **Total (per 180 h)**   |                      |                 |         **32.670** |
-|                         |                      |                 |                    |
 
+**Total (per 180 h): 28.170** 
 <p align="right"><em>Table 4 Variable personnel costs (per 180 h)</em></p>
 
 
 ### Costs per Work Phase
-| Phase     | Martin Böhm | Florian Zahn | Daniel Ziegler | Federico Dibenedetto | Felix Bandl | Leonardo Risatti | Morten Haase |      Cost (€) |
-| --------- | ----------- | ------------ | -------------- | -------------------- | ----------- | ---------------- | ------------ | ------------: |
-| Analyse   | 40h         | 40h          | 20h            | 20h                  | 20h         | 30h              | 30h          |      5.260 |
-| Design    | 40h         | 40h          | 20h            | 40h                  | 40h         | 40h              | 40h          |      6.760 |
-| Coding    | 40h         | 40h          | 50h            | 60h                  | 60h         | 50h              | 50h          |      9.010 |
-| Testing   | 30h         | 40h          | 70h            | 40h                  | 40h         | 50h              | 50h          |      8.210 |
-| End Phase | 30h         | 20h          | 20h            | 20h                  | 20h         | 10h              | 10h          |      3.430 |
-| **Total** | 180h        | 180h         | 180h           | 180h                 | 180h        | 180h             | 180h         | **32.670** |
 
-
+| Phase     | Martin Böhm | Florian Zahn | Daniel Ziegler | Federico Dibenedetto | Felix Bandl | Leonardo Risatti | Cost (€) |
+| --------- | ----------- | ------------ | -------------- | -------------------- | ----------- | ---------------- | -------- |
+| Analyse   | 40h         | 40h          | 20h            | 20h                  | 20h         | 30h              | 4.510    |
+| Design    | 40h         | 40h          | 20h            | 40h                  | 40h         | 40h              | 5.760    |
+| Coding    | 40h         | 40h          | 50h            | 60h                  | 60h         | 50h              | 7.760    |
+| Testing   | 30h         | 40h          | 70h            | 40h                  | 40h         | 50h              | 6.960    |
+| End Phase | 30h         | 20h          | 20h            | 20h                  | 20h         | 10h              | 3.180    |
+| Total     | 180h        | 180h         | 180h           | 180h                 | 180h        | 180h             | 28.170   |
 
 <p align="right"><em>Table 5 Costs per work phase 
 </em></p>
 
 ### Total Cost and Markup
 
-The total project cost amounts to **35.270 €** (fixed costs: 2.600 € + personnel costs: 32.670 €). After applying a 20% markup of **7.054 €**, the final price is **42.324 €**.
+The total project cost amounts to €30,770, comprising fixed costs of €2,600 and personnel costs of €28,170. After applying a 20% markup of €6,154, the final project price is €36,924.
 
 ---
 
 ## Project Timeline
 
-The Gantt chart illustrates the project timeline across five phases (Analysis, Design, Coding, Testing, Finalization) with a total duration of approximately 20 weeks. Detailed planning is available in `Gantt project planner.xlsx`.
+The Gantt chart illustrates the project timeline across five phases (Analysis, Design, Implementation, Testing, Finalization) with a total duration of approximately 34 weeks. Detailed planning is available in `Gantt project planner.xlsx`.
 
 ![GANTT](images/BC/GANTT.png)
 

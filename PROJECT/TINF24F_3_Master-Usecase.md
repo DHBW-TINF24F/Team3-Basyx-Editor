@@ -6,7 +6,7 @@
 |Version|Date|Author|Comment|
 |-----|-----------|------------|---------------------|
 |1.0|07.11.2025|Martin Boehm|first version|
-|1.1|Datum|Name|Kommentar1|
+|1.1|12.04.2026|Martin Boehm|spezifying requirements, new sources, update use case diagram|
 |1.2|Datum|Name|Kommentar2|
 |1.3|Datum|Name|Kommentar3|
 |1.4|Datum|Name|Kommentar4|
@@ -20,27 +20,11 @@
 ## 1. Master Usecase
 
 
-As a user of BaSyx, I want to add external model, KBL, or VEC files to the Asset Administration Shell (AAS), link them after validation, and automatically extract relevant technical data as well as nameplate information so that these are stored in the technical submodel, can be displayed in the viewer, and are accessible and documented via the REST API and user interface.
-
-The main sub-use cases are:
-
-- Add file to AAS
-
-- Perform plausibility check and correct linking with mimeType
-
-- Extract technical data and nameplate information and transfer to the 'General Technical Data' submodel
-
-- Extend the REST API for access to XML content
-
-- Structured display of XML data in the viewer
-
-- Usability analysis and improvement for editor/viewer
-
-- Build, deploy, and testing of functionalities
-
-- Online documentation and demo hosting
-
-
+As a BaSyx user, I want to work with XML, KBL, or VEC files in the AAS environment so that I can:
+  + validate uploaded files for well-formedness and plausibility,
+  + create a new AAS from KBL or VEC files and automatically extract relevant data into submodels,
+  + view extracted submodels in a structured visualization with a table of contents, and
+  + extract relevant file content externally via REST API.
 
 ## 2. Use Case Diagram
 
@@ -55,7 +39,7 @@ graph
   %%dummy1([" "]) 
   
    subgraph "REST-API"
-      UCRest("expand REST-API")
+      UCRest("extract data from file")
     end
 
      
@@ -68,9 +52,14 @@ graph
    
 
     subgraph "New AAS"
-      UCAAS("check plausibility + MimeType")
-      UCADD("extract data from KBL/VEC")
+      UCAAS("Automatic Submodel Content from file")
+      
     end
+
+    subgraph "File upload"
+      UCADD("XML plausibility and KBL/VEC validation")
+    end
+    
   end
 
   %% Use Case außerhalb als unbedeutend positioniert
@@ -90,11 +79,9 @@ Abb 01 Use Case Diagram
 
 ## 3. Sources
 
-* https://www.altexsoft.com/blog/functional-vs-technical-requirements/
+* https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/8
+* https://dpp40.harting.com:3000/dpp?aas=https://dpp40.harting.com:8081/shells/aHR0cHM6Ly9kcHA0MC5oYXJ0aW5nLmNvbS9zaGVsbHMvMDkwMDAwMDUzNDA
 * https://www.pulsion.co.uk/blog/requirements-analysis-for-software-development/
-* https://en.itpedia.nl/2017/01/04/sisp-2-2-soorten-requirements/
-* https://www.ecb.europa.eu/paym/target/consolidation/profuse/shared/pdf/2021-04-01_urd-common_components_v2-2_with_revisions.pdf
 * https://www.softkraft.co/how-to-write-software-requirements/
-* https://en.itpedia.nl/2018/11/23/technische-requirements-voor-een-saas-infrastructure/
 * https://www.awork.com/glossary/user-requirements
-* https://www.eolss.net/sample-chapters/c15/E1-28-02-01.pdf
+
