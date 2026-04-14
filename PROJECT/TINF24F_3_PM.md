@@ -104,11 +104,11 @@ The End Phase completes the project with the handover and presentation.
 
 | Milestone | Description | Planned Week |  
 |---|---|---|  
-| Requirement Clarification | Final clarification and sign-off of BC, CRS, and AAS integration | Week 6 |  
-| Design Approval | Completion and acceptance of wireframes, SRS, SAS | Week 11 |  
-| Code Implementation | All major functionalities implemented | Week 23 |  
-| Testing & Error Documentation | All tests completed and errors documented | Week 36 |  
-| Project Handover & Presentation | Delivery to stakeholders and first presentation on 21.11.2025; final presentation TBD | Week 37 |
+| Requirement Clarification | Final clarification and sign-off of BC, CRS, and AAS integration | Week 1-6 |  
+| Design Approval | Completion and acceptance of wireframes, SRS, SAS | Week 7-12 |  
+| Code Implementation | All major functionalities implemented | Week 13-32 |  
+| Testing & Error Documentation | All tests completed and errors documented | Week 20-32 |  
+| Project Handover & Presentation | Delivery to stakeholders and first presentation on 21.11.2025; final presentation TBD | Week 33-34 |
 
 ---
 
@@ -116,10 +116,10 @@ The End Phase completes the project with the handover and presentation.
 
 As can be seen in the Gantt chart of the **Business Case (BC)**, the project is planned over a total of **37 working weeks**, distributed as follows:  
 - **Analysis:** 6 weeks  
-- **Design:** 5 weeks  
-- **Coding / Implementation:** 12 weeks  
+- **Design:** 6 weeks  
+- **Coding / Implementation:** 20 weeks  
 - **Testing:** 13 weeks  
-- **End Phase / Handover:** 1 week  
+- **End Phase / Handover:** 3 week  
 ---
 
 ## 7. Risks  
