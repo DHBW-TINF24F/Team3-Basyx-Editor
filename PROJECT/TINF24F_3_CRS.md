@@ -10,6 +10,7 @@
 |1.2|31.10.2025|Felix Bandl|CRS adjusted after consultation with Mr. Rentschler|
 |1.3|08.11.2025|Felix Bandl|added images, prioritized use cases, and fixed bugs|
 |1.4|14.11.2025|Felix Bandl|improved format and a few bugs fixed|
+|1.5|15.04.2026|Felix Bandl|add 2 FR after consultation with the developers and testers|
 
 ## Table of contents
 1. [Scope](#1-scope)
@@ -23,9 +24,11 @@
     - 4.1 [Functional Requirements](#41-functional-requirements)
         - 4.1.1 [FR.01 MimeType Detection of Model Files](#411-fr01-mimetype-detection-of-model-files)
         - 4.1.2 [FR.02 Plausibility Check (Extension vs. Content)](#412-fr02-plausibility-check-extension-vs-content)
-        - 4.1.3 [FR.03 Table of Contents in XML Visualization](#413-fr03-table-of-contents-in-xml-visualization)
-        - 4.1.4 [FR.04 AAS Generator Wizard and Property Adoption](#414-fr04-aas-generator-wizard-and-property-adoption)
-        - 4.1.5 [FR.05 REST API for Targeted Data Retrieval](#415-fr05-rest-api-for-targeted-data-retrieval)
+        - 4.1.3 [FR.03 Readable Error Message After Plausibility Check](#413-fr03-readable-error-message-after-plausibility-check)
+        - 4.1.4 [FR.04 Table of Contents in XML Visualization](#414-fr04-table-of-contents-in-xml-visualization)
+        - 4.1.5 [FR.05 AAS Generator Wizard and Property Adoption](#415-fr05-aas-generator-wizard-and-property-adoption)
+        - 4.1.6 [FR.06 Background Processing for KBL/VEC to AAS Submodels](#416-fr06-background-processing-for-kblvec-to-aas-submodels)
+        - 4.1.7 [FR.07 REST API for Targeted Data Retrieval](#417-fr07-rest-api-for-targeted-data-retrieval)
     - 4.2 [Non-functional Requirements](#42-non-functional-requirements)
         - 4.2.1 [NFR.01 Usability](#421-nfr01-usability)
         - 4.2.2 [NFR.02 Performance](#422-nfr02-performance)
@@ -46,7 +49,7 @@
 | REST | Representational State Transfer |
 | UI | User Interface |
 | VEC | Vehicle Electric Container [file format]|
-| KBL | Kabel Baum Liste (cable harness list) [file format]|
+| KBL | Cable Harness List [file format]|
 | AML | Automation Markup Language [file format] |
 
 ## 1. Scope
@@ -144,35 +147,53 @@ The functional requirements are prioritized from 1 to 5 to indicate which requir
 | :--- | :--- | 
 | **Requirement ID** | FR.02 | 
 | **Overview** | Before further processing, the application must perform a plausibility check that verifies the file extension against the actual content (start line/structure) of the file for agreement. | 
-| **Fit Criterion** | In case of a conflict between extension and content (e.g., an .xml file starting with PK), the upload is aborted, and an informative error message (see FR.06) is issued. | 
+| **Fit Criterion** | In case of a conflict between extension and content (e.g., an .xml file starting with PK), the upload is aborted, and an informative error message (see FR.03) is issued. | 
 | **Priority** | 5 | 
 
-#### 4.1.3 FR.03 Table of Contents in XML Visualization
+#### 4.1.3 FR.03 Readable Error Message After Plausibility Check
 
-| Field | Content | 
-| :--- | :--- | 
-| **Requirement ID** | FR.03 | 
-| **Overview** | The Viewer plugin must display the data of an attached XML file in a structured table of contents to enable navigation through the document. | 
-| **Fit Criterion** | When a user opens an AAS and clicks on the Viewer, a new view displays the table of contents and the XML file. | 
-| **Priority** | 4 | 
-| **UI** |  ![FR03 XML Viewer Sketch](images/CRS/XMLViewer.png)<br><sub>Figure 2: XML Viewer Sketch</sub>|
+| Field | Content |
+| :--- | :--- |
+| **Requirement ID** | FR.03 |
+| **Overview** | If the plausibility check fails during file import, the application must display a readable and understandable error message to the user in the UI. |
+| **Fit Criterion** | For each failed plausibility check, the UI shows a clear message that states the reason (e.g., extension/content mismatch) and indicates what the user can do next. |
+| **Priority** | 5 |
 
-
-#### 4.1.4 FR.04 AAS Generator Wizard and Property Adoption
+#### 4.1.4 FR.04 Table of Contents in XML Visualization
 
 | Field | Content | 
 | :--- | :--- | 
 | **Requirement ID** | FR.04 | 
-| **Overview** | The application must provide a Wizard that uses the data extracted from the KBL/VEC files for the automatic generation of the AAS model and the associated Submodel Elements. All properties selected by the user must be adopted. | 
-| **Fit Criterion** | The Wizard guides the user through the generation process. Upon completion, the generated AAS model contains all selected KBL/VEC data as Submodel Elements. | 
+| **Overview** | The Viewer plugin must display the data of an attached XML file in a structured table of contents to enable navigation through the document. | 
+| **Fit Criterion** | When a user opens an AAS and clicks on the Viewer, a new view displays the table of contents and the XML file. | 
 | **Priority** | 4 | 
-|**UI**|![FR04 AAS Generator Wizard](images/CRS/GenerateASSFileO.png)<br><sub>Figure 3: Generator Wizard</sub>|
+| **UI** |  ![FR04 XML Viewer Sketch](images/CRS/XMLViewer.png)<br><sub>Figure 2: XML Viewer Sketch</sub>|
 
-#### 4.1.5 FR.05 REST API for Targeted Data Retrieval
+
+#### 4.1.5 FR.05 AAS Generator Wizard and Property Adoption
 
 | Field | Content | 
 | :--- | :--- | 
 | **Requirement ID** | FR.05 | 
+| **Overview** | The application must provide a Wizard that uses the data extracted from the KBL/VEC files for the automatic generation of the AAS model and the associated Submodel Elements. All properties selected by the user must be adopted. | 
+| **Fit Criterion** | The Wizard guides the user through the generation process. Upon completion, the generated AAS model contains all selected KBL/VEC data as Submodel Elements. | 
+| **Priority** | 4 | 
+|**UI**|![FR05 AAS Generator Wizard](images/CRS/GenerateASSFileO.png)<br><sub>Figure 3: Generator Wizard</sub>|
+
+#### 4.1.6 FR.06 Background Processing for KBL/VEC to AAS Submodels
+
+| Field | Content |
+| :--- | :--- |
+| **Requirement ID** | FR.06 |
+| **Overview** | As background processing of FR.05, the client application must automatically parse KBL/VEC files and transform the extracted data into the correct AAS submodels and submodel elements according to the defined mapping rules. Only the validated and correctly generated submodels are sent to the backend. |
+| **Fit Criterion** | For a valid KBL/VEC input, client-side processing generates the expected submodels and correctly assigned submodel elements with accurate values and structure. The backend receives only valid submodels; invalid or incomplete mappings are not transmitted. |
+| **Priority** | 4 |
+
+#### 4.1.7 FR.07 REST API for Targeted Data Retrieval
+
+| Field | Content | 
+| :--- | :--- | 
+| **Requirement ID** | FR.07 | 
 | **Overview** | The backend interface (REST API) must be extended to allow external systems to automatically retrieve specific XML/AAS entries from the generated AAS by submitting a query path (Path/ID). (Reference to UC04). | 
 | **Fit Criterion** | A new API endpoint exists. Upon a correct request, the API returns only the values of the specified Properties/Elements, not the entire Submodel content. | 
 | **Priority** | 1 | 
@@ -226,7 +247,7 @@ The functional requirements are prioritized from 1 to 5 to indicate which requir
 | :--- | :--- | 
 | **Requirement ID** | NFR.06 | 
 | **Overview** | The system must correctly handle errors (e.g., corrupt files, API failures, invalid query paths) and return clear, informative error messages (UI) or correct HTTP status codes (API). | 
-| **Fit Criterion** | A message is displayed upon invalid file (UC01); no crash occurs upon generation error (UC03); a 404 Not Found or 40 Bad Request is returned upon invalid API path (UC04). | 
+| **Fit Criterion** | no crash occurs upon generation error (UC03); a 404 Not Found or 40 Bad Request is returned upon invalid API path (UC04). | 
 |**UI**|![FR06 File Error Sketch](images/CRS/FileError.png) <br><sub>Figure 4: File Error Sketch</sub>|
 
 #### 4.2.7 NFR.07 Availability (Demo)
