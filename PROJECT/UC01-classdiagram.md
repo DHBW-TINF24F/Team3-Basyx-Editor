@@ -4,27 +4,21 @@
 ## Class Diagram Xml Validator
 
 ```mermaid
-classDiagram
 %%{init: {'classDiagram': {'nodeSpacing': 100}}}%%
-    class ValidatorResult {
-        +ok: bool
-        +doc?: Document
-    }
+classDiagram
 
-    class Utils {
-        +file: File|null
-        +error: string
-        +result: string
-        +kblRoots: string[]
-        +vecRoots: string[]
-        
-        +wellFormedXML(f): ValidatorResult
-        +vecFile(f): bool
-        +kblFile(f): bool
-        +upload(input): string
-    }
-    
-    Utils --> ValidatorResult
+class XmlValidator {
+    -file: File | null
+    -errorMessage: string
+    -resultMessage: string
+    -allowedKblRoots: string[]
+    -allowedVecRoots: string[]
+
+    -validateWellFormedXML(f: File): Promise~ValidatorResult~
+    -validateVecFile(f: File): Promise~boolean~
+    -validateKBLFile(f: File): Promise~boolean~
+    +uploadHandler(fileInput: any | null): Promise~string~
+}
 ```
 
 ## Flowchart XmlValidator
@@ -41,5 +35,5 @@ flowchart TD
     F --> G
     G --> I{errorMessage ?}
     I -->|message| J[return errorMessage <br>=> no Upload]
-    I -->|empty| K[return '' => Upload]
+    I -->|empty| K[return ' ' => Upload]
 ```
