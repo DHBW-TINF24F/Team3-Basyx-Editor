@@ -152,7 +152,7 @@ SRS-UC02-Graph
 
     F --> G[AAS gets created by caling the AAS generator and Submodel generator API]
 
-    G --> H[Two submodels "HandoverDocumentation" and "TechnicalData" exists]
+    G --> H[Two submodels HandoverDocumentation and TechnicalData exist and are populated]
 
 ```
 SRS-UC03-Graph
