@@ -18,7 +18,8 @@ Meetings were hold between September 2025 and June 2026.
 12. [Meeting 20.03.](#meeting-protocol-2003)
 13. [Meeting 27.03.](#meeting-protocol-2703)
 14. [Meeting 08.04.](#meeting-protocol-0804)
-15. [Meeting 10.04.](#meeting-protocol-0804)
+15. [Meeting 10.04.](#meeting-protocol-1004)
+15. [Meeting 17.04.](#meeting-protocol-1704)
 
 
 
@@ -674,6 +675,53 @@ this meeting took ```90 Minutes```.
 |Felix Bandl|update UC03, CRS, PSP deadline 17.04.|
 |Daniel Ziegler|STP deadline 24.04.|
 |Leonardo Risatti|UC04 problem analysis + Issue, update PM deadline 17.04.; User Manual deadline 24.04.|
+
+
+## Further Information
+
+# Meeting Protocol 17.04
+
+## Type of Meeting
+this meeting was a ```Weekly ```.
+
+## Protocol Writer
+this protocol was written by ```Martin Böhm```.
+
+## Meeting Participants
+
+* Martin Böhm
+* Florian Zahn
+* Federico DiBenedetto
+* Felix Bandl
+* Daniel Ziegler
+* Leonardo Risatti
+
+## Meeting Duration
+this meeting took ```90 Minutes```.
+
+## Agenda and Summary
+
+|Agenda          |Summary                      |
+|----------------|-----------------------------|
+|Review Design Documents|update SRS, BC, CRS, Master Usecase|
+|UC03|integration stakeholder feedback|
+|UC04|problem analysis, feature for BaSyx, Felix joins UC04|
+|Features to BaSyx|final versions from UC01, UC04, other UCs for next week|
+|UC01|english text in alerts|
+|Github|Merge in Project3-Repo|
+
+
+
+## Work Progress 
+
+|Name            |Task                              |
+|----------------|----------------------------------|
+|Martin Böhm |Issue UC01 to BaSyx, Update UC01 deadline 24.04.|
+|Florian Zahn|Issue UC02 to BaSyx, Logistic GitHub/Repo, Update SAS, deadline 24.04.|
+|Federico DiBenedetto|Issue UC03, update UC03, update SRS, MODs deadline 24.04.|
+|Felix Bandl|update UC03, PSP, Issue UC03 to BaSyx, UC04 problem analysis,  deadline 24.04.|
+|Daniel Ziegler|STP deadline 24.04.; unit tests|
+|Leonardo Risatti|UC04 problem analysis + Issue, update PM deadline, Issue UC02 to BaSyx; User Manual deadline 24.04.|
 
 
 ## Further Information
