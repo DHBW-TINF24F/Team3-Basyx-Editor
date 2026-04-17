@@ -1,4 +1,6 @@
 # XML / KBL / VEC Validator
+
+### Programmer: Martin Böhm
 ###     ./aas-web-ui/src/utils/XmlValidator.ts
 
 ## Class Diagram Xml Validator
@@ -37,3 +39,15 @@ flowchart TD
     I -->|message| J[return errorMessage <br>=> no Upload]
     I -->|empty| K[return ' ' => Upload]
 ```
+
+
+## MimeType Expansion for KBL/VEC
+
+MIME type settings were expanded to include media types with pending IANA registration requests (as of April 2026).
+
+### Source Code:
+ .\aas-web-ui\src\composables\AAS\SubmodelElements\File.ts
+
+.\aas-web-ui\src\components\EditorComponents\InputTypes\FileInput.vue
+
+
