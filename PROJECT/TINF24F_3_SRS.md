@@ -35,6 +35,8 @@
     - 6.2.3 [NFR.03 Maintainability and Contribution to the Open-Source Project](#623-nfr03-maintainability-and-contribution-to-the-open-source-project)
     - 6.2.4 [NFR.04 Documentation](#624-nfr04-documentation)
     - 6.2.5 [NFR.05 Compatibility](#625-nfr05-compatibility)
+    - 6.2.6 [NFR.06 Error Handling](#626-nfr06-error-handling)
+    - 6.2.7 [NFR.07 Availability (Demo)](#627-nfr07-availability-demo)
 
 
 ## 1. Glossary
@@ -152,7 +154,7 @@ SRS-UC02-Graph
 
     F --> G[AAS gets created by caling the AAS generator and Submodel generator API]
 
-    G --> H[Two submodels HandoverDocumentation and TechnicalData exist and are populated]
+    G --> H[Two submodels "HandoverDocumentation" and "TechnicalData" exists]
 
 ```
 SRS-UC03-Graph
@@ -299,3 +301,19 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The extensions must be fully compatible with the target version of the BaSyx UI and the backend infrastructure and must not negatively affect existing functionalities. |
 
 | **Acceptance Criterion** | All existing, unchanged functionalities of the BaSyx UI continue to function as expected after the integration of the new features. The solution can be built and run within the standard BaSyx build chain. |
+
+#### 6.2.6 NFR.06 Error Handling
+
+| Field | Content | 
+| :--- | :--- | 
+| **Requirement ID** | NFR.06 | 
+| **Overview** | The system must correctly handle errors (e.g., corrupt files, API failures, invalid query paths) and return clear, informative error messages (UI) or correct HTTP status codes (API). | 
+| **Fit Criterion** | no crash occurs upon generation error (UC03); a 404 Not Found or 40 Bad Request is returned upon invalid API path (UC04). | 
+|**UI**|![FR06 File Error Sketch](images/CRS/FileError.png) <br><sub>Figure 4: File Error Sketch</sub>|
+
+#### 6.2.7 NFR.07 Availability (Demo)
+| | |
+| :--- | :--- |
+| **Requirement ID** | NFR.07 |
+| **Overview** | The final functionalities must be hosted on a publicly accessible demo server and be executable. |
+| **Fit Criterion** | The Use Cases implemented in the project can be tested live by project stakeholders via a provided URL without requiring a VPN or special software installations.|
