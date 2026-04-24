@@ -5,8 +5,6 @@
 **Class:** TINF24F  
 **Professors:** Markus Rentschler, Pawel Wojcik  
 
----
-
 ## Version History
 
 | Version | Date | Author | Comment |
@@ -16,35 +14,39 @@
 | 0.3 | 23.10.2025 | Leonardo Risatti | Small changes |  
 | 1.0 | 19.11.2025 | Leonardo Risatti | Major Rework of Pm |
 
----
-
 ## 1. Project Assignment  
 
 **Objective (Output)**  
-The project extends the **Eclipse BaSyx UI** by developing an **Editor Plugin**, a **Viewer Plugin**, and enhancing the **REST API backend**.  
-It allows importing, validating, and integrating external model files (KBL, VEC) into the **Asset Administration Shell (AAS)**, with automated plausibility checks, linking, data extraction, and visualization of structured XML data.  
+The project extends the **Eclipse BaSyx UI** by developing an **Editor Plugin**, a **Viewer Plugin**, and enhancing the associated **REST API backend**.  
+It enables the structured import, validation, and integration of external engineering model files (e.g., KBL and VEC) into the **Asset Administration Shell (AAS)**.  
 
-**Benefit (Outcome)**  
-- Reduce manual effort for integrating engineering data  
-- Improve data quality and consistency  
-- Enhance usability and interoperability within the BaSyx ecosystem  
-- Enable structured XML visualization directly in AAS  
+The system provides automated plausibility checks, data extraction, and linking mechanisms, as well as a structured visualization of XML-based data within the BaSyx environment.  
 
-**Customer / Stakeholders**  
+Additionally, this document establishes a common understanding of the system scope and serves as a foundation for development, testing, and validation throughout the project lifecycle.  
+
+**Stakeholders**  
 - **Customer:** Markus Rentschler, Pawel Wojcik  
-- **Provider:** Team 3  
+- **Users:** Developers and engineers working with AAS and engineering data  
+- **Project Team:** Team 3  
 
 **Main Tasks**  
-- Analysis  
-- Design  
-- Implementation  
-- Testing  
-- Documentation  
+- Requirements analysis and specification (Use Cases, functional & non-functional requirements)  
+- System design (architecture, interfaces, data flow)  
+- Implementation of editor and viewer plugins as well as backend extensions  
+- Testing and validation of all system components  
+- Documentation
+
+**Benefit (Outcome)**  
+- Reduction of manual effort when integrating  data  
+- Improved data quality and consistency through automated validation  
+- Enhanced usability and transparency within the BaSyx ecosystem  
+- Structured and user-friendly visualization of complex XML data  
+- Clear basis for implementation and verification via defined requirements 
 
 **Deadlines**  
 - First presentation: 21.11.2025  
-- Final presentation: 22.05.26 
-
+- Handover to stakeholders: 21.05.2026  
+- Final presentation: 22.05.2026  
 ---
 ## 2. Project Organization  
 
@@ -60,34 +62,32 @@ _All team members contribute to development._
 
 ## 3. Project Context  
 
-**Initial Situation**  
-The current BaSyx UI lacks direct integration of engineering data (KBL/VEC) into the AAS.  
-Users must currently process and link such files manually.  
-This project automates these steps, providing a more intelligent and user-friendly workflow.  
+This section describes the context in which the project is carried out. It outlines the organizational, technical, and temporal framework conditions as well as the involved stakeholders.  
 
 **Temporal Context**  
 | Phase | Description |  
 |---|---|  
-| Pre-project | Familiarization with BaSyx, AAS, and model formats |  
-| Project phase | Development of editor/viewer plugins and API |  
-| Post-project | Handover and optional documentation updates |
+| Pre-project | Familiarization with BaSyx architecture, AAS concepts, repository structure, and model formats (KBL/VEC) |  
+| Project phase | Iterative development of editor and viewer plugins, REST API extensions, and integration into the existing BaSyx system |  
+| Post-project | Handover to stakeholders, documentation finalization, and potential future extensions |  
 
 **Social Context**  
-| Stakeholder | Opportunity | Risk | Mitigation |  
-|---|---|---|---|  
-| Customer | Improved BaSyx usability | Late requirement changes | Regular feedback loops |  
-| Team | Successful delivery | Resource overload | Clear task division |  
-| User | Better visualization | Misunderstanding functions | Provide user manual and demos |
+| Stakeholder | Role | Opportunity | Risk | Mitigation |  
+|---|---|---|---|---|  
+| Customer  | Define requirements, evaluate results | Improved teaching and demonstrability of BaSyx extensions | Changing or unclear requirements | Regular reviews and feedback sessions |  
+| Users  | Use the system for data integration and analysis | More efficient workflows and better data understanding | Misinterpretation of features or workflows | User documentation, examples, and demos |  
+| Project Team | Design and implement the solution | Successful project delivery and technical learning | Overload, knowledge gaps | Clear task distribution, internal communication, documentation |  
+| Open-Source Community  | Potential future users / contributors | Reusable extension for broader ecosystem | Compatibility issues with upstream changes | Modular design, alignment with BaSyx standards |  
 
 **Goals / Non-Goals**  
+
 | Goals | Non-Goals |  
 |---|---|  
-| Integrate external model files into AAS | Redesign full BaSyx backend |  
-| Automated extraction and linking of data | Replacement of existing BaSyx features |  
-| REST API extension for XML access | Integration of unrelated data formats |  
-| Structured XML visualization | Major UI redesign |
-
-
+| Seamless integration of external model files (KBL, VEC) into AAS | Redesign of the complete BaSyx backend architecture |  
+| Automated validation, extraction, and linking of engineering data | Replacement of existing BaSyx core functionalities |  
+| Extension of REST API for structured XML data access | Support for arbitrary or unrelated data formats |  
+| Visualization of XML data in a structured and user-friendly way | Full UI redesign beyond plugin scope |  
+| Integration into existing plugin-based BaSyx architecture | Development of a standalone system outside BaSyx |  
 
 ## 4. Work Breakdown Structure (PSP)
 ![PSP](images/PM/PSP.png)
