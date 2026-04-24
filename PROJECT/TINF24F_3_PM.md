@@ -5,8 +5,6 @@
 **Class:** TINF24F  
 **Professors:** Markus Rentschler, Pawel Wojcik  
 
----
-
 ## Version History
 
 | Version | Date | Author | Comment |
@@ -16,35 +14,39 @@
 | 0.3 | 23.10.2025 | Leonardo Risatti | Small changes |  
 | 1.0 | 19.11.2025 | Leonardo Risatti | Major Rework of Pm |
 
----
-
 ## 1. Project Assignment  
 
 **Objective (Output)**  
-The project extends the **Eclipse BaSyx UI** by developing an **Editor Plugin**, a **Viewer Plugin**, and enhancing the **REST API backend**.  
-It allows importing, validating, and integrating external model files (KBL, VEC) into the **Asset Administration Shell (AAS)**, with automated plausibility checks, linking, data extraction, and visualization of structured XML data.  
+The project extends the **Eclipse BaSyx UI** by developing an **Editor Plugin**, a **Viewer Plugin**, and enhancing the associated **REST API backend**.  
+It enables the structured import, validation, and integration of external engineering model files (e.g., KBL and VEC) into the **Asset Administration Shell (AAS)**.  
 
-**Benefit (Outcome)**  
-- Reduce manual effort for integrating engineering data  
-- Improve data quality and consistency  
-- Enhance usability and interoperability within the BaSyx ecosystem  
-- Enable structured XML visualization directly in AAS  
+The system provides automated plausibility checks, data extraction, and linking mechanisms, as well as a structured visualization of XML-based data within the BaSyx environment.  
+
+Additionally, this document establishes a common understanding of the system scope and serves as a foundation for development, testing, and validation throughout the project lifecycle.  
 
 **Customer / Stakeholders**  
 - **Customer:** Markus Rentschler, Pawel Wojcik  
-- **Provider:** Team 3  
+- **Users:** Developers and engineers working with AAS and engineering data  
+- **Project Team:** Team 3  
 
 **Main Tasks**  
-- Analysis  
-- Design  
-- Implementation  
-- Testing  
-- Documentation  
+- Requirements analysis and specification (Use Cases, functional & non-functional requirements)  
+- System design (architecture, interfaces, data flow)  
+- Implementation of editor and viewer plugins as well as backend extensions  
+- Testing and validation of all system components  
+- Documentation
+
+**Benefit (Outcome)**  
+- Reduction of manual effort when integrating  data  
+- Improved data quality and consistency through automated validation  
+- Enhanced usability and transparency within the BaSyx ecosystem  
+- Structured and user-friendly visualization of complex XML data  
+- Clear basis for implementation and verification via defined requirements 
 
 **Deadlines**  
 - First presentation: 21.11.2025  
-- Final presentation: 22.05.26 
-
+- Handover to stakeholders: 21.05.2026  
+- Final presentation: 22.05.2026  
 ---
 ## 2. Project Organization  
 
