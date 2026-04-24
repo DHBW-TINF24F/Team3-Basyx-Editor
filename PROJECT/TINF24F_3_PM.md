@@ -89,40 +89,47 @@ This section describes the context in which the project is carried out. It outli
 | Visualization of XML data in a structured and user-friendly way | Full UI redesign beyond plugin scope |  
 | Integration into existing plugin-based BaSyx architecture | Development of a standalone system outside BaSyx |  
 
-## 4. Work Breakdown Structure (PSP)
-![PSP](images/PM/PSP.png)
-The project’s work is divided into major phases: Analysis, Design, Coding, Testing, and End Phase.  
-During Analysis, requirements are clarified and documents such as CRS and BC are created.  
-The Design phase includes wireframes, SRS, and SAS creation.  
-Coding covers frontend and backend implementation, including the editor and viewer features, XML navigation, AAS generator, plausibility checks, and automated data extraction.  
-Testing involves unit tests, black-box and white-box tests, as well as error documentation.  
-The End Phase completes the project with the handover and presentation.  
+## 4. Project Structure Plan(PSP)
 
----
+The **Project Structure Plan (PSP)** organizes the project into five main phases: **Analysis, Design, Coding, Testing, and End Phase**, each consisting of clearly defined sub-tasks.
+![PSP](images/PM/PSP.png)
+
+
+During the **Analysis phase**, the project plan is prepared and fundamental requirements are clarified. This includes the integration into ASSX, requirement discussions with stakeholders, and alignment with external partners. In parallel, essential project documents such as the CRS (Customer Requirements Specification) and Business Case (BC) are created.
+
+The **Design phase** focuses on defining the system structure and user interaction. This includes the creation of wireframes, initial code examples, and technical specifications such as the Software Requirements Specification (SRS) and Software Architecture Specification (SAS).
+
+In the **Coding phase**, the defined system functionalities are implemented based on the previously specified requirements and use cases.  
+The focus lies on translating the designed concepts into a working software solution within the existing BaSyx architecture.  
+
+The **Testing phase** ensures system quality through structured validation. This includes the development of a Software Test Plan (STP), execution of black-box, white-box, and unit tests, as well as systematic error documentation.
+
+Finally, the **End Phase** concludes the project with the formal handover to stakeholders, ensuring that all deliverables, documentation, and results are completed and ready for presentation.
 
 ## 5. Milestones  
-
+This section defines the Milestones based on the PSP.
 | Milestone | Description | Planned Week |  
 |---|---|---|  
-| Requirement Clarification | Final clarification and sign-off of BC, CRS, and AAS integration | Week 1-6 |  
-| Design Approval | Completion and acceptance of wireframes, SRS, SAS | Week 7-12 |  
-| Code Implementation | All major functionalities implemented | Week 13-32 |  
-| Testing & Error Documentation | All tests completed and errors documented | Week 20-32 |  
-| Project Handover & Presentation | Delivery to stakeholders and first presentation on 21.11.2025; final presentation TBD | Week 33-34 |
-
----
+| Requirement Clarification BC | Final clarification and sign-off of BC, CRS, and AAS integration |  6 |  
+| Design Approval | Completion and acceptance of wireframes, SRS, SAS |  12 |  
+| Code Implementation | All major functionalities implemented | 32 |  
+| Testing & Error Documentation | All tests completed and errors documented | 32 |  
+| Project Handover & Presentation | Delivery to stakeholders and presentation | 34 |
 
 ## 6. Project Timeline 
-
+Shown here is the planned project timeline.
+![GANTT](images/BC/GANTT.png)
 As can be seen in the Gantt chart of the **Business Case (BC)**, the project is planned over a total of **37 working weeks**, distributed as follows:  
 - **Analysis:** 6 weeks  
 - **Design:** 6 weeks  
-- **Coding / Implementation:** 20 weeks  
+- **Implementation:** 20 weeks  
 - **Testing:** 13 weeks  
-- **End Phase / Handover:** 3 week  
----
+- **End Phase:** 3 week  
 
 ## 7. Risks  
+
+This section identifies potential risks that may affect the successful execution of the project.  
+For each risk, possible impacts are considered and appropriate mitigation strategies are defined.  
 
 | # | Risk | Mitigation / Countermeasure |  
 |---|---|---|  
@@ -137,17 +144,6 @@ As can be seen in the Gantt chart of the **Business Case (BC)**, the project is 
 The project team will actively monitor and manage these risks. Each risk is regularly reviewed, and mitigation strategies are applied throughout the project lifecycle. The **Risk Matrix** visually summarizes risk probability and impact.  
 
 ![Risk Matrix](images/PM/RisikoMatrix.png)
-
----
-
-## 8. End of Project  
-- Handover to stakeholders  
-- First presentation on 21.11.2025; final presentation 22.05.2026
-
-
-
-
-
 
 
 
