@@ -14,7 +14,7 @@
 | 0.1 | 21.10.2025 | Leonardo Risatti | Initial structure / Prototype |  
 | 0.2 | 21.10.2025 | Leonardo Risatti | Added content |  
 | 0.3 | 23.10.2025 | Leonardo Risatti | Small changes |  
-| 1.0 | 19.11.2025 | Leonardo Risatti | Mojor Rework of Pm |
+| 1.0 | 19.11.2025 | Leonardo Risatti | Major Rework of Pm |
 
 ---
 
@@ -43,7 +43,7 @@ It allows importing, validating, and integrating external model files (KBL, VEC)
 
 **Deadlines**  
 - First presentation: 21.11.2025  
-- Final presentation: TBD  
+- Final presentation: 22.05.26 
 
 ---
 ## 2. Project Organization  
@@ -142,7 +142,7 @@ The project team will actively monitor and manage these risks. Each risk is regu
 
 ## 8. End of Project  
 - Handover to stakeholders  
-- First presentation on 21.11.2025; final presentation TBD  
+- First presentation on 21.11.2025; final presentation 22.05.2026
 
 
 
