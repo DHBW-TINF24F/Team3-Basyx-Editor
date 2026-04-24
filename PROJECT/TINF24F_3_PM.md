@@ -24,7 +24,7 @@ The system provides automated plausibility checks, data extraction, and linking 
 
 Additionally, this document establishes a common understanding of the system scope and serves as a foundation for development, testing, and validation throughout the project lifecycle.  
 
-**Customer / Stakeholders**  
+**Stakeholders**  
 - **Customer:** Markus Rentschler, Pawel Wojcik  
 - **Users:** Developers and engineers working with AAS and engineering data  
 - **Project Team:** Team 3  
@@ -62,34 +62,32 @@ _All team members contribute to development._
 
 ## 3. Project Context  
 
-**Initial Situation**  
-The current BaSyx UI lacks direct integration of engineering data (KBL/VEC) into the AAS.  
-Users must currently process and link such files manually.  
-This project automates these steps, providing a more intelligent and user-friendly workflow.  
+This section describes the context in which the project is carried out. It outlines the organizational, technical, and temporal framework conditions as well as the involved stakeholders.  
 
 **Temporal Context**  
 | Phase | Description |  
 |---|---|  
-| Pre-project | Familiarization with BaSyx, AAS, and model formats |  
-| Project phase | Development of editor/viewer plugins and API |  
-| Post-project | Handover and optional documentation updates |
+| Pre-project | Familiarization with BaSyx architecture, AAS concepts, repository structure, and model formats (KBL/VEC) |  
+| Project phase | Iterative development of editor and viewer plugins, REST API extensions, and integration into the existing BaSyx system |  
+| Post-project | Handover to stakeholders, documentation finalization, and potential future extensions |  
 
 **Social Context**  
-| Stakeholder | Opportunity | Risk | Mitigation |  
-|---|---|---|---|  
-| Customer | Improved BaSyx usability | Late requirement changes | Regular feedback loops |  
-| Team | Successful delivery | Resource overload | Clear task division |  
-| User | Better visualization | Misunderstanding functions | Provide user manual and demos |
+| Stakeholder | Role | Opportunity | Risk | Mitigation |  
+|---|---|---|---|---|  
+| Customer  | Define requirements, evaluate results | Improved teaching and demonstrability of BaSyx extensions | Changing or unclear requirements | Regular reviews and feedback sessions |  
+| Users  | Use the system for data integration and analysis | More efficient workflows and better data understanding | Misinterpretation of features or workflows | User documentation, examples, and demos |  
+| Project Team | Design and implement the solution | Successful project delivery and technical learning | Overload, knowledge gaps | Clear task distribution, internal communication, documentation |  
+| Open-Source Community  | Potential future users / contributors | Reusable extension for broader ecosystem | Compatibility issues with upstream changes | Modular design, alignment with BaSyx standards |  
 
 **Goals / Non-Goals**  
+
 | Goals | Non-Goals |  
 |---|---|  
-| Integrate external model files into AAS | Redesign full BaSyx backend |  
-| Automated extraction and linking of data | Replacement of existing BaSyx features |  
-| REST API extension for XML access | Integration of unrelated data formats |  
-| Structured XML visualization | Major UI redesign |
-
-
+| Seamless integration of external model files (KBL, VEC) into AAS | Redesign of the complete BaSyx backend architecture |  
+| Automated validation, extraction, and linking of engineering data | Replacement of existing BaSyx core functionalities |  
+| Extension of REST API for structured XML data access | Support for arbitrary or unrelated data formats |  
+| Visualization of XML data in a structured and user-friendly way | Full UI redesign beyond plugin scope |  
+| Integration into existing plugin-based BaSyx architecture | Development of a standalone system outside BaSyx |  
 
 ## 4. Work Breakdown Structure (PSP)
 ![PSP](images/PM/PSP.png)
