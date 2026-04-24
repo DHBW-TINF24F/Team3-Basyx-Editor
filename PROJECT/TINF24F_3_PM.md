@@ -117,7 +117,6 @@ This section defines the Milestones based on the PSP.
 | Project Handover & Presentation | Delivery to stakeholders and presentation | 34 |
 
 ## 6. Project Timeline 
-Shown here is the planned project timeline.
 ![GANTT](images/BC/GANTT.png)
 As can be seen in the Gantt chart of the **Business Case (BC)**, the project is planned over a total of **37 working weeks**, distributed as follows:  
 - **Analysis:** 6 weeks  
