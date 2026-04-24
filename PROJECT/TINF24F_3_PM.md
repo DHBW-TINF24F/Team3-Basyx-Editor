@@ -16,7 +16,7 @@
 
 ## 1. Project Assignment  
 
-**Objective (Output)**  
+**Objective**  
 The project extends the **Eclipse BaSyx UI** by developing an **Editor Plugin**, a **Viewer Plugin**, and enhancing the associated **REST API backend**.  
 It enables the structured import, validation, and integration of external engineering model files (e.g., KBL and VEC) into the **Asset Administration Shell (AAS)**.  
 
@@ -36,7 +36,7 @@ Additionally, this document establishes a common understanding of the system sco
 - Testing and validation of all system components  
 - Documentation
 
-**Benefit (Outcome)**  
+**Benefit**  
 - Reduction of manual effort when integrating  data  
 - Improved data quality and consistency through automated validation  
 - Enhanced usability and transparency within the BaSyx ecosystem  
@@ -107,7 +107,6 @@ The **Testing phase** ensures system quality through structured validation. This
 Finally, the **End Phase** concludes the project with the formal handover to stakeholders, ensuring that all deliverables, documentation, and results are completed and ready for presentation.
 
 ## 5. Milestones  
-This section defines the Milestones based on the PSP.
 | Milestone | Description | Planned Week |  
 |---|---|---|  
 | Requirement Clarification BC | Final clarification and sign-off of BC, CRS, and AAS integration |  6 |  
