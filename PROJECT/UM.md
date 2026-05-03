@@ -106,6 +106,7 @@ This improves readability and simplifies working with complex engineering data s
 3. Browse the tree structure on the left panel  
 4. Click on nodes to view detailed information  
 
+<img width="1386" height="1070" alt="Image" src="https://github.com/user-attachments/assets/90b2b62b-877e-4ab3-81e0-ba273b88fc57" />
 
 
 
