@@ -23,6 +23,7 @@
   - 5.3 [UC03: AAS generator from KBL/VEC](#53-uc03-aas-generator-from-kblvec)
   - 5.4 [UC04: Automated extraction of specific XML entries from the AAS](#54-uc04-automated-extraction-of-specific-xml-entries-from-the-aas)
 6. [Customer Requirements](#6-customer-requirements)
+    - 6.1 [Functional Requirements](#61-functional-requirements)
       - 6.1.1 [FR.01 MimeType Detection of Model Files](#611-fr01-mimetype-detection-of-model-files)
       - 6.1.2 [FR.02 Plausibility Check (Extension vs. Content)](6412-fr02-plausibility-check-extension-vs-content)
       - 6.1.3 [FR.03 Readable Error Message After Plausibility Check](#613-fr03-readable-error-message-after-plausibility-check)
