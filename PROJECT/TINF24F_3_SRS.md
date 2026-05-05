@@ -10,6 +10,7 @@
 |1.2|11.11.25|Federico Dibenedetto|Changed Use Cases based off of meeting with Mr. Rentschler|
 |1.3|13.11.25|Federico Dibenedetto|Added Glossary, Component overview and little fixes|
 |1.4|16.04.26|Federico Dibenedetto|Changed Use Cases based on Stakeholder meeting and meeting with BaSyx developer|
+|1.5|05.05.26|Federico Dibenedetto|UC 4 and FR feature request adapted|
 
 ## Table of contents
 1. [Glossary](#1-glossary)
@@ -22,21 +23,21 @@
   - 5.3 [UC03: AAS generator from KBL/VEC](#53-uc03-aas-generator-from-kblvec)
   - 5.4 [UC04: Automated extraction of specific XML entries from the AAS](#54-uc04-automated-extraction-of-specific-xml-entries-from-the-aas)
 6. [Customer Requirements](#6-customer-requirements)
-    - 6.1 [Functional Requirements](#61-functional-requirements)
-    - 6.1.1 [FR.01 File Upload and Linking](#611-fr01-file-upload-and-linking)
-    - 6.1.2 [FR.02 KBL/VEC Data Extraction](#612-fr02-kblvec-data-extraction)
-    - 6.1.3 [FR.03 Automated Population of Submodels](#613-fr03-automated-population-of-submodels)
-    - 6.1.4 [FR.04 REST API Extension](#614-fr04-rest-api-extension)
-    - 6.1.5 [FR.05 Visualization of structured data](#615-fr05-visualization-of-structured-data)
-    - 6.1.6 [FR.06 Error Handling](#616-fr06-error-handling)
+      - 6.1.1 [FR.01 MimeType Detection of Model Files](#611-fr01-mimetype-detection-of-model-files)
+      - 6.1.2 [FR.02 Plausibility Check (Extension vs. Content)](6412-fr02-plausibility-check-extension-vs-content)
+      - 6.1.3 [FR.03 Readable Error Message After Plausibility Check](#613-fr03-readable-error-message-after-plausibility-check)
+      - 6.1.4 [FR.04 Table of Contents in XML Visualization](#614-fr04-table-of-contents-in-xml-visualization)
+      - 6.1.5 [FR.05 AAS Generator Wizard and Property Adoption](#615-fr05-aas-generator-wizard-and-property-adoption)
+      - 6.1.6 [FR.06 Background Processing for KBL/VEC to AAS Submodels](#616-fr06-background-processing-for-kblvec-to-aas-submodels)
+      - 6.1.7 [FR.07 REST API for Targeted Data Retrieval](#617-fr07-rest-api-for-targeted-data-retrieval)
     - 6.2 [Non-functional Requirements](#62-non-functional-requirements)
-    - 6.2.1 [NFR.01 Usability](#621-nfr01-usability)
-    - 6.2.2 [NFR.02 Performance](#622-nfr02-performance)
-    - 6.2.3 [NFR.03 Maintainability and Contribution to the Open-Source Project](#623-nfr03-maintainability-and-contribution-to-the-open-source-project)
-    - 6.2.4 [NFR.04 Documentation](#624-nfr04-documentation)
-    - 6.2.5 [NFR.05 Compatibility](#625-nfr05-compatibility)
-    - 6.2.6 [NFR.06 Error Handling](#626-nfr06-error-handling)
-    - 6.2.7 [NFR.07 Availability (Demo)](#627-nfr07-availability-demo)
+      - 6.2.1 [NFR.01 Usability](#621-nfr01-usability)
+      - 6.2.2 [NFR.02 Performance](#622-nfr02-performance)
+      - 6.2.3 [NFR.03 Maintainability and Contribution to the Open-Source Project](#623-nfr03-maintainability-and-contribution-to-the-open-source-project)
+      - 6.2.4 [NFR.04 Documentation](#624-nfr04-documentation)
+      - 6.2.5 [NFR.05 Compatibility](#625-nfr05-compatibility)
+      - 6.2.6 [NFR.06 Error Handling](#626-nfr06-error-handling)
+      - 6.2.7 [NFR.07 Availability (Demo)](#627-nfr07-availability-demo)
 
 
 ## 1. Glossary
@@ -175,12 +176,12 @@ AAS
 | | |
 | :--- | :--- |
 | **Use Case ID** | UC04 |
-| **Description** | An external system or internal backend service wants to retrieve specific, individual XML entries from the AAS model. The application provides a backend interface (REST API) that enables targeted data queries by transmitting a specific query point (e.g., the ID of an element or a path in the XML/AAS model). The interface then returns only the desired information (e.g., the value of a specific property). |
-| **Involved Roles** | BaSyx-UI (Editor-Plugin), AAS-Server |
+| **Description** | An external system or internal backend service wants to retrieve only specific data points from an external structured file (XML or JSON) linked in the BaSyx context. The application provides a backend interface (REST API) to inspect the internal file structure (XML tree/JSON hierarchy), query specific elements by path/ID, and return only the requested values. The response format is always XML, independent of the source file format.  |
+| **Involved roles** | API Client, AAS-Server, BaSyx-UI|
 | **System Boundary** | BaSyx-UI, AAS-Server |
-| **Precondition** | An AAS model was successfully generated and is available on the AAS-Server. The requesting system knows the ID or path of the desired XML/AAS entry. |
-| **Postcondition on Success**| The backend interface automatically and accurately returns the requested specific XML/AAS information to the requesting system. |
-| **Triggering Event** | The external system/backend service sends an API request to the interface containing the desired query point (path/ID). |
+| **Precondition** | A valid external XML or JSON file is accessible via HTTP in the BaSyx-based environment. The requesting system provides a valid query point (path/ID/field). |
+| **Postcondition on Success**| The backend interface returns only the requested data point(s) as XML to the requesting system, without transferring the complete source file. |
+| **Triggering Event** | The external system/backend service sends an API request for structure inspection or targeted data retrieval, including the file reference and query point.|
 
 ## Flowchart UC04
 
@@ -211,53 +212,62 @@ The requirements are described with an ID and an overview to enable the developm
 
 ### 6.1 Functional Requirements
 
-#### 6.1.1 FR.01 File Upload and Linking
+#### 6.1.1 FR.01 MimeType Detection of Model Files
 
 | | |
 | :--- | :--- |
-| **Requirement ID** | FR.001 |
-| **Overview** | The application must provide a UI component that allows users to upload external model files. After a successful upload, the file must be linked as a `File` element in the AAS and the correct `mimeType` must be set automatically. |
-| **Acceptance Criterion** | A user can select a local file via the UI. The file is uploaded and appears in the AAS structure. The `mimeType` property corresponds to the actual file type. The process handles common file types correctly. |
+| **Requirement ID** | FR.01 |
+| **Overview** | The application must correctly identify all supported model file types (e.g., KBL, VEC, XML, AML) upon upload and automatically assign the corresponding IANA-compliant MimeType. |
+| **Acceptance Criterion** | Based on the file extension, the system recognizes the file type (e.g., KBL, VEC, XML, or AML). |
 
-#### 6.1.2 FR.02 KBL/VEC Data Extraction
-
-| | |
-| :--- | :--- |
-| **Requirement ID** | FR.002 |
-| **Overview** | The application must be able to parse uploaded KBL and VEC files to extract predefined information, including nameplate data and important technical specifications (e.g., weight, features). |
-| **Acceptance Criterion** | When a valid KBL or VEC file is entered, the application correctly extracts the specified data points. The extracted data can be compared with the source file. The process must be able to handle the defined file schemas. |
-
-#### 6.1.3 FR.03 Automated Population of Submodels
+#### 6.1.2 FR.02 Plausibility Check (Extension vs. Content)
 
 | | |
 | :--- | :--- |
-| **Requirement ID** | FR.003 |
-| **Overview** | The data extracted from the KBL/VEC files must be automatically used to create or update the "General Technical Data" AAS submodel after pressing the "Generate Technical Data" button. |
-| **Acceptance Criterion** | After a KBL/VEC file has been processed, the corresponding AAS contains a "General Technical Data" submodel whose elements (e.g., Weight, Dimensions) are filled with the values from the file. |
+| **Requirement ID** | FR.02 |
+| **Overview** | Before further processing, the application must perform a plausibility check that verifies the file extension against the actual content (start line/structure) of the file for agreement. |
+| **Acceptance Criterion** | In case of a conflict between extension and content (e.g., an .xml file starting with PK), the upload is aborted, and an informative error message (see FR.03) is issued. |
 
-#### 6.1.4 FR.04 REST API Extension
-
-| | |
-| :--- | :--- |
-| **Requirement ID** | FR.004 |
-| **Overview** | The BaSyx REST API must be extended to provide a mechanism for accessing and retrieving structured data from an XML file stored as a `File` element in an AAS. |
-| **Acceptance Criterion** | A new API endpoint exists according to the specification in the corresponding GitHub issue. When called with the correct path to an XML file within an AAS, the API returns the file content in a structured format (e.g., JSON). The endpoint can be verified by automated tests. |
-
-#### 6.1.5 FR.05 Visualization of structured data
+#### 6.1.3 FR.03 Readable Error Message After Plausibility Check
 
 | | |
 | :--- | :--- |
-| **Requirement ID** | FR.005 |
-| **Overview** | The viewer plugin must be able to display the internal data points of an attached XML file in a structured, hierarchical view. |
-| **Acceptance Criterion** | When a user clicks on a linked XML file in the viewer, a new panel or a new view displays the content of the XML file as a tree structure (similar to Notepad++). The displayed structure correctly reflects the Document Object Model (DOM) of the XML file. |
+| **Requirement ID** | FR.03 |
+| **Overview** | If the plausibility check fails during file import, the application must display a readable and understandable error message to the user in the UI. |
+| **Acceptance Criterion** | For each failed plausibility check, the UI shows a clear message that states the reason (e.g., extension/content mismatch) and indicates what the user can do next. |
 
-#### 6.1.6 FR.06 Error Handling
+#### 6.1.4 FR.04 Table of Contents in XML Visualization
+
+| | |
+| :--- | :--- |
+| **Requirement ID** | FR.04 |
+| **Overview** | The Viewer plugin must display the data of an attached XML file in a structured table of contents to enable navigation through the document. |
+| **Acceptance Criterion** | When a user opens an AAS and clicks on the Viewer, a new view displays the table of contents and the XML file. |
+
+#### 6.1.5 FR.05 AAS Generator Wizard and Property Adoption
+
+| | |
+| :--- | :--- |
+| **Requirement ID** | FR.05 |
+| **Overview** | The application must provide a Wizard that uses the data extracted from the KBL/VEC files for the automatic generation of the AAS model and the associated Submodel Elements. All properties selected by the user must be adopted. |
+| **Acceptance Criterion** | The Wizard guides the user through the generation process. Upon completion, the generated AAS model contains all selected KBL/VEC data as Submodel Elements. |
+
+#### 6.1.6 FR.06 Background Processing for KBL/VEC to AAS Submodels
 
 | | |
 | :--- | :--- |
 | **Requirement ID** | FR.006 |
-| **Overview** | The system must handle errors, such as uploading faulty or un-processable files, properly. |
-| **Acceptance Criterion** | If an attempt is made to process an invalid KBL/VEC file, the application must not crash. It must issue a clear and informative error message to the user explaining the error. API errors must return appropriate HTTP status codes. |
+| **Overview** | As background processing of FR.05, the client application must automatically parse KBL/VEC files and transform the extracted data into the correct AAS submodels and submodel elements according to the defined mapping rules. Only the validated and correctly generated submodels are sent to the backend. |
+| **Acceptance Criterion** | For a valid KBL/VEC input, client-side processing generates the expected submodels and correctly assigned submodel elements with accurate values and structure. The backend receives only valid submodels; invalid or incomplete mappings are not transmitted. |
+
+#### 6.1.7 FR.07 REST API for Targeted Data Retrieval
+
+| Field | Content | 
+| :--- | :--- | 
+| **Requirement ID** | FR.07 | 
+| **Overview** | The backend interface (REST API) must be extended to allow external systems to inspect and query external structured files (XML/JSON) in a targeted way. The API must support structure inspection (XML tree/JSON hierarchy) and selective extraction of specific entries by path/ID/field. The response payload must always be returned as XML. (Reference to UC04). | 
+| **Acceptance Criterion** | Endpoints for structure inspection and targeted querying exist. For a valid request, the API returns only the requested element(s)/value(s) as XML and does not return the full source document. For invalid query paths, the API returns a clear client error (e.g., HTTP 400/404). | 
+
 
 ### 6.2 Non-functional Requirements
 
