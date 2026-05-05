@@ -5,46 +5,41 @@
 
 |Version|Date|Author|Comment|
 |-----|-----------|------------|---------------------|
-|1.0|16.10.2026|Daniel Ziegler|Version 1.0|
-|1.1|Date|Name|Comment1|
-|1.2|Date|Name|Comment2|
-|1.3|Date|Name|Comment3|
-|1.4|Date|Name|Comment4|
+|1.0|16.04.2026|Daniel Ziegler|Version 1.0|
+|1.1|24.04.2026|Daniel Ziegler|Fromulating Test Cases, adding Testfiles|
+|1.2|05.05.2026|Daniel Ziegler|Linking the testcases to the right Requirements|
 
 ## Table of contents
-1. [Introduction](#1-scope)
-2. [Scope](#2)
-3. [Definitions and Acronymes](#)
-3. [Test Strategy](#3)
-4. [Test Environment](#4)
+1. [Introduction](#1-introduction)
+2. [Scope](#2-scope)
+3. [Test Strategy](#)
+4. [Test Environment](#4-test-environment)
     - 4.1 [Hardware Environment](#)
     - 4.2 [Software Environment](#)
     - 4.3 [Deployment Setup](#)
 5. [Test Cases](#5)
-    - 5.1
-    - 5.2
-    - 5.3
-    - 5.4 
-    - 5.5
-    - 5.6
+    - 5.1 [TC01	Proper XML-Validation	MOD01](#)
+    - 5.2 [TC02	Handle Error Messages	MOD01](#)
+    - 5.3 [TC03	Display XML structure	MOD02](#)
+    - 5.4 [TC04	AAS-Creation-Wizard functions properly	MOD03](#)
+    - 5.5 [TC05	Extraction of the AAS Information MOD03](#)
 6. [Test Data](#6)
 
 
-##dynamische Tests, keine statischen Tests, -> unit tests
 
-## 1 Introduction
+## 1. Introduction
 The purpose of this System Test Plan (STP) is to define the overall testing approach for the BaSyx Editor Extension.
 It describes the test strategy, environment, test cases, and acceptance criteria required to verify that the system fulfills the requirements specified in the Software Architecture Specification (SAS).
-## 2 Scope
-This document covers testing of the changes planed in the BaSyx Editor Extension including:<br>
--MOD01 – File Import and Validation Subsystem<br>
--MOD02 – XML Viewer and Navigation Subsystem<br>
--MOD03 – AAS Generation and Submodel Mapping Subsystem<br>
--MOD04 – Targeted Data Retrieval Subsystem<br>
-This document does not cover:<br>
--Unit testing of slight changes to already existing code<br>
--Internal BaSyx backend functionality<br>
-## 3 Test Strategy
+## 2. Scope
+This document covers testing of the changes planed in the BaSyx Editor Extension including:
+* MOD01 – File Import and Validation Subsystem
+* MOD02 – XML Viewer and Navigation Subsystem
+* MOD03 – AAS Generation and Submodel Mapping Subsystem
+
+This document does not cover:
+* Unit testing of minor changes to existing code
+* Internal BaSyx backend functionality
+## 3. Test Strategy
 The testing strategy for the BaSyx Editor Extension ensures reliable validation of all added system functionalities through a structured and requirement-driven approach. A key objective is to achieve wide test coverage.  Both positive and negative scenarios, including edge cases are considered to verify system robustness.
 
 Testing is performed using a function isolation approach, where individual functionalities are tested independently. This improves defect detection and simplifies root cause analysis.
@@ -52,31 +47,30 @@ Testing is performed using a function isolation approach, where individual funct
 To validate requirements effectively, both file-based and code-based testing are applied. File-based testing uses input data (e.g., XML, KBL, VEC files) to verify the import, parsing, and visualization processes. Code-based testing uses Vitest, the existing testing environment the Basyx software uses, to ensure reliable, automated unit and integration test execution. 
 
 This approach ensures a comprehensive, traceable, and efficient validation of the system.
-## 4 Test Environment
---noch md formatten / vielleicht auch noch umschreiben--
-### 4.1 Hardware Environment
-Client machine (modern browser-capable system)
-### 4.2 Software Environment
-Browser: Chrome, Firefox, Edge
-Frontend: Vue.js application
-Backend services:
-BaSyx Registry
-BaSyx AAS Repository
-BaSyx Submodel Service
-### 4.3 Deployment Setup
-Docker-based deployment setup
+## 4. Test Environment
+### 4.1. Hardware Environment
+* Client machine (modern browser-capable system)
+### 4.2. Software Environment
+* Browser: Chrome, Firefox, Edge
+* Frontend: Vue.js application
+* Backend services:
+* BaSyx Registry
+* BaSyx AAS Repository
+* BaSyx Submodel Service
+### 4.3. Deployment Setup
+* Docker-based deployment setup
 
-## 5 Test Cases Overview
---Für steps einen Standartausgang definieren (Basyx Editor offen und eine AAS geöffnet)--
---normalerweise den kasten, aber bei unit tests auf den code verweisen, statt ausführungteil--
-Test ID	Description	Related Module	Requirement
-TC01	Proper XML-Validation	MOD01	FR.01
-TC02	Handle Error Messages	MOD01	FR.02
-TC03	Display XML structure	MOD02	FR.05
-TC04	Generate AAS from KBL	MOD03	FR.02
-TC05	Query specific data via API	MOD04	FR.04
-TC06	Handle missing resource error	MOD04	FR.06
-### 5.1 TC01    Proper XML-Validation	MOD01	FR.01
+## 5. Test Cases Overview
+All testcases include:
+* TC01	Proper XML-Validation	MOD01
+* TC02	Handle Error Messages	MOD01
+* TC03	Display XML structure	MOD02
+* TC04	AAS Creation Wizard functions properly	MOD03
+* TC05	Extraction of AAS Information MOD03
+
+As an initial situation for all tests, it is assumed that the environment is functional and accessible and the BaSyx Web UI is open. Additionally, the mode is set to the BaSyx Editor, and at least one AAS is already imported and open. The AAS contains at least one Submodel with an XML-type file element included.
+
+### 5.1. TC01    Proper XML-Validation	MOD01
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
     <th colspan="3" style="border:1px solid black; padding:8px; text-align:center;">
@@ -93,12 +87,12 @@ TC06	Handle missing resource error	MOD04	FR.06
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Req.-ID:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">6000</td>
+    <td colspan="3" style="border:1px solid black; padding:8px;">RR.02</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Description:</strong></td>
     <td colspan="3" style="border:1px solid black; padding:8px;">
-      The test case verifies that the function correctly validates XML, KBL, and VEC files by checking their headers and returns an appropriate error when the header is missing, invalid, or malformed.
+      The test case verifies that the function correctly validates XML, KBL, and VEC files by checking their headers and returns an appropriate error if the header is missing, invalid, or malformed.
     </td>
   </tr>
 
@@ -109,11 +103,11 @@ TC06	Handle missing resource error	MOD04	FR.06
   </tr>
   <tr>
     <th style="border:1px solid black; padding:8px; text-align:center;">Found in:</th>
-    <td colspan="2" style="border:1px solid black; padding:8px; text-align:center;">src/........</td>
+    <td colspan="2" style="border:1px solid black; padding:8px; text-align:center;">/tests/utils/XMLValidator.test.ts</td>
   </tr>
 </table>
 
-### 5.2 TC02	Handle Error Messages	MOD01	FR.01
+### 5.2. TC02	Handle Error Messages	MOD01
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -131,12 +125,12 @@ TC06	Handle missing resource error	MOD04	FR.06
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Req.-ID:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">6000</td>
+    <td colspan="3" style="border:1px solid black; padding:8px;">FR.01, FR.03</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Description:</strong></td>
     <td colspan="3" style="border:1px solid black; padding:8px;">
-      The test case verifies that incorrect XML, KBL, and VEC files return an error with consistent, accurate, and meaningful error responses.
+      The test case verifies that incorrect XML, KBL, and VEC files return consistent, accurate, and meaningful error messages.
     </td>
   </tr>
 
@@ -152,39 +146,39 @@ TC06	Handle missing resource error	MOD04	FR.06
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">1</td>
-    <td style="border:1px solid black; padding:8px;">Click the add Element button within a Submodel</td>
+    <td style="border:1px solid black; padding:8px;">Click the "add Submodel Element" button within a Submodel</td>
     <td style="border:1px solid black; padding:8px;">A Dialog for the type of Element opens</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">2</td>
     <td style="border:1px solid black; padding:8px;">
-      Select file and click next
+      Select file and click "next"
     </td>
     <td style="border:1px solid black; padding:8px;">
-      A Dialog for Element-Details opens
-    </td>
-  </tr>
-  <tr>
-    <td style="border:1px solid black; padding:8px;">3</td>
-    <td style="border:1px solid black; padding:8px;">
-      Under Value click file and add a file in the fileinput.
-    </td>
-    <td style="border:1px solid black; padding:8px;">
-      The file is added into the Dialog, the ShortID is filled with the filename if empty
+      A dialog for element details opens
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">3</td>
     <td style="border:1px solid black; padding:8px;">
-      Click save
+      Under "Value" click "file" and add a file in the file input.
     </td>
     <td style="border:1px solid black; padding:8px;">
-      If the file is faulty, the fileinput is marked in red and an error is shown
+      The file is added to the dialog, the ShortID is filled with the filename if empty. The MIME type is displayed correctly.
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">4</td>
+    <td style="border:1px solid black; padding:8px;">
+      Click "save"
+    </td>
+    <td style="border:1px solid black; padding:8px;">
+      If the file is invalid, the file input is marked in red and an error is shown. If valid, an element is created with the correct MIME type. 
     </td>
   </tr>
 </table>
 
-### 5.3 TC03	Display XML structure	MOD02	FR.05
+### 5.3. TC03	Display XML structure	MOD02
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -194,20 +188,20 @@ TC06	Handle missing resource error	MOD04	FR.06
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>ID:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px; ">&lt;8000&gt;</td>
+    <td colspan="3" style="border:1px solid black; padding:8px; ">&lt;TC03&gt;</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Name:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">7000</td>
+    <td colspan="3" style="border:1px solid black; padding:8px;">Display XML structure</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Req.-ID:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">6000</td>
+    <td colspan="3" style="border:1px solid black; padding:8px;">FR.04</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Description:</strong></td>
     <td colspan="3" style="border:1px solid black; padding:8px;">
-      5000
+      The test case verifies that the XML structure is correctly represented as a table of contents and that selecting entries navigates to the corresponding XML sections accurately and consistently within the viewer.
     </td>
   </tr>
 
@@ -223,21 +217,66 @@ TC06	Handle missing resource error	MOD04	FR.06
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">1</td>
-    <td style="border:1px solid black; padding:8px;">4000</td>
-    <td style="border:1px solid black; padding:8px;">3000</td>
+    <td style="border:1px solid black; padding:8px;">Choose a Submodel with a XML-type file element and open it.</td>
+    <td style="border:1px solid black; padding:8px;">A list of elements in the Submodel is shown.</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">2</td>
     <td style="border:1px solid black; padding:8px;">
-      2000
+      Click on the XML-type file.
     </td>
     <td style="border:1px solid black; padding:8px;">
-      1000
+      A detailed description of the Element opens on the right.
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">3</td>
+    <td style="border:1px solid black; padding:8px;">
+      Click on "Visualization".
+    </td>
+    <td style="border:1px solid black; padding:8px;">
+      The XML preview with a table of contents and the XML content opens.
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">4</td>
+    <td style="border:1px solid black; padding:8px;">
+      Scroll the XML content.
+    </td>
+    <td style="border:1px solid black; padding:8px;">
+      Only the XML content is scrolled.
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">5</td>
+    <td style="border:1px solid black; padding:8px;">
+      Scroll the table of contents.
+    </td>
+    <td style="border:1px solid black; padding:8px;">
+      Only the table of contents is scrolled.
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">6</td>
+    <td style="border:1px solid black; padding:8px;">
+      In table of contents click on an entry.
+    </td>
+    <td style="border:1px solid black; padding:8px;">
+      The XML content jumps to this entry and highlights the line.
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">7</td>
+    <td style="border:1px solid black; padding:8px;">
+      In table of contents click on the triangle next to an entry.
+    </td>
+    <td style="border:1px solid black; padding:8px;">
+      The inner XML structure is revealed and the XML Content does not jump to the entry.
     </td>
   </tr>
 </table>
 
-### 5.4 TC04	AAS-Creation-Wizard functions properly	MOD03	FR.02
+### 5.4. TC04	AAS-Creation-Wizard functions properly	MOD03
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -255,7 +294,7 @@ TC06	Handle missing resource error	MOD04	FR.06
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Req.-ID:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">6000</td>
+    <td colspan="3" style="border:1px solid black; padding:8px;">FR.05</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Description:</strong></td>
@@ -276,8 +315,8 @@ TC06	Handle missing resource error	MOD04	FR.06
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">1</td>
-    <td style="border:1px solid black; padding:8px;">On the slide for the administration shells, click on the three dots and on "Create AAS form KBL/VEC"</td>
-    <td style="border:1px solid black; padding:8px;">The wizard for the AAS-Creation opens</td>
+    <td style="border:1px solid black; padding:8px;">On the slide for the Asset Administration Shells, click on the three dots and on "Create AAS form KBL/VEC"</td>
+    <td style="border:1px solid black; padding:8px;">The wizard for the AAS creation opens</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">2</td>
@@ -285,39 +324,48 @@ TC06	Handle missing resource error	MOD04	FR.06
       Cilck on the FileInput and choose a KBL or VEC file.
     </td>
     <td style="border:1px solid black; padding:8px;">
-      Only eligable files can be choosen. The file is displayed --weiterführen mit genaueren details--
+      Only eligable files can be choosen. The file is displayed.
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">3</td>
+    <td style="border:1px solid black; padding:8px;">
+      Optionally choose a picture for the AAS in the second FileInput.
+    </td>
+    <td style="border:1px solid black; padding:8px;">
+      Only eligable files can be choosen. The file is displayed.
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">4</td>
     <td style="border:1px solid black; padding:8px;">
-      Optionally choose a picture for the AAS in the second FileInput
+      Provide or generate AAS ID and Asset ID Fill. Optionally change general Information for the AAS that will be created
     </td>
     <td style="border:1px solid black; padding:8px;">
-      Only eligable files can be choosen. The file is displayed
-    </td>
-  </tr>
-  <tr>
-    <td style="border:1px solid black; padding:8px;">4</td>
-    <td style="border:1px solid black; padding:8px;">
-      Optionally fill in some general Information on the AAS, that will be created
-    </td>
-    <td style="border:1px solid black; padding:8px;">
-      The fields for the Information are easy to interact with and display the Information
+      The fields for the Information are easy to use and display the entered values. The "generate" button fills the corresponding textinput with a generated value.
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">5</td>
     <td style="border:1px solid black; padding:8px;">
+      Choose Information which should be used to fill the Submodels of the AAS. 
+    </td>
+    <td style="border:1px solid black; padding:8px;">
+      Individual Information can be selected or deselected.
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">6</td>
+    <td style="border:1px solid black; padding:8px;">
       Click "Create"
     </td>
     <td style="border:1px solid black; padding:8px;">
-      The AAS is created with the given Information.
+      The AAS is created with the provided Information.
     </td>
   </tr>
 </table>
 
-### 5.5 TC05	Mapping of the AAS Structure	MOD04	FR.04
+### 5.5. TC05	Extraction of the AAS Information	MOD03
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -331,16 +379,16 @@ TC06	Handle missing resource error	MOD04	FR.06
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Name:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">Mapping of the AAS Structure</td>
+    <td colspan="3" style="border:1px solid black; padding:8px;">Extraction of the AAS Information</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Req.-ID:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">6000</td>
+    <td colspan="3" style="border:1px solid black; padding:8px;">FR.06</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Description:</strong></td>
     <td colspan="3" style="border:1px solid black; padding:8px;">
-The test case verifies that the AAS is correctly formed from KBL and VEC files, ensuring proper structure, data mapping, and successful output without errors.    </td>
+The test case verifies that AAS information is correctly extracted from a given file, ensuring all relevant elements are accurately identified, parsed, and made available for further processing.</td>
   </tr>
 
   <tr>
@@ -353,63 +401,106 @@ The test case verifies that the AAS is correctly formed from KBL and VEC files, 
     Found in:
   </th>
   <td colspan="2" style="border:1px solid black; padding:8px; text-align:center;">
-  /src/...
+  /tests/utils/KblVecUtils/KblVecDataPointTreeUtils<br>
+  /tests/utils/KblVecUtils/KblVecRequiredFieldUtils<br>
+  /tests/utils/KblVecUtils/KblVecSubmodelGenerationUtils
   </td>
   </tr>
 </table>
 
-### 5.6 TC06	Handle missing resource error	MOD04	FR.06
 
-<table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
+
+### 6. Test Data
+The test data consists of various files located in the '/Testfiles' folder and uses the same headers as those in the unit test strings. Unlike the unit tests, however, the test data includes data structures composed of shortened KBL and VEC files. Structural validation is included within otherwise valid structures.
+
+<table>
   <tr>
-    <th colspan="3" style="border:1px solid black; padding:8px; text-align:center;">
-      Test case
+    <th colspan="2" style="border:1px solid black; padding:8px; text-align:center;">
+      Test data:
     </th>
   </tr>
   <tr>
-    <td style="border:1px solid black; padding:8px;"><strong>ID:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px; ">&lt;8000&gt;</td>
-  </tr>
-  <tr>
-    <td style="border:1px solid black; padding:8px;"><strong>Name:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">7000</td>
-  </tr>
-  <tr>
-    <td style="border:1px solid black; padding:8px;"><strong>Req.-ID:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">6000</td>
-  </tr>
-  <tr>
-    <td style="border:1px solid black; padding:8px;"><strong>Description:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">
-      5000
-    </td>
-  </tr>
-
-  <tr>
-    <th colspan="3" style="border:1px solid black; padding:8px; text-align:center;">
-      Test steps
-    </th>
-  </tr>
-  <tr>
-    <th style="border:1px solid black; padding:8px; ">Step</th>
-    <th style="border:1px solid black; padding:8px; ">Action</th>
-    <th style="border:1px solid black; padding:8px; ">Expected result</th>
-  </tr>
+    <th style="border:1px solid black; padding:8px; ">Dataset</th>
+    <th style="border:1px solid black; padding:8px; ">Data</th>  </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">1</td>
-    <td style="border:1px solid black; padding:8px;">4000</td>
-    <td style="border:1px solid black; padding:8px;">3000</td>
+    <td style="border:1px solid black; padding:8px;">kbl_noheader.kbl</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">2</td>
-    <td style="border:1px solid black; padding:8px;">
-      2000
+    <td style="border:1px solid black; padding:8px;">kbl_vec_inside.kbl
     </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">3</td>
     <td style="border:1px solid black; padding:8px;">
-      1000
+      kbl_normal.kbl
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">4</td>
+    <td style="border:1px solid black; padding:8px;">
+      kbl_faultykbl.kbl
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">5</td>
+    <td style="border:1px solid black; padding:8px;">
+      kbl_faultyxml.kbl
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">6</td>
+    <td style="border:1px solid black; padding:8px;">
+      kbl_nokbl.kbl
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">7</td>
+    <td style="border:1px solid black; padding:8px;">
+      kbl_xml.xml
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">8</td>
+    <td style="border:1px solid black; padding:8px;">
+      kbl_vec.vec
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">9</td>
+    <td style="border:1px solid black; padding:8px;">
+      vec_normal.vec
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">10</td>
+    <td style="border:1px solid black; padding:8px;">
+      vec_kbl.kbl
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">11</td>
+    <td style="border:1px solid black; padding:8px;">
+      vec_endkbl.kbl
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">12</td>
+    <td style="border:1px solid black; padding:8px;">
+      vec_noversion.vec
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">13</td>
+    <td style="border:1px solid black; padding:8px;">
+      vec_kbl_inside.vec
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">14</td>
+    <td style="border:1px solid black; padding:8px;">
+      missing_close.vec
     </td>
   </tr>
 </table>
-
-
-### 6 Test Data
