@@ -6,7 +6,7 @@
 |Version|Date|Author|Comment|
 |-----|-----------|------------|---------------------|
 |1.0|05.05.2026|Daniel Ziegler|Version 1.0|
-|1.1|Date|Name|Comment1|
+|1.1|06.05.2026|Daniel Ziegler|fix table of contents|
 |1.2|Date|Name|Comment2|
 |1.3|Date|Name|Comment3|
 |1.4|Date|Name|Comment4|
@@ -14,12 +14,12 @@
 ## Table of contents
 1. [Introduction](#1-introduction)
 2. [Scope](#2-scope)
-3. [Results of Test Cases](#)
-    - 3.1 [TC01	Proper XML-Validation	MOD01](#)
-    - 3.2 [TC02	Handle Error Messages	MOD01](#)
-    - 3.3 [TC03	Display XML structure	MOD02](#)
-    - 3.4 [TC04	AAS-Creation-Wizard functions properly	MOD03](#)
-    - 3.5 [TC05	Extraction of the AAS Information MOD03](#)
+3. [Results of Test Cases](#3-results-of-test-cases)
+    - 3.1 [TC01	Proper XML-Validation	MOD01](#31-tc01-proper-xml-validation-mod01)
+    - 3.2 [TC02	Handle Error Messages	MOD01](#32-tc02-handle-error-messages-mod01)
+    - 3.3 [TC03	Display XML structure	MOD02](#33-tc03-display-xml-structure-mod02)
+    - 3.4 [TC04	AAS-Creation-Wizard functions properly	MOD03](#34-tc04-aas-creation-wizard-functions-properly-mod03)
+    - 3.5 [TC05	Extraction of the AAS Information MOD03](#35-tc05-extraction-of-the-aas-information-mod03)
 
 
 ## 1. Introduction
@@ -36,7 +36,7 @@ As defined in the STP, this report does not include results related to unit test
 
 ## 3 Results of Test Cases
 
-### 3.1. TC01    Proper XML-Validation	MOD01
+### 3.1. TC01 Proper XML-Validation MOD01
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
     <th colspan="3" style="border:1px solid black; padding:8px; text-align:center;">
@@ -89,7 +89,7 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
 </table>
 
-### 3.2. TC02	Handle Error Messages	MOD01
+### 3.2. TC02 Handle Error Messages MOD01
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -259,7 +259,7 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
 </table>
 
-### 3.3. TC03	Display XML structure	MOD02
+### 3.3. TC03 Display XML structure MOD02
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -398,7 +398,7 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
 </table>
 
-### 3.4. TC04	AAS-Creation-Wizard functions properly	MOD03
+### 3.4. TC04 AAS-Creation-Wizard functions properly MOD03
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -527,7 +527,7 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
 </table>
 
-### 3.5. TC05	Extraction of the AAS Information	MOD03
+### 3.5. TC05 Extraction of the AAS Information MOD03
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
