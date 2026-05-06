@@ -8,6 +8,7 @@
 |1.0|16.04.2026|Daniel Ziegler|Version 1.0|
 |1.1|24.04.2026|Daniel Ziegler|Fromulating Test Cases, adding Testfiles|
 |1.2|05.05.2026|Daniel Ziegler|Linking the testcases to the right Requirements|
+|1.3|06.05.2026|Daniel Ziegler|Fixed table of contents, corrected the testfile linkage|
 
 ## Table of contents
 1. [Introduction](#1-introduction)
@@ -411,7 +412,7 @@ The test case verifies that AAS information is correctly extracted from a given 
 
 
 ### 6. Test Data
-The test data consists of various files located in the '/Testfiles' folder and uses the same headers as those in the unit test strings. Unlike the unit tests, however, the test data includes data structures composed of shortened KBL and VEC files. Structural validation is included within otherwise valid structures.
+The test data consists of various files located in the '/Testfiles' folder. The test data includes data structures composed of shortened KBL and VEC files. Structural defects are included within otherwise valid structures.
 
 <table>
   <tr>
