@@ -147,13 +147,13 @@ As an initial situation for all tests, it is assumed that the environment is fun
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">1</td>
-    <td style="border:1px solid black; padding:8px;">Click the "add Submodel Element" button within a Submodel</td>
+    <td style="border:1px solid black; padding:8px;">Click the "add Submodel Element (+)" button within a Submodel</td>
     <td style="border:1px solid black; padding:8px;">A Dialog for the type of Element opens</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">2</td>
     <td style="border:1px solid black; padding:8px;">
-      Select file and click "next"
+      Select "file" and click "next"
     </td>
     <td style="border:1px solid black; padding:8px;">
       A dialog for element details opens
@@ -166,6 +166,15 @@ As an initial situation for all tests, it is assumed that the environment is fun
     </td>
     <td style="border:1px solid black; padding:8px;">
       The file is added to the dialog, the ShortID is filled with the filename if empty. The MIME type is displayed correctly.
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">4</td>
+    <td style="border:1px solid black; padding:8px;">
+      Optionally change other values including the ShortID
+    </td>
+    <td style="border:1px solid black; padding:8px;">
+      The changes are displayed
     </td>
   </tr>
   <tr>
@@ -340,7 +349,7 @@ As an initial situation for all tests, it is assumed that the environment is fun
   <tr>
     <td style="border:1px solid black; padding:8px;">4</td>
     <td style="border:1px solid black; padding:8px;">
-      Provide or generate AAS ID and Asset ID Fill. Optionally change general Information for the AAS that will be created
+      Provide or generate AAS ID and Asset ID and Type. Optionally change general Information for the AAS that will be created
     </td>
     <td style="border:1px solid black; padding:8px;">
       The fields for the Information are easy to use and display the entered values. The "generate" button fills the corresponding textinput with a generated value.
