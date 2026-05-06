@@ -145,7 +145,8 @@ This improves readability and simplifies working with complex engineering data s
 1. Click on an already uploaded XML-based file (e.g. XML, KBL, VEC) in the BaSyx UI
 2. Open the XML Viewer by clicking the **“Visualization”** button
 
-<img width="2009" height="908" alt="image" src="https://github.com/user-attachments/assets/29198bad-46bd-4b46-b720-70963513fd7f" />
+<img width="1351" height="759" alt="image" src="https://github.com/user-attachments/assets/ff01d616-6402-4ab1-a79a-b5cb73fa0a61" />
+
 
 ## Layout Overview
 
