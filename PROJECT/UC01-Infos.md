@@ -78,6 +78,32 @@ flowchart TD
     N -->|ok| U4[Upload XML with IODD]
 ```
 
+## Data and Control Flow
+
+```txt
+File | null
+   ↓
+uploadHandler()
+   ↓
+Check File extension
+   ↓
+Format-dependent validation function
+   ├─ .vec → validateVecFile()
+   ├─ .kbl → validateKBLFile()
+   ├─ .xml → validateXmlFile()
+   └─ andere → keine spezifische Validierung
+   ↓
+validateWellFormedXML()
+   ↓
+DOMParser
+   ↓
+Root Element- or IODD Structure verification
+   ↓
+errorMessage
+   ↓
+Return to component
+```
+
 ## MimeType Expansion for KBL/VEC
 
 MIME type settings were expanded to include media types with pending IANA registration requests (as of April 2026).
