@@ -23,6 +23,7 @@ Meetings were hold between September 2025 and June 2026.
 15. [Meeting 10.04.](#meeting-protocol-1004)
 16. [Meeting 17.04.](#meeting-protocol-1704)
 17. [Meeting 24.04.](#meeting-protocol-2404)
+18. [Meeting 06.05.](#meeting-protocol-0605)
 
 # Meeting Protocol 23.09.
 
@@ -809,3 +810,51 @@ this meeting took `60 Minutes`.
 ## Further Information
 
 - PR to BaSyx-MainRepo: final versions to be pull-requested, meeting with aaron
+
+# Meeting Protocol 06.05
+
+## Type of Meeting
+
+this meeting was a `Weekly `.
+
+## Protocol Writer
+
+this protocol was written by `Martin Böhm`.
+
+## Meeting Participants
+
+- Martin Böhm
+- Felix Bandl
+- Daniel Ziegler
+- Leonardo Risatti
+- Florian Zahn
+- Federico DiBenedetto
+
+## Meeting Duration
+
+this meeting took `90 Minutes`.
+
+## Agenda and Summary
+
+| Agenda       | Summary                                                 |
+| ------------ | ------------------------------------------------------- |
+| Pull Request | BaSyx-Main-Repo done                 |
+| Test        | STP finished, test files to be uploaded, STR advanced status |
+| Update documents       | CRS, SRS done (close Issues), SAS to be finished                                   |
+| User Manual  | advanced first version, change of old screenshots, "user test" of UM|    
+| MOD  | Review of UCxx-teams|      
+| Presentation  | Inclusion of feedback of presentation no. 1, live demos for each UC seperately, assignment of presentation parts to team members |                 
+
+## Work Progress
+
+| Name                 | Task                   |
+| -------------------- | ---------------------- |
+| Martin Böhm          | presentation, review STP, STR, MOD UC01           |
+| Florian Zahn         | presentation, update SAS, review MOD UC02             |
+| Federico DiBenedetto | presentation, MOD       |
+| Felix Bandl          | presentation           |
+| Daniel Ziegler       | presentation, STR    |
+| Leonardo Risatti     | presentation |
+
+## Further Information
+
