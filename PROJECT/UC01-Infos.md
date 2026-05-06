@@ -80,6 +80,8 @@ flowchart TD
 
 ## Data and Control Flow
 
+referencing MOD-UC01
+
 ```txt
 File | null
    ↓
@@ -91,7 +93,7 @@ Format-dependent validation function
    ├─ .vec → validateVecFile()
    ├─ .kbl → validateKBLFile()
    ├─ .xml → validateXmlFile()
-   └─ andere → keine spezifische Validierung
+   └─ other → no specific Validation
    ↓
 validateWellFormedXML()
    ↓
