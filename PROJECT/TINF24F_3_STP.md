@@ -23,7 +23,7 @@
     - 5.2 [TC02	Handle Error Messages	MOD01](#52-tc02-handle-error-messages-mod01)
     - 5.3 [TC03	Display XML structure	MOD02](#53-tc03-display-xml-structure-mod02)
     - 5.4 [TC04	AAS-Creation-Wizard functions properly	MOD03](#54-tc04-aas-creation-wizard-functions-properly-mod03)
-    - 5.5 [TC05	Extraction of the AAS Information MOD03](#55-tc05-extraction-of-the-aas-information-mod03)
+    - 5.5 [TC05	Extraction of Information for AAS-Generation MOD03](#55-tc05-extraction-of-information-for-aas-generation-mod03)
 6. [Test Data](#6-test-data)
 
 
@@ -375,7 +375,7 @@ As an initial situation for all tests, it is assumed that the environment is fun
   </tr>
 </table>
 
-### 5.5. TC05 Extraction of the AAS Information MOD03
+### 5.5. TC05 Extraction of Information for AAS-Generation MOD03
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>

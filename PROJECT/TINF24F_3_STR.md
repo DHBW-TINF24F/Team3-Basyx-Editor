@@ -17,7 +17,7 @@
     - 3.2 [TC02	Handle Error Messages	MOD01](#32-tc02-handle-error-messages-mod01)
     - 3.3 [TC03	Display XML structure	MOD02](#33-tc03-display-xml-structure-mod02)
     - 3.4 [TC04	AAS-Creation-Wizard functions properly	MOD03](#34-tc04-aas-creation-wizard-functions-properly-mod03)
-    - 3.5 [TC05	Extraction of the AAS Information MOD03](#35-tc05-extraction-of-the-aas-information-mod03)
+    - 3.5 [TC05	Extraction of Information for AAS-Generation MOD03](#35-tc05-extraction-of-information-for-aas-generation-mod03)
 
 
 ## 1. Introduction
@@ -555,7 +555,7 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
 </table>
 
-### 3.5. TC05 Extraction of the AAS Information MOD03
+### 3.5. TC05 Extraction of Information for AAS-Generation MOD03
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
