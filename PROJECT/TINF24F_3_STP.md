@@ -425,83 +425,96 @@ The test data consists of various files located in the '/Testfiles' folder. The 
     <th style="border:1px solid black; padding:8px; ">Data</th>  </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">1</td>
-    <td style="border:1px solid black; padding:8px;">kbl_noheader.kbl</td>
+    <td style="border:1px solid black; padding:8px;">_valid_kbl.kbl</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">2</td>
-    <td style="border:1px solid black; padding:8px;">kbl_vec_inside.kbl
+    <td style="border:1px solid black; padding:8px;">_valid_svg.svg
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">3</td>
     <td style="border:1px solid black; padding:8px;">
-      kbl_normal.kbl
+      _valid_vec.vec
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">4</td>
     <td style="border:1px solid black; padding:8px;">
-      kbl_faultykbl.kbl
+      _valid_xml.xml
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">5</td>
     <td style="border:1px solid black; padding:8px;">
-      kbl_faultyxml.kbl
+      kbl_faultykbl.kbl
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">6</td>
     <td style="border:1px solid black; padding:8px;">
-      kbl_nokbl.kbl
+      kbl_faultyxml.kbl
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">7</td>
     <td style="border:1px solid black; padding:8px;">
-      kbl_xml.xml
+      kbl_noheader.kbl
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">8</td>
     <td style="border:1px solid black; padding:8px;">
-      kbl_vec.vec
+      kbl_nokbl.kbl
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">9</td>
     <td style="border:1px solid black; padding:8px;">
-      vec_normal.vec
+      kbl_vec.vec
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">10</td>
     <td style="border:1px solid black; padding:8px;">
-      vec_kbl.kbl
+      kbl_vec_inside.kbl
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">11</td>
     <td style="border:1px solid black; padding:8px;">
-      vec_endkbl.kbl
+      kbl_xml.xml
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">12</td>
     <td style="border:1px solid black; padding:8px;">
-      vec_noversion.vec
+      missing_close.vec
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">13</td>
     <td style="border:1px solid black; padding:8px;">
-      vec_kbl_inside.vec
+      vec_endkbl.kbl
     </td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">14</td>
     <td style="border:1px solid black; padding:8px;">
-      missing_close.vec
+      vec_kbl.kbl
     </td>
   </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">15</td>
+    <td style="border:1px solid black; padding:8px;">
+      vec_kbl_inside.vec
+    </td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">16</td>
+    <td style="border:1px solid black; padding:8px;">
+      vec_noversion.vec
+    </td>
+  </tr>
+  
 </table>
