@@ -7,9 +7,7 @@
 |-----|-----------|------------|---------------------|
 |1.0|05.05.2026|Daniel Ziegler|Version 1.0|
 |1.1|06.05.2026|Daniel Ziegler|fix table of contents|
-|1.2|Date|Name|Comment2|
-|1.3|Date|Name|Comment3|
-|1.4|Date|Name|Comment4|
+|1.2|06.05.2026|Daniel Ziegler|Added test results|
 
 ## Table of contents
 1. [Introduction](#1-introduction)
@@ -28,9 +26,9 @@ This System Test Report (STR) documents the results of the system testing activi
 ## 2. Scope
 The scope of this report includes the evaluation of the following subsystems:
 
-MOD01 – File Import and Validation Subsystem
-MOD02 – XML Viewer and Navigation Subsystem
-MOD03 – AAS Generation and Submodel Mapping Subsystem
+* MOD01 – File Import and Validation Subsystem
+* MOD02 – XML Viewer and Navigation Subsystem
+* MOD03 – AAS Generation and Submodel Mapping Subsystem
 
 As defined in the STP, this report does not include results related to unit testing of minor code changes or internal BaSyx backend functionality.
 
@@ -81,11 +79,11 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
     <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Date:</strong></td>
-    <td colspan="2" style="border:1px solid black; padding:8px; ">05.05.2026</td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">06.05.2026</td>
   </tr>
     <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Test result:</strong></td>
-    <td colspan="2" style="border:1px solid black; padding:8px; "></td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">PASSED</td>
   </tr>
 </table>
 
@@ -129,14 +127,14 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">1</td>
-    <td style="border:1px solid black; padding:8px;">Click the "add Submodel Element" button within a Submodel</td>
+    <td style="border:1px solid black; padding:8px;">Click the "add Submodel Element (+)" button within a Submodel</td>
     <td style="border:1px solid black; padding:8px;">A Dialog for the type of Element opens</td>
     <td style="border:1px solid black; padding:8px;">A dialog for selecting the element type appears</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">2</td>
     <td style="border:1px solid black; padding:8px;">
-      Select file and click "next"
+      Select "file" and click "next"
     </td>
     <td style="border:1px solid black; padding:8px;">
       A dialog for element details opens
@@ -152,6 +150,16 @@ As defined in the STP, this report does not include results related to unit test
       The file is added to the dialog, the ShortID is filled with the filename if empty. The MIME type is displayed correctly.
     </td>
     <td style="border:1px solid black; padding:8px;">The selected file is added to the dialog, the ShortID is automatically populated and the MIME type is displayed correctly.</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:8px;">4</td>
+    <td style="border:1px solid black; padding:8px;">
+      Optionally change other values including the ShortID
+    </td>
+    <td style="border:1px solid black; padding:8px;">
+      The changes are displayed
+    </td>
+    <td style="border:1px solid black; padding:8px;">The Changes are displayed</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">4</td>
@@ -173,8 +181,8 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">1</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: XML header is missing.</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: XML header is missing.</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">2</td>
@@ -188,8 +196,8 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">4</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">5</td>
@@ -203,43 +211,53 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">7</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: XML header is missing.</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: XML header is missing.</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">8</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: KBL_container is not a valid root element for .vec files.</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: KBL_container is not a valid root element for .vec files.</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">9</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: KBL_container is not a valid root element for .vec files.</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: KBL_container is not a valid root element for .vec files.</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">10</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: VecContent is not a valid root element for .kbl files.</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: VecContent is not a valid root element for .kbl files.</td>
+    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">No Error</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">11</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
+    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">No Error</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">12</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">13</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:4px;">14</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: VecContent is not a valid root element for .kbl files.</td>
+    <td  style="border:1px solid black; padding:4px; ">Error: VecContent is not a valid root element for .kbl files.</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:4px;">15</td>
     <td  style="border:1px solid black; padding:4px; ">No Error</td>
     <td  style="border:1px solid black; padding:4px; ">No Error</td>
   </tr>
   <tr>
-    <td style="border:1px solid black; padding:4px;">14</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
-    <td  style="border:1px solid black; padding:4px; ">Error: XML is not well-formed.</td>
+    <td style="border:1px solid black; padding:4px;">16</td>
+    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">No Error</td>
   </tr>
   <tr>
     <td colspan="3" style="border:1px solid black; padding:8px; "></td>
@@ -251,11 +269,11 @@ As defined in the STP, this report does not include results related to unit test
   
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Date:</strong></td>
-    <td colspan="2" style="border:1px solid black; padding:8px; ">05.05.2026</td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">06.05.2026</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Test result:</strong></td>
-    <td colspan="2" style="border:1px solid black; padding:8px; "></td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">PASSED</td>
   </tr>
 </table>
 
@@ -372,14 +390,24 @@ As defined in the STP, this report does not include results related to unit test
     <th style="border:1px solid black; padding:8px; ">Actual Result:</th>
   </tr>
   <tr>
-    <td style="border:1px solid black; padding:4px;">3</td>
-    <td style="border:1px solid black; padding:4px; "></td>
-    <td style="border:1px solid black; padding:4px; "></td>
+    <td style="border:1px solid black; padding:4px;">1</td>
+    <td style="border:1px solid black; padding:4px; ">The Visualisation works</td>
+    <td style="border:1px solid black; padding:4px; ">The Visualisation works</td>
   </tr>
   <tr>
-    <td style="border:1px solid black; padding:4px;">9</td>
-    <td style="border:1px solid black; padding:4px; "></td>
-    <td style="border:1px solid black; padding:4px; "></td>
+    <td style="border:1px solid black; padding:4px;">2</td>
+    <td style="border:1px solid black; padding:4px; ">The Visualisation works</td>
+    <td style="border:1px solid black; padding:4px; ">The Visualisation works</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:4px;">3</td>
+    <td style="border:1px solid black; padding:4px; ">The Visualisation works</td>
+    <td style="border:1px solid black; padding:4px; ">The Visualisation works</td>
+  </tr>
+  <tr>
+    <td style="border:1px solid black; padding:4px;">4</td>
+    <td style="border:1px solid black; padding:4px; ">The Visualisation works</td>
+    <td style="border:1px solid black; padding:4px; ">The Visualisation works</td>
   </tr>
   <tr>
     <td colspan="3" style="border:1px solid black; padding:8px; "></td>
@@ -390,11 +418,11 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
     <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Date:</strong></td>
-    <td colspan="2" style="border:1px solid black; padding:8px; ">05.05.2026</td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">06.05.2026</td>
   </tr>
     <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Test result:</strong></td>
-    <td colspan="2" style="border:1px solid black; padding:8px; "></td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">PASSED</td>
   </tr>
 </table>
 
@@ -465,7 +493,7 @@ As defined in the STP, this report does not include results related to unit test
   <tr>
     <td style="border:1px solid black; padding:8px;">4</td>
     <td style="border:1px solid black; padding:8px;">
-      Provide or generate AAS ID and Asset ID Fill. Optionally change general Information for the AAS that will be created
+      Provide or generate AAS ID and Asset ID and Type. Optionally change general Information for the AAS that will be created
     </td>
     <td style="border:1px solid black; padding:8px;">
       The fields for the Information are easy to use and display the entered values. The "generate" button fills the corresponding textinput with a generated value.
@@ -501,14 +529,14 @@ As defined in the STP, this report does not include results related to unit test
     <th style="border:1px solid black; padding:8px; ">Actual Result:</th>
   </tr>
   <tr>
-    <td style="border:1px solid black; padding:4px;">3</td>
-    <td style="border:1px solid black; padding:4px; "></td>
-    <td style="border:1px solid black; padding:4px; "></td>
+    <td style="border:1px solid black; padding:4px;">1</td>
+    <td style="border:1px solid black; padding:4px; ">The corresponding AAS is created</td>
+    <td style="border:1px solid black; padding:4px; ">The corresponding AAS is created</td>
   </tr>
   <tr>
-    <td style="border:1px solid black; padding:4px;">9</td>
-    <td style="border:1px solid black; padding:4px; "></td>
-    <td style="border:1px solid black; padding:4px; "></td>
+    <td style="border:1px solid black; padding:4px;">3</td>
+    <td style="border:1px solid black; padding:4px; ">The corresponding AAS is created</td>
+    <td style="border:1px solid black; padding:4px; ">The corresponding AAS is created</td>
   </tr>
   <tr>
     <td colspan="3" style="border:1px solid black; padding:8px; "></td>
@@ -519,11 +547,11 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
     <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Date:</strong></td>
-    <td colspan="2" style="border:1px solid black; padding:8px; ">05.05.2026</td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">06.05.2026</td>
   </tr>
     <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Test result:</strong></td>
-    <td colspan="2" style="border:1px solid black; padding:8px; "></td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">PASSED</td>
   </tr>
 </table>
 
@@ -576,11 +604,30 @@ The test case verifies that AAS information is correctly extracted from a given 
   </tr>
     <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Date:</strong></td>
-    <td colspan="2" style="border:1px solid black; padding:8px; ">05.05.2026</td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">03.05.2026</td>
   </tr>
     <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Test result:</strong></td>
-    <td colspan="2" style="border:1px solid black; padding:8px; "></td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">
+    ERROR WITH: prefers File-Name over XML<br>
+    ERROR WITH: interprets &lt;aas&gt;-tags correctly<br>
+    ERROR WITH: reads description data point to only description
+    </td>
+  </tr>
+</table>
+
+<table style=" border-collapse:collapse; font-family:Arial, sans-serif;">
+  <tr>
+    <td style="border:1px solid black; padding:8px;"><strong>Tester:</strong></td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">Daniel Ziegler</td>
+  </tr>
+    <tr>
+    <td style="border:1px solid black; padding:8px;"><strong>Date:</strong></td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">06.05.2026</td>
+  </tr>
+    <tr>
+    <td style="border:1px solid black; padding:8px;"><strong>Test result:</strong></td>
+    <td colspan="2" style="border:1px solid black; padding:8px; ">PASSED</td>
   </tr>
 </table>
 </table>
