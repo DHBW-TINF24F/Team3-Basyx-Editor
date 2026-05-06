@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?elena version="2.8.0-b7" system="Windows 10 10.0" compilation_date="11.07.2018" compilation_time="17:12:00"?>
+<?extraction date="18.07.2018" time="13:11:58"?>
+<?pc checksum="695947884"?>
+<?xsd validated="true"?>
+<kbl:KBL_container xmlns:kbl="http://www.prostep.org/Car_electric_container/KBL2.3/KBLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="KBL_container" version_id="2.3 SR-1">	
+	<ns2:VecContent xmlns:ns2="http://www.prostep.org/ecad-if/2011/vec" id="id_vec_content_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.prostep.org/ecad-if/2011/vec file:///C:/Users/kyriazis/Projektdokumente/VDA%20Standards/VEC/Schema/VEC1.1.3_final/vec_1.1.3.xsd">
+	<Cartesian_point id="Cartesian_point_3">
+		<Coordinates>-72992.624842</Coordinates>
+		<Coordinates>-87163.253273</Coordinates>
+		<Coordinates>48243.877044</Coordinates>
+	</Cartesian_point>
+	<Cartesian_point id="Cartesian_point_4">
+		<Coordinates>-6866.761167</Coordinates>
+		<Coordinates>4821.907432</Coordinates>
+		<Coordinates>-16665.890871</Coordinates>
+	</Cartesian_point>
+	<General_terminal id="id_326_0">
+		<Part_number>7Ya102612461C</Part_number>
+		<Company_name>GCMC</Company_name>
+		<Version>2</Version>
+		<Abbreviation>/NULL</Abbreviation>
+		<Description>KABSCHUHE_BATERIE</Description>
+		<Mass_information id="id_380_4">
+			<Unit_component>id_346_2</Unit_component>
+			<Value_component>109.0</Value_component>
+		</Mass_information>
+		<Terminal_type>special</Terminal_type>
+		<Plating_material>sn</Plating_material>
+	</General_terminal>
+	<Segment id="Segment_1">
+		<Id>ROUTING_BAUKST_BATTERIE_PLUS-Multi-branchable1/ElecRouteBody.1/Flexible Curve.1</Id>
+		<Start_vector>-0.999473</Start_vector>
+		<Start_vector>0.013345</Start_vector>
+		<Start_vector>-0.029600</Start_vector>
+		<End_vector>-0.000000</End_vector>
+		<End_vector>0.000000</End_vector>
+		<End_vector>1.000000</End_vector>
+		<Virtual_length id="Virtual_length_1">
+			<Unit_component>id_346_1</Unit_component>
+			<Value_component>1082.076241</Value_component>
+		</Virtual_length>
+		<Form>circular</Form>
+		<End_node>Node_2</End_node>
+		<Start_node>Node_1</Start_node>
+		<Center_curve id="Center_curve_1">
+			<Degree>6</Degree>
+			<Control_points>Cartesian_point_3 Cartesian_point_4</Control_points>
+		</Center_curve>
+		<Cross_section_area_information id="Cross_section_area_1">
+			<Value_determination>reserved</Value_determination>
+			<Area id="Area_1">
+				<Unit_component>id_346_0</Unit_component>
+				<Value_component>63.617251</Value_component>
+			</Area>
+		</Cross_section_area_information>
+	</Segment>
+	<Unit id="id_346_2">
+		<Si_unit_name>gram</Si_unit_name>
+	</Unit>
+	<Unit id="id_346_1">
+		<Si_unit_name>metre</Si_unit_name>
+		<Si_prefix>milli</Si_prefix>
+	</Unit>
+	<Unit id="id_346_0">
+		<Si_unit_name>metre</Si_unit_name>
+		<Si_prefix>milli</Si_prefix>
+		<Si_dimension>square</Si_dimension>
+	</Unit>
+	<Unit id="id_346_3">
+		<Unit_name>GramPerMetre</Unit_name>
+	</Unit>
+	</ns2:VecContent>
+</kbl:KBL_container>

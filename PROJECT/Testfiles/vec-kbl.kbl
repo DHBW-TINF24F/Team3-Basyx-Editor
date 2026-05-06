@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:VecContent xmlns:ns2="http://www.prostep.org/ecad-if/2011/vec" id="id_vec_content_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.prostep.org/ecad-if/2011/vec file:///C:/Users/kyriazis/Projektdokumente/VDA%20Standards/VEC/Schema/VEC1.1.3_final/vec_1.1.3.xsd">
+	<VecVersion>1.1.3</VecVersion>
+	<GeneratingSystemName>VOBES NG</GeneratingSystemName>
+	<DateOfCreation>2018-07-20T09:38:39.228+02:00</DateOfCreation>
+	<GeneratingSystemVersion>1.1.43</GeneratingSystemVersion>
+	<DocumentVersion id="id_docu_ver_1">
+		<Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:LocalizedString" id="id_localizedString_2">
+			<LanguageCode>De</LanguageCode>
+			<Value>I-Teststand DV03</Value>
+		</Description>
+		<CompanyName>GCMC</CompanyName>
+		<Approval id="id_approval_4">
+			<Identification>WfijdmfQspkfduCbtfmjofBqqspwbm</Identification>
+			<Status>LOCKED</Status>
+		</Approval>
+		<Creation id="id_creation_5">
+			<CreationDate>2018-07-16T00:00:00.000+02:00</CreationDate>
+		</Creation>
+		<DocumentNumber>WfijdmfQspkfduCbtfmjof13a293a8327 aa:aa:aa2a12</DocumentNumber>
+		<DocumentType>VehicleProjectBaseline</DocumentType>
+		<DocumentVersion>1</DocumentVersion>
+		<CreatingSystem>DesignSystem</CreatingSystem>
+	</DocumentVersion>
+	<DocumentVersion id="id_docu_ver_6668">
+		<Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:LocalizedString" id="id_localizedString_6669">
+			<LanguageCode>De</LanguageCode>
+			<Value>/NULL</Value>
+		</Description>
+		<CompanyName>GCMC</CompanyName>
+		<DocumentNumber>3a29a636</DocumentNumber>
+		<DocumentType>VehiclePlatformSchematic</DocumentType>
+		<DocumentVersion>1</DocumentVersion>
+		<CreatingSystem>SchematicSystem</CreatingSystem>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:UsageNodeSpecification" id="id_usage_node_spec_6670">
+			<Identification>VOTqfd13a29a6362</Identification>
+			<UsageNodes id="id_usage_node_6671">
+				<Identification>PMF2</Identification>
+				<Description xsi:type="ns2:LocalizedString" id="id_usage_node_6672">
+					<LanguageCode>De</LanguageCode>
+					<Value>Offenes Leitungsende 1</Value>
+				</Description>
+				<UsageNodeType>COMPONENT</UsageNodeType>
+				<UsedInProject>id_proj_8</UsedInProject>
+			</UsageNodes>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:ConnectionSpecification" id="id_connect_spec_6674">
+			<Identification>DpoTqfd13a29a636ovmm</Identification>
+			<ComponentNode id="id_comp_node_7472">
+				<Identification>K2a522</Identification>
+				<Description xsi:type="ns2:LocalizedString" id="id_localizedString_7473">
+					<LanguageCode>De</LanguageCode>
+					<Value>Steuergerät für ABS</Value>
+				</Description>
+				<RealizedUsageNode>id_usage_node_402</RealizedUsageNode>
+				<ComponentConnector id="id_component_connector_7474">
+					<Identification>B</Identification>
+					<ComponentPort id="id_comp_port_7475">
+						<Identification>32</Identification>
+						<Description xsi:type="ns2:LocalizedString" id="id_localizedString_7476">
+							<LanguageCode>De</LanguageCode>
+							<Value>HAfP+</Value>
+						</Description>
+					</ComponentPort>
+					<ComponentPort id="id_comp_port_7477">
+						<Identification>3a</Identification>
+						<Description xsi:type="ns2:LocalizedString" id="id_localizedString_7478">
+							<LanguageCode>De</LanguageCode>
+							<Value>HAfP-</Value>
+						</Description>
+					</ComponentPort>
+					<ComponentPort id="id_comp_port_7539">
+						<Identification>86</Identification>
+					</ComponentPort>
+				</ComponentConnector>
+			</ComponentNode>
+			<ComponentNode id="id_comp_node_7763">
+				<Identification>P22</Identification>
+				<Description xsi:type="ns2:LocalizedString" id="id_localizedString_7764">
+					<LanguageCode>De</LanguageCode>
+					<Value>Zündverteiler</Value>
+				</Description>
+				<RealizedUsageNode>id_usage_node_246</RealizedUsageNode>
+				<ComponentConnector id="id_component_connector_7765">
+					<Identification>B</Identification>
+					<ComponentPort id="id_comp_port_7766">
+						<Identification>3</Identification>
+						<Description xsi:type="ns2:LocalizedString" id="id_localizedString_7767">
+							<LanguageCode>De</LanguageCode>
+							<Value>Unterbrecher</Value>
+						</Description>
+					</ComponentPort>
+					<ComponentPort id="id_comp_port_7768">
+						<Identification>2</Identification>
+						<Description xsi:type="ns2:LocalizedString" id="id_localizedString_7769">
+							<LanguageCode>De</LanguageCode>
+							<Value>Endstörung</Value>
+						</Description>
+					</ComponentPort>
+				</ComponentConnector>
+			</ComponentNode>
+			<Connection id="id_connection_8261">
+				<Identification>P2XXM2TZT1a662</Identification>
+				<Signal>id_signal_204</Signal>
+				<ConnectionEnd id="id_conn_end_8262">
+					<Identification>13a22X2</Identification>
+					<IsExternalEnd>true</IsExternalEnd>
+					<ConnectedComponentPort>id_comp_port_7804</ConnectedComponentPort>
+				</ConnectionEnd>
+				<ConnectionEnd id="id_conn_end_8263">
+					<Identification>W622X2</Identification>
+					<IsExternalEnd>true</IsExternalEnd>
+					<ConnectedComponentPort>id_comp_port_7317</ConnectedComponentPort>
+				</ConnectionEnd>
+			</Connection>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:CompositionSpecification" id="id_composition_spec_8264">
+			<Identification>DnqtT13a29a636121a</Identification>
+			<Component id="id_partOccurrence_11353">
+				<ConfigInfo>id_var_conf_11354</ConfigInfo>
+				<Identification>13a2236Na106610971D</Identification>
+				<Description xsi:type="ns2:LocalizedString" id="id_localizedString_11355">
+					<LanguageCode>De</LanguageCode>
+					<Value>Heizwiderstand für Spritzdüse links</Value>
+				</Description>
+				<Role xsi:type="ns2:EEComponentRole" id="id_ee_role_11356">
+					<Identification>13a2236Na106610971D</Identification>
+					<EEComponentSpecification>id_ecomponent_spec_3752</EEComponentSpecification>
+					<ComponentNode>id_comp_node_7801</ComponentNode>
+					<HousingComponentRef id="id_housing_comp_ref_11366">
+						<Identification>X</Identification>
+						<ComponentConnector>id_component_connector_7803</ComponentConnector>
+						<HousingComponent>id_housing_comp_3779</HousingComponent>
+						<ConnectorHousingRole id="id_conHousingRole_11367">
+							<Identification>X</Identification>
+							<ConnectorHousingSpecification>id_connect_hous_spec_3780</ConnectorHousingSpecification>
+							<SlotReference xsi:type="ns2:SlotReference" id="id_slotRef_11368">
+								<Identification>X</Identification>
+								<ReferencedSlot>id_slot_3781</ReferencedSlot>
+								<CavityReference id="id_cavityRef_11369">
+									<Identification>2</Identification>
+									<ComponentPort>id_comp_port_7804</ComponentPort>
+									<ReferencedCavity>id_cavity_3782</ReferencedCavity>
+								</CavityReference>
+							</SlotReference>
+						</ConnectorHousingRole>
+						<PinComponentRef id="id_pin_comp_ref_11370">
+							<Identification>2</Identification>
+							<PinComponent>id_pin_comp_3783</PinComponent>
+							<TerminalRole id="id_terminalRole_11371">
+								<Identification>13a2236Na106610971D</Identification>
+								<ComponentPort>id_comp_port_7804</ComponentPort>
+								<TerminalSpecification>id_terminal_spec_3740</TerminalSpecification>
+							</TerminalRole>
+						</PinComponentRef>
+					</HousingComponentRef>
+				</Role>
+				<Part>id_part_ver_3729</Part>
+			</Component>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:VariantConfigurationSpecification" id="id_variant_conf_spec_8265">
+			<Identification>WDT13a29a636ovmm</Identification>
+			<VariantConfiguration id="id_var_conf_8267">
+				<Identification>WbsDpog1252232Ka1082135a1C12</Identification>
+				<LogisticControlString>[VW1200]+L0L/K0P</LogisticControlString>
+			</VariantConfiguration>
+			<VariantConfiguration id="id_var_conf_8289">
+				<Identification>WbsDpog1772232Ka1082135a1C13</Identification>
+				<LogisticControlString>[VW1200]+L0L/K0P</LogisticControlString>
+			</VariantConfiguration>
+		</Specification>
+	</DocumentVersion>
+	<DocumentVersion id="id_docu_ver_11380">
+		<Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:LocalizedString" id="id_localizedString_11381">
+			<LanguageCode>De</LanguageCode>
+			<Value>LTGS Movo</Value>
+		</Description>
+		<CompanyName>GCMC</CompanyName>
+		<DocumentNumber>000971619</DocumentNumber>
+		<DocumentType>HarnessDescription</DocumentType>
+		<DocumentVersion>1</DocumentVersion>
+		<CreatingSystem>HarnessDesignSystem</CreatingSystem>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:PartUsageSpecification" id="id_part_usage_spec_17350">
+			<Identification>QVT1aaa10821720</Identification>
+			<PartUsage id="id_part_usage_17351">
+				<Identification>ENZ1TQMJDF</Identification>
+				<PrimaryPartUsageType>Terminal</PrimaryPartUsageType>
+				<PartOrUsageRelatedSpecification>id_terminal_spec_17352</PartOrUsageRelatedSpecification>
+			</PartUsage>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:ContactingSpecification" id="id_contacting_spec_25736">
+			<Identification>DPOUBDUJOH</Identification>
+			<ContactPoint id="id_contactPoint_25818">
+				<Identification>YB2H82232#291T2TJHOBM2TZT1a4621UNS23B21412</Identification>
+				<MountedTerminal>id_terminalRole_17397</MountedTerminal>
+				<CavityMounting id="id_cavity_mount_25819">
+					<EquippedCavityRef>id_cavityRef_21825</EquippedCavityRef>
+				</CavityMounting>
+				<WireMounting id="id_wire_mounting_25820">
+					<ReferencedWireEnd>id_wireEnd_19486</ReferencedWireEnd>
+				</WireMounting>
+			</ContactPoint>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:BuildingBlockSpecification3D" id="id_build_block_3d_27247">
+			<Identification>HFPNFUSZ4E</Identification>
+			<BaseUnit>id_unit_1436</BaseUnit>
+			<CartesianPoint id="id_cart_point_27249">
+				<X>2560.506678</X>
+				<Y>-215.602681</Y>
+				<Z>368.219292</Z>
+			</CartesianPoint>
+			<CartesianPoint id="id_cart_point_27486">
+				<X>2650.0</X>
+				<Y>0.0</Y>
+				<Z>370.0</Z>
+			</CartesianPoint>
+			<GeometryNode id="id_geo_node_27550">
+				<Identification>QOJE32</Identification>
+				<AliasId id="id_aliasId_27551">
+					<IdentificationValue>ROUTING_BAUKST_LTGS_MOVO-Multi-branchable142/ElecRouteBody.19/Flexible Curve.19/ElecBundleSegmentExtremity.40 SP_15_2</IdentificationValue>
+					<Scope>VOBES-original_node_id</Scope>
+				</AliasId>
+				<ReferenceNode>id_topo_node_24243</ReferenceNode>
+				<CartesianPoint>id_cart_point_27499</CartesianPoint>
+			</GeometryNode>
+			<GeometrySegment id="id_geo_segment_27580">
+				<Identification>SPVUJOH1CBVLTU1MUHT1NPWP3Nvmuj3csbodibcmf253/FmfdSpvufCpez24/Gmfyjcmf Dvswf24</Identification>
+				<ReferenceSegment>id_topo_segment_24275</ReferenceSegment>
+				<StartVector id="id_cart_vec_27581">
+					<X>-0.112544</X>
+					<Y>0.957751</Y>
+					<Z>-0.264663</Z>
+				</StartVector>
+				<EndVector id="id_cart_vec_27582">
+					<X>-0.0</X>
+					<Y>0.300668</Y>
+					<Z>-0.953729</Z>
+				</EndVector>
+				<EndNode>id_geo_node_27516</EndNode>
+				<StartNode>id_geo_node_27512</StartNode>
+				<BSplineCurve id="id_bspline_27583">
+					<Degree>6</Degree>
+					<ControlPoint>id_cart_point_27283 id_cart_point_27284 id_cart_point_27285 id_cart_point_27286 id_cart_point_27287 id_cart_point_27288 id_cart_point_27289</ControlPoint>
+				</BSplineCurve>
+			</GeometrySegment>
+			<PlacedElementViewItem3D id="id_occ_or_usage_viewitem_27768">
+				<Identification>U1YC229221opof1#22a</Identification>
+				<AliasId id="id_aliasId_27769">
+					<IdentificationValue>MB17B</IdentificationValue>
+					<Scope>VOBES-Alias-Ref</Scope>
+				</AliasId>
+				<OccurrenceOrUsage>id_partOccurrence_17441</OccurrenceOrUsage>
+				<Orientation id="id_transformation_3D_27767">
+					<A11>-0.162703</A11>
+					<A12>0.986675</A12>
+					<A13>0.0</A13>
+					<A21>-0.986675</A21>
+					<A22>-0.162703</A22>
+					<A23>0.0</A23>
+					<A31>0.0</A31>
+					<A32>0.0</A32>
+					<A33>0.9999998218339999</A33>
+					<Origin>id_cart_point_27264</Origin>
+				</Orientation>
+			</PlacedElementViewItem3D>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:RoutingSpecification" id="id_routing_spec_32398">
+			<Identification>SPVUJOH</Identification>
+			<Routing id="id_routing_32399">
+				<Identification>W2262TZT1a4521E361212</Identification>
+				<RoutedElement>id_wire_element_ref_19348</RoutedElement>
+				<Path id="id_path_32400">
+					<Segment>id_topo_segment_24360 id_topo_segment_24350 id_topo_segment_24295 id_topo_segment_24380</Segment>
+				</Path>
+			</Routing>
+			<Routing id="id_routing_32401">
+				<Identification>W2262TZT1a4521E361213</Identification>
+				<RoutedElement>id_wire_element_ref_19356</RoutedElement>
+				<Path id="id_path_32402">
+					<Segment>id_topo_segment_24360 id_topo_segment_24350 id_topo_segment_24295 id_topo_segment_24375</Segment>
+				</Path>
+			</Routing>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:PlacementSpecification" id="id_placement_spec_32984">
+			<Identification>QMBDFNFOU</Identification>
+			<Placement xsi:type="ns2:OnPointPlacement" id="id_on_point_placement_32985">
+				<Identification>E36</Identification>
+				<PlacedElement>id_place_role_17357</PlacedElement>
+				<Location xsi:type="ns2:NodeLocation" id="id_node_location_32986">
+					<Identification>QOJE32</Identification>
+					<ReferencedNode>id_topo_node_24243</ReferencedNode>
+				</Location>
+			</Placement>
+			<Placement xsi:type="ns2:OnPointPlacement" id="id_on_point_placement_33021">
+				<Identification>YB2G222</Identification>
+				<PlacedElement>id_place_role_21816</PlacedElement>
+				<Location xsi:type="ns2:NodeLocation" id="id_node_location_33022">
+					<Identification>QOJE20</Identification>
+					<ReferencedNode>id_topo_node_24239</ReferencedNode>
+				</Location>
+			</Placement>
+		</Specification>
+	</DocumentVersion>
+	<DocumentVersion id="id_docu_ver_11382">
+		<Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:LocalizedString" id="id_localizedString_11383">
+			<LanguageCode>De</LanguageCode>
+			<Value>MODULARE LTGS.</Value>
+		</Description>
+		<CompanyName>GCMC</CompanyName>
+		<DocumentNumber>TAB016120</DocumentNumber>
+		<DocumentType>HarnessDescription</DocumentType>
+		<DocumentVersion>1</DocumentVersion>
+		<CreatingSystem>HarnessDesignSystem</CreatingSystem>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:CompositionSpecification" id="id_composition_spec_17484">
+			<Identification>DPNQPOFOUT</Identification>
+			<Component id="id_partOccurrence_23390">
+				<Identification>YB2K022</Identification>
+				<AliasId id="id_aliasId_23391">
+					<IdentificationValue>XA.J9.1</IdentificationValue>
+					<Scope>VOBES-UL_ID</Scope>
+				</AliasId>
+				<AliasId id="id_aliasId_23392">
+					<IdentificationValue>AKR</IdentificationValue>
+					<Scope>VOBES-Alias-Ref</Scope>
+				</AliasId>
+				<Description xsi:type="ns2:LocalizedString" id="id_localizedString_23393">
+					<LanguageCode>De</LanguageCode>
+					<Value>Relais für beheizbare Heckscheibe</Value>
+				</Description>
+				<Role xsi:type="ns2:PlaceableElementRole" id="id_place_role_23480">
+					<Identification>YB2K022</Identification>
+					<PlaceableElementSpecification>id_placeable_spec_23478</PlaceableElementSpecification>
+				</Role>
+				<Role xsi:type="ns2:EEComponentRole" id="id_ee_role_23394">
+					<Identification>YB2K022</Identification>
+					<EEComponentSpecification>id_ecomponent_spec_4198</EEComponentSpecification>
+					<ComponentNode>id_comp_node_6930</ComponentNode>
+					<HousingComponentRef id="id_housing_comp_ref_23566">
+						<Identification>7</Identification>
+						<HousingComponent>id_housing_comp_4684</HousingComponent>
+						<ConnectorHousingRole id="id_conHousingRole_23567">
+							<ConnectorHousingSpecification>id_connect_hous_spec_4107</ConnectorHousingSpecification>
+							<SlotReference xsi:type="ns2:SlotReference" id="id_slotRef_23568">
+								<ReferencedSlot>id_slot_4108</ReferencedSlot>
+								<CavityReference id="id_cavityRef_23569">
+									<Identification>7B</Identification>
+									<ReferencedCavity>id_cavity_4110</ReferencedCavity>
+								</CavityReference>
+								<CavityReference id="id_cavityRef_23570">
+									<Identification>7C</Identification>
+									<ReferencedCavity>id_cavity_4111</ReferencedCavity>
+								</CavityReference>
+							</SlotReference>
+						</ConnectorHousingRole>
+						<PinComponentRef id="id_pin_comp_ref_23574">
+							<Identification>7B</Identification>
+							<PinComponent>id_pin_comp_4685</PinComponent>
+						</PinComponentRef>
+						<PinComponentRef id="id_pin_comp_ref_23575">
+							<Identification>7C</Identification>
+							<PinComponent>id_pin_comp_4691</PinComponent>
+						</PinComponentRef>
+					</HousingComponentRef>
+				</Role>
+				<Part>id_part_ver_4099</Part>
+			</Component>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:CouplingSpecification" id="id_coupling_spec_23661">
+			<Identification>GVTFT1YB2T5a22</Identification>
+			<CouplingPoint id="id_coupling_point_23662">
+				<Identification>YB2T5a22G2</Identification>
+				<FirstConnector>id_conHousingRole_23012</FirstConnector>
+				<SecondConnector>id_conHousingRole_22713</SecondConnector>
+				<SlotCoupling id="id_slotCoupling_23663">
+					<FirstSlot>id_slotRef_23013</FirstSlot>
+					<SecondSlot>id_slotRef_22714</SecondSlot>
+					<CavityCoupling id="id_cavity_coupling_23664">
+						<Identification>2</Identification>
+						<FirstCavity>id_cavityRef_23014</FirstCavity>
+						<SecondCavity>id_cavityRef_22715</SecondCavity>
+					</CavityCoupling>
+				</SlotCoupling>
+			</CouplingPoint>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:TopologySpecification" id="id_topo_spec_24415">
+			<Identification>UPQPMPHZ</Identification>
+			<TopologyNode id="id_topo_node_24416">
+				<Identification>QOJE2</Identification>
+				<AliasId id="id_aliasId_24417">
+					<IdentificationValue>001_Scheinwerfer_Hupe_li-Multi-branchable5/ElecRouteBody.1/Flexible Curve.1/ElecBundleSegmentExtremity.2 001_Scheinwerfer_li-Multi-branchable4/ElecRouteBody.1/Flexible Curve.1/ElecBundleSegmentExtremity.2 001_Scheinwerfer_Masse1_li-Multi-branchable6/ElecRouteBody.1/Flexible Curve.1/ElecBundleSegmentExtremity.1 001_Scheinwerfer_Masse2_li-Multi-branchable7/ElecRouteBody.1/Flexible Curve.1/ElecBundleSegmentExtremity.1 0011_SW_Multi-branchable1/ElecRouteBody.1/Flexible Curve.1/ElecBundleSegmentExtremity.1 Part1/ElecRouteBody.1/Flexible Curve.1/ElecBundleSegmentExtremity.1</IdentificationValue>
+					<Scope>VOBES-original_node_id</Scope>
+				</AliasId>
+				<NodeType>JUNCTION</NodeType>
+			</TopologyNode>
+			<TopologySegment id="id_topo_segment_24784">
+				<Identification>aa221TX1Nvmuj3csbodibcmf2/FmfdSpvufCpez22/Gmfyjcmf Dvswf22</Identification>
+				<Form>CIRCULAR</Form>
+				<EndNode>id_topo_node_24418</EndNode>
+				<StartNode>id_topo_node_24416</StartNode>
+				<CrossSectionAreaInformation id="id_topo_seg_csa_24785">
+					<Area id="id_num_Value_24786">
+						<UnitComponent>id_unit_11532</UnitComponent>
+						<ValueComponent>28.274334</ValueComponent>
+					</Area>
+					<ValueDetermination>Estimated</ValueDetermination>
+					<CrossSectionAreaType>reserved</CrossSectionAreaType>
+				</CrossSectionAreaInformation>
+				<LengthInformation id="id_topo_seg_length_24787">
+					<Length id="id_num_Value_24788">
+						<UnitComponent>id_unit_1436</UnitComponent>
+						<ValueComponent>233.501227</ValueComponent>
+					</Length>
+					<Classification>Designed</Classification>
+				</LengthInformation>
+			</TopologySegment>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:CompositionSpecification" id="id_composition_spec_35651">
+			<Identification>NPEVMFT</Identification>
+			<Component id="id_partOccurrence_35823">
+				<ConfigInfo>id_var_conf_35755</ConfigInfo>
+				<Identification>aaa108a1aaa</Identification>
+				<Description xsi:type="ns2:LocalizedString" id="id_localizedString_35824">
+					<LanguageCode>De</LanguageCode>
+					<Value>Modul</Value>
+				</Description>
+				<Role xsi:type="ns2:PartWithSubComponentsRole" id="id_part_with_sub_component_role_35825">
+					<Identification>aaa108a1aaa</Identification>
+					<PartStructureSpecification>id_part_struct_spec_35826</PartStructureSpecification>
+					<SubComponent>id_partOccurrence_18057 id_partOccurrence_19208 id_partOccurrence_23836 id_partOccurrence_22928 id_partOccurrence_19562 id_partOccurrence_19890 id_partOccurrence_20130 id_partOccurrence_18232 id_partOccurrence_18666 id_partOccurrence_18702 id_partOccurrence_18995 id_partOccurrence_17644 id_partOccurrence_19714 id_partOccurrence_19882 id_partOccurrence_17926 id_partOccurrence_20066 id_partOccurrence_18252 id_partOccurrence_18276 id_partOccurrence_19498 id_partOccurrence_17888 id_partOccurrence_19127 id_partOccurrence_20146 id_partOccurrence_20250 id_partOccurrence_23860 id_partOccurrence_20282 id_partOccurrence_20026 id_partOccurrence_23844 id_partOccurrence_20010 id_partOccurrence_20138 id_partOccurrence_17669 id_partOccurrence_18149 id_partOccurrence_23920 id_partOccurrence_17505 id_partOccurrence_18395 id_partOccurrence_24016 id_partOccurrence_17998 id_partOccurrence_20394 id_partOccurrence_17536 id_partOccurrence_18165 id_partOccurrence_18053 id_partOccurrence_18359 id_partOccurrence_19200 id_partOccurrence_19834 id_partOccurrence_17626 id_partOccurrence_18698 id_partOccurrence_17817 id_partOccurrence_20322 id_partOccurrence_35215 id_partOccurrence_20034 id_partOccurrence_18033 id_partOccurrence_17837 id_partOccurrence_18316 id_partOccurrence_22054 id_partOccurrence_17485 id_partOccurrence_18858 id_partOccurrence_24024 id_partOccurrence_20450 id_partOccurrence_22274 id_partOccurrence_18419 id_partOccurrence_17493 id_partOccurrence_17728 id_partOccurrence_20178 id_partOccurrence_18963 id_partOccurrence_23832 id_partOccurrence_18304 id_partOccurrence_18532 id_partOccurrence_18006 id_partOccurrence_18248 id_partOccurrence_18901 id_partOccurrence_20490 id_partOccurrence_23716 id_partOccurrence_23712 id_partOccurrence_23786 id_partOccurrence_18987 id_partOccurrence_17748 id_partOccurrence_19978 id_partOccurrence_20386 id_partOccurrence_19922 id_partOccurrence_18244 id_partOccurrence_18983 id_partOccurrence_22464 id_partOccurrence_22016 id_partOccurrence_19610 id_partOccurrence_22730 id_partOccurrence_19554 id_partOccurrence_17942 id_partOccurrence_18018 id_partOccurrence_17693 id_partOccurrence_18504 id_partOccurrence_18443 id_partOccurrence_18674 id_partOccurrence_19071 id_partOccurrence_19850 id_partOccurrence_17578 id_partOccurrence_23680 id_partOccurrence_21876 id_partOccurrence_20474 id_partOccurrence_19067 id_partOccurrence_18564 id_partOccurrence_18643 id_partOccurrence_20082 id_partOccurrence_18085 id_partOccurrence_19490 id_partOccurrence_18528 id_partOccurrence_22996 id_partOccurrence_19786 id_partOccurrence_20186 id_partOccurrence_18678 id_partOccurrence_20002 id_partOccurrence_17844 id_partOccurrence_22132 id_partOccurrence_23778 id_partOccurrence_18387 id_partOccurrence_17884 id_partOccurrence_18921 id_partOccurrence_18718 id_partOccurrence_18815 id_partOccurrence_18650 id_partOccurrence_22490 id_partOccurrence_21852 id_partOccurrence_18725 id_partOccurrence_22906 id_partOccurrence_24020 id_partOccurrence_18929 id_partOccurrence_18002 id_partOccurrence_19103 id_partOccurrence_19962 id_partOccurrence_22007 id_partOccurrence_23856 id_partOccurrence_18951 id_partOccurrence_19546 id_partOccurrence_24086 id_partOccurrence_21989 id_partOccurrence_22252 id_partOccurrence_18854 id_partOccurrence_21830 id_partOccurrence_19506 id_partOccurrence_23912 id_partOccurrence_17542 id_partOccurrence_20354 id_partOccurrence_18204 id_partOccurrence_18733 id_partOccurrence_20258 id_partOccurrence_19898 id_partOccurrence_21867 id_partOccurrence_19003 id_partOccurrence_19778 id_partOccurrence_17860 id_partOccurrence_17548 id_partOccurrence_17848 id_partOccurrence_19530 id_partOccurrence_23972 id_partOccurrence_17596 id_partOccurrence_23700 id_partOccurrence_18811 id_partOccurrence_20154 id_partOccurrence_20506 id_partOccurrence_19818 id_partOccurrence_20482 id_partOccurrence_18772 id_partOccurrence_19866 id_partOccurrence_22025 id_partOccurrence_20090 id_partOccurrence_18807 id_partOccurrence_19698 id_partOccurrence_18193 id_partOccurrence_20314 id_partOccurrence_20218 id_partOccurrence_18846 id_partOccurrence_23768 id_partOccurrence_18865 id_partOccurrence_19986 id_partOccurrence_19674 id_partOccurrence_19938 id_partOccurrence_19570 id_partOccurrence_20074 id_partOccurrence_18177 id_partOccurrence_20330 id_partOccurrence_18363 id_partOccurrence_19035 id_partOccurrence_20410 id_partOccurrence_19754 id_partOccurrence_20058 id_partOccurrence_17797 id_partOccurrence_19522 id_partOccurrence_20106 id_partOccurrence_19514 id_partOccurrence_20434 id_partOccurrence_18312 id_partOccurrence_17638 id_partOccurrence_24052 id_partOccurrence_22829 id_partOccurrence_22034 id_partOccurrence_17901 id_partOccurrence_23736 id_partOccurrence_17897 id_partOccurrence_18799 id_partOccurrence_22741 id_partOccurrence_18399 id_partOccurrence_18300 id_partOccurrence_18686 id_partOccurrence_19168 id_partOccurrence_20426 id_partOccurrence_19770 id_partOccurrence_18439 id_partOccurrence_18592 id_partOccurrence_18576 id_partOccurrence_21978 id_partOccurrence_20202 id_partOccurrence_19650 id_partOccurrence_21961 id_partOccurrence_18173 id_partOccurrence_17990 id_partOccurrence_18714 id_partOccurrence_20306 id_partOccurrence_17756 id_partOccurrence_18140 id_partOccurrence_18288 id_partOccurrence_18967 id_partOccurrence_17590 id_partOccurrence_18873 id_partOccurrence_22752 id_partOccurrence_19538 id_partOccurrence_24044 id_partOccurrence_20298 id_partOccurrence_18690 id_partOccurrence_23956 id_partOccurrence_17934 id_partOccurrence_19930 id_partOccurrence_22774 id_partOccurrence_19762 id_partOccurrence_18061 id_partOccurrence_18631 id_partOccurrence_23720 id_partOccurrence_18600 id_partOccurrence_19602 id_partOccurrence_20378 id_partOccurrence_19738 id_partOccurrence_23908 id_partOccurrence_21841 id_partOccurrence_20418 id_partOccurrence_19730 id_partOccurrence_22785 id_partOccurrence_20234 id_partOccurrence_17602 id_partOccurrence_18744 id_partOccurrence_18893 id_partOccurrence_20274 id_partOccurrence_22479 id_partOccurrence_19152 id_partOccurrence_17922 id_partOccurrence_19658 id_partOccurrence_19794 id_partOccurrence_19626 id_partOccurrence_19706 id_partOccurrence_19970 id_partOccurrence_21998 id_partOccurrence_19906 id_partOccurrence_20114 id_partOccurrence_18881 id_partOccurrence_19618 id_partOccurrence_19914 id_partOccurrence_18037 id_partOccurrence_22693 id_partOccurrence_20338 id_partOccurrence_17608 id_partOccurrence_17781 id_partOccurrence_18572 id_partOccurrence_23840 id_partOccurrence_19019 id_partOccurrence_19594 id_partOccurrence_18324 id_partOccurrence_20018 id_partOccurrence_22285 id_partOccurrence_23724 id_partOccurrence_19842 id_partOccurrence_22796 id_partOccurrence_18104 id_partOccurrence_23960 id_partOccurrence_20098 id_partOccurrence_17813 id_partOccurrence_19946 id_partOccurrence_24124 id_partOccurrence_20362 id_partOccurrence_23848 id_partOccurrence_17918 id_partOccurrence_22763 id_partOccurrence_20370 id_partOccurrence_20458 id_partOccurrence_24140 id_partOccurrence_18467 id_partOccurrence_21904 id_partOccurrence_22708 id_partOccurrence_20226 id_partOccurrence_19666 id_partOccurrence_19180 id_partOccurrence_19031 id_partOccurrence_22437 id_partOccurrence_19802 id_partOccurrence_24144 id_partOccurrence_18320 id_partOccurrence_18065 id_partOccurrence_19826 id_partOccurrence_24100 id_partOccurrence_18181 id_partOccurrence_20170 id_partOccurrence_19578 id_partOccurrence_18869 id_partOccurrence_19954 id_partOccurrence_18780 id_partOccurrence_19874 id_partOccurrence_20242 id_partOccurrence_18897 id_partOccurrence_19682 id_partOccurrence_18508 id_partOccurrence_18041 id_partOccurrence_19188 id_partOccurrence_19994 id_partOccurrence_18351 id_partOccurrence_18662 id_partOccurrence_17566 id_partOccurrence_23936 id_partOccurrence_17517 id_partOccurrence_23740 id_partOccurrence_24028 id_partOccurrence_23800 id_partOccurrence_23872 id_partOccurrence_19027 id_partOccurrence_17529 id_partOccurrence_19586 id_partOccurrence_23892 id_partOccurrence_18999 id_partOccurrence_19858 id_partOccurrence_19099 id_partOccurrence_17499 id_partOccurrence_22818 id_partOccurrence_17930 id_partOccurrence_20162 id_partOccurrence_22807 id_partOccurrence_23896 id_partOccurrence_20042 id_partOccurrence_20402 id_partOccurrence_23964 id_partOccurrence_19810 id_partOccurrence_20266 id_partOccurrence_18029 id_partOccurrence_19746 id_partOccurrence_21940 id_partOccurrence_19634 id_partOccurrence_20194 id_partOccurrence_17699 id_partOccurrence_18339 id_partOccurrence_18670 id_partOccurrence_20466 id_partOccurrence_22101 id_partOccurrence_24096 id_partOccurrence_19722 id_partOccurrence_20290 id_partOccurrence_18822 id_partOccurrence_20122 id_partOccurrence_20346 id_partOccurrence_20498 id_partOccurrence_20210 id_partOccurrence_18729 id_partOccurrence_23686 id_partOccurrence_19642 id_partOccurrence_23704 id_partOccurrence_24090 id_partOccurrence_23868 id_partOccurrence_18588 id_partOccurrence_18552 id_partOccurrence_22158 id_partOccurrence_18089 id_partOccurrence_18568 id_partOccurrence_21893 id_partOccurrence_17829 id_partOccurrence_20442 id_partOccurrence_23852 id_partOccurrence_23884 id_partOccurrence_17764 id_partOccurrence_18136 id_partOccurrence_19690 id_partOccurrence_20050 id_partOccurrence_18877 id_partOccurrence_17650 id_partOccurrence_23828 id_partOccurrence_18208 id_partOccurrence_23018 id_partOccurrence_18236</SubComponent>
+				</Role>
+				<Part>id_part_ver_35652</Part>
+			</Component>
+			<Component id="id_partOccurrence_35827">
+				<ConfigInfo>id_var_conf_35757</ConfigInfo>
+				<Identification>aaa108a1aaa1B</Identification>
+				<Description xsi:type="ns2:LocalizedString" id="id_localizedString_35828">
+					<LanguageCode>De</LanguageCode>
+					<Value>Modul</Value>
+				</Description>
+				<Role xsi:type="ns2:PartWithSubComponentsRole" id="id_part_with_sub_component_role_35829">
+					<Identification>aaa108a1aaa1B</Identification>
+					<PartStructureSpecification>id_part_struct_spec_35830</PartStructureSpecification>
+					<SubComponent>id_partOccurrence_22851 id_partOccurrence_21569 id_partOccurrence_17752 id_partOccurrence_18124 id_partOccurrence_21590 id_partOccurrence_18331 id_partOccurrence_19172 id_partOccurrence_35215 id_partOccurrence_18710 id_partOccurrence_22840 id_partOccurrence_18917 id_partOccurrence_22873 id_partOccurrence_19023 id_partOccurrence_22917 id_partOccurrence_18830 id_partOccurrence_20514 id_partOccurrence_22884 id_partOccurrence_19204 id_partOccurrence_22862 id_partOccurrence_23018 id_partOccurrence_22895 id_partOccurrence_18108</SubComponent>
+				</Role>
+				<Part>id_part_ver_35655</Part>
+			</Component>
+		</Specification>
+	</DocumentVersion>
+	<DocumentVersion id="id_docu_ver_16677">
+		<CompanyName>GCMC</CompanyName>
+		<Approval id="id_approval_16678">
+			<Status>Approved</Status>
+		</Approval>
+		<DocumentNumber>O1a481a5210</DocumentNumber>
+		<DocumentType>PartMaster</DocumentType>
+		<DocumentVersion>2</DocumentVersion>
+		<CreatingSystem>PartMasterSystem</CreatingSystem>
+		<ReferencedPart>id_part_ver_16676</ReferencedPart>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:WireElementSpecification" id="id_wire_element_spec_16679">
+			<Identification>Tds30a49</Identification>
+			<Type id="id_wiretype_16689">
+				<Type>FLR</Type>
+				<ReferenceSystem>VobesSpecific</ReferenceSystem>
+			</Type>
+			<MinBendRadiusStatic id="id_num_Value_16687">
+				<UnitComponent>id_unit_1436</UnitComponent>
+				<ValueComponent>8.7</ValueComponent>
+			</MinBendRadiusStatic>
+			<OutsideDiameter id="id_num_Value_16688">
+				<UnitComponent>id_unit_1436</UnitComponent>
+				<ValueComponent>2.9</ValueComponent>
+			</OutsideDiameter>
+			<ConductorSpecification>id_core_conductor_spec_16680</ConductorSpecification>
+			<InsulationSpecification>id_insulation_spec_16683</InsulationSpecification>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:GeneralTechnicalPartSpecification" id="id_tech_part_spec_16690">
+			<Identification>Huqt3O1a481a521033</Identification>
+			<DescribedPart>id_part_ver_16676</DescribedPart>
+			<MassInformation id="id_massInformation_16691">
+				<DeterminationType>Calculated</DeterminationType>
+				<Value id="id_num_Value_16692">
+					<UnitComponent>id_compositeUnit_14074</UnitComponent>
+					<ValueComponent>26.0</ValueComponent>
+				</Value>
+			</MassInformation>
+			<RobustnessProperties id="id_robustness_prop_16693">
+				<Class>AmbientTemperature</Class>
+				<ClassKey>B (105)</ClassKey>
+				<ClassReferenceSystem>ISO 6722-1</ClassReferenceSystem>
+				<HasRobustness>false</HasRobustness>
+			</RobustnessProperties>
+			<TemperatureInformation id="id_temperature_info_16694">
+				<TemperatureRange id="id_valueRange_16695">
+					<UnitComponent>id_unit_11408</UnitComponent>
+					<Minimum>-40.0</Minimum>
+					<Maximum>105.0</Maximum>
+				</TemperatureRange>
+			</TemperatureInformation>
+		</Specification>
+		<Specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:CoreSpecification" id="id_core_conductor_spec_16680">
+			<Identification>Dps3O1a481a521033</Identification>
+			<CrossSectionArea id="id_num_Value_16681">
+				<UnitComponent>id_unit_11532</UnitComponent>
+				<ValueComponent>2.5</ValueComponent>
+			</CrossSectionArea>
+			<Material id="id_material_16682">
+				<Key>Cu-ETP1</Key>
+				<ReferenceSystem>VobesSpecific</ReferenceSystem>
+			</Material>
+		</Specification>
+	</DocumentVersion>
+	<PartVersion id="id_part_ver_3802">
+		<Abbreviation id="id_localizedString_3803">
+			<LanguageCode>De</LanguageCode>
+			<Value>SRFL1</Value>
+		</Abbreviation>
+		<Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:LocalizedString" id="id_localizedString_3805">
+			<LanguageCode>De</LanguageCode>
+			<Value>Getriebeschalter Rueckfahrlicht</Value>
+		</Description>
+		<CompanyName>GCMC</CompanyName>
+		<PartNumber>a2F10521632</PartNumber>
+		<PartVersion>1</PartVersion>
+		<PrimaryPartType>EEComponent</PrimaryPartType>
+		<IsPreferredPart>undefined</IsPreferredPart>
+	</PartVersion>
+	<Project id="id_proj_8">
+		<CarClassificationLevel2>KAEFER</CarClassificationLevel2>
+		<CarClassificationLevel3>0A0</CarClassificationLevel3>
+		<CarClassificationLevel4>/NULL</CarClassificationLevel4>
+		<Identification>WX23aa</Identification>
+		<Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:LocalizedString" id="id_9">
+			<LanguageCode>De</LanguageCode>
+			<Value>/NULL</Value>
+		</Description>
+	</Project>
+	<Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:SIUnit" id="id_unit_652">
+		<SiUnitName>Ampere</SiUnitName>
+	</Unit>
+	<Unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:CompositeUnit" id="id_compositeUnit_14074">
+		<Factors>id_unit_885 id_unit_14075</Factors>
+	</Unit>
+</ns2:VecContent>
