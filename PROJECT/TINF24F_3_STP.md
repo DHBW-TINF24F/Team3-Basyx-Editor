@@ -12,18 +12,18 @@
 ## Table of contents
 1. [Introduction](#1-introduction)
 2. [Scope](#2-scope)
-3. [Test Strategy](#)
+3. [Test Strategy](#3-test-strategy)
 4. [Test Environment](#4-test-environment)
-    - 4.1 [Hardware Environment](#)
-    - 4.2 [Software Environment](#)
-    - 4.3 [Deployment Setup](#)
-5. [Test Cases](#5)
-    - 5.1 [TC01	Proper XML-Validation	MOD01](#)
-    - 5.2 [TC02	Handle Error Messages	MOD01](#)
-    - 5.3 [TC03	Display XML structure	MOD02](#)
-    - 5.4 [TC04	AAS-Creation-Wizard functions properly	MOD03](#)
-    - 5.5 [TC05	Extraction of the AAS Information MOD03](#)
-6. [Test Data](#6)
+    - 4.1 [Hardware Environment](#41-hardware-environment)
+    - 4.2 [Software Environment](#42-software-environment)
+    - 4.3 [Deployment Setup](#43-deployment-setup)
+5. [Test Cases Overwiew](#5-test-cases-overview)
+    - 5.1 [TC01	Proper XML-Validation	MOD01](#51-tc01-proper-xml-validation-mod01)
+    - 5.2 [TC02	Handle Error Messages	MOD01](#52-tc02-handle-error-messages-mod01)
+    - 5.3 [TC03	Display XML structure	MOD02](#53-tc03-display-xml-structure-mod02)
+    - 5.4 [TC04	AAS-Creation-Wizard functions properly	MOD03](#54-tc04-aas-creation-wizard-functions-properly-mod03)
+    - 5.5 [TC05	Extraction of the AAS Information MOD03](#55-tc05-extraction-of-the-aas-information-mod03)
+6. [Test Data](#6-test-data)
 
 
 
@@ -70,7 +70,7 @@ All testcases include:
 
 As an initial situation for all tests, it is assumed that the environment is functional and accessible and the BaSyx Web UI is open. Additionally, the mode is set to the BaSyx Editor, and at least one AAS is already imported and open. The AAS contains at least one Submodel with an XML-type file element included.
 
-### 5.1. TC01    Proper XML-Validation	MOD01
+### 5.1. TC01 Proper XML-Validation MOD01
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
     <th colspan="3" style="border:1px solid black; padding:8px; text-align:center;">
@@ -107,7 +107,7 @@ As an initial situation for all tests, it is assumed that the environment is fun
   </tr>
 </table>
 
-### 5.2. TC02	Handle Error Messages	MOD01
+### 5.2. TC02 Handle Error Messages MOD01
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -178,7 +178,7 @@ As an initial situation for all tests, it is assumed that the environment is fun
   </tr>
 </table>
 
-### 5.3. TC03	Display XML structure	MOD02
+### 5.3. TC03 Display XML structure MOD02
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -276,7 +276,7 @@ As an initial situation for all tests, it is assumed that the environment is fun
   </tr>
 </table>
 
-### 5.4. TC04	AAS-Creation-Wizard functions properly	MOD03
+### 5.4. TC04 AAS-Creation-Wizard functions properly MOD03
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -365,7 +365,7 @@ As an initial situation for all tests, it is assumed that the environment is fun
   </tr>
 </table>
 
-### 5.5. TC05	Extraction of the AAS Information	MOD03
+### 5.5. TC05 Extraction of the AAS Information MOD03
 
 <table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif;">
   <tr>
@@ -401,9 +401,9 @@ The test case verifies that AAS information is correctly extracted from a given 
     Found in:
   </th>
   <td colspan="2" style="border:1px solid black; padding:8px; text-align:center;">
-  /tests/utils/KblVecUtils/KblVecDataPointTreeUtils<br>
-  /tests/utils/KblVecUtils/KblVecRequiredFieldUtils<br>
-  /tests/utils/KblVecUtils/KblVecSubmodelGenerationUtils
+  /tests/utils/KblVecUtils/KblVecDataPointTreeUtils.test.ts<br>
+  /tests/utils/KblVecUtils/KblVecRequiredFieldUtils.test.ts<br>
+  /tests/utils/KblVecUtils/KblVecSubmodelGenerationUtils.test.ts
   </td>
   </tr>
 </table>
