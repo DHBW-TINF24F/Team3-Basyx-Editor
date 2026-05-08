@@ -65,7 +65,6 @@ This ensures that only valid and processable files are integrated into the Asset
 ### 1. Open Submodel Tree
 Open the desired **Submodel Tree** inside the AAS Editor, to which you want to add the new file.Then Navigate to **"Add Submodel Element"** in the context menu.
 
-<img width="1195" height="986" alt="image" src="https://github.com/user-attachments/assets/acdf2938-a8a8-44b7-bc0d-e1121c6a57ea" />
 
 ---
 
@@ -107,17 +106,18 @@ If the file does not pass validation, an error message is displayed explaining t
 Typical error cases include:
 
 #### Missing XML Header
-<img width="1061" height="717" alt="image" src="https://github.com/user-attachments/assets/e5ed1ab4-da4e-4e74-babe-ba9c1b570859" />
+<img width="830" height="700" alt="image" src="https://github.com/user-attachments/assets/9c8fd547-5629-42bf-8911-8acdb5566da6" />
 
 ---
 
 #### Invalid Elements / Structure Violation
-<img width="1066" height="805" alt="image" src="https://github.com/user-attachments/assets/eabe46ed-c083-4790-89ee-eec382cfc572" />
+<img width="829" height="585" alt="image" src="https://github.com/user-attachments/assets/ef2ea072-5edf-4376-b5b9-cc0e0c81739a" />
 
 ---
 
 #### Not Well-Formed XML File
-<img width="1073" height="805" alt="image" src="https://github.com/user-attachments/assets/210ef405-5980-4ca8-a013-f1c9c05a33ed" />
+<img width="809" height="685" alt="image" src="https://github.com/user-attachments/assets/cdbf13ba-7e29-4671-90dd-10b24df94561" />
+
 
 
 
