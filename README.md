@@ -228,7 +228,7 @@ The project also addresses the non-functional requirements:
 
 The Team 3 BaSyx Editor Extension establishes a more automated and reliable workflow for integrating engineering model files into Asset Administration Shells.
 
-The final solution is intended to provide:
+The final solution provides:
 
 - safer model-file imports
 - clearer XML file inspection
@@ -237,3 +237,9 @@ The final solution is intended to provide:
 - stronger alignment between engineering source data and AAS-based digital models
 
 **Implementation note:** UC04 – Automated extraction of specific XML entries from the AAS – was specified in the SRS but was **not implemented** in the final project scope.
+
+# 🔎 Live Hosting
+
+The WebUI can be accessed [here](https://swe.fede.rocks).
+To have full functionality please use a local or remotely hosted backend and connect it through the WebUI settings under Infrastructure. It may be necessary to refresh the page after changing the Infrastructure settings.
+The BaSyx backend can be downloaded [here](https://basyx.org/get-started/application).
