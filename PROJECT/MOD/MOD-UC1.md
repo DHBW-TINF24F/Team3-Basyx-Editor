@@ -23,7 +23,7 @@ Its objective is to detect malformed or technically unsuitable files at an early
 
 Core functions:
 
-- Validation of uploaded files through a central API
+- Validation of uploaded files
 - Routing based on file extension
 - XML header validation
 - XML well-formedness validation
