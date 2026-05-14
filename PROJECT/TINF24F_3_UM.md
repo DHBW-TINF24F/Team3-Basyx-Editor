@@ -300,13 +300,3 @@ All additional functionalities, plugins, and extensions developed within this pr
 
 © 2026 Team3 – DHBW Stuttgart  
 Licensed under the MIT License.
-
-
-## Screenshots and Documentation
-
-All screenshots, UI mockups, diagrams, and documentation created as part of this project are:
-
-© 2026 Team3 – DHBW Stuttgart
-
-These materials may be used for documentation, presentation, and academic purposes.
-
