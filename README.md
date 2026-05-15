@@ -126,7 +126,7 @@ This improves data quality at the beginning of the process and prevents incorrec
 
 Users can inspect attached XML-based files through a dedicated viewer interface.
 
-<img width="1651" height="1071" alt="image" src="https://github.com/user-attachments/assets/4dc19cf8-a76c-46c2-bfac-67b3f1ce5dfe" />
+<img width="640" height="400" alt="image" src="https://github.com/user-attachments/assets/4dc19cf8-a76c-46c2-bfac-67b3f1ce5dfe" />
 
 ### Core Workflow
 
