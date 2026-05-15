@@ -7,9 +7,8 @@
 |-----|-----------|------------|---------------------|
 |1.0|07.11.2025|Martin Boehm|first version|
 |1.1|12.04.2026|Martin Boehm|spezifying requirements, new sources, update use case diagram|
-|1.2|Datum|Name|Kommentar2|
-|1.3|Datum|Name|Kommentar3|
-|1.4|Datum|Name|Kommentar4|
+|1.2|15.05.2026|Martin Boehm|minor changes in 1. Master Usecase|
+
 
 
 ## Table of contents
