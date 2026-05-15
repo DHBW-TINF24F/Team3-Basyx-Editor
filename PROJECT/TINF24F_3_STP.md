@@ -31,7 +31,7 @@
 
 ## 1. Introduction
 The purpose of this System Test Plan (STP) is to define the overall testing approach for the BaSyx Editor Extension.
-It describes the test strategy, environment, test cases, and acceptance criteria required to verify that the system fulfills the requirements specified in the Software Architecture Specification ([SAS](./TINF24F_3_SRS.md)).
+It describes the test strategy, environment, test cases, and acceptance criteria required to verify that the system fulfills the requirements specified in the Software Architecture Specification ([SAS](./TINF24F_3_SAS.md)).
 ## 2. Scope
 This document covers testing of the changes planed in the BaSyx Editor Extension including:
 * [MOD01](./MOD/MOD-UC1.md) – File Import and Validation Subsystem
