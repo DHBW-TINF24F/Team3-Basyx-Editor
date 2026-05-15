@@ -8,6 +8,7 @@
 |1.0|05.05.2026|Daniel Ziegler|Version 1.0|
 |1.1|06.05.2026|Daniel Ziegler|fix table of contents|
 |1.2|06.05.2026|Daniel Ziegler|Added test results|
+|1.3|15.05.2026|Daniel Ziegler|Added external links, small format changes|
 
 ## Table of contents
 1. [Introduction](#1-introduction)
@@ -21,14 +22,14 @@
 
 
 ## 1. Introduction
-This System Test Report (STR) documents the results of the system testing activities conducted for the BaSyx Editor Extension. The testing process was performed in accordance with the defined System Test Plan (STP) and aimed to verify that the implemented functionality meets the requirements specified in the Software Architecture Specification (SAS).
+This System Test Report (STR) documents the results of the system testing activities conducted for the BaSyx Editor Extension. The testing process was performed in accordance with the defined System Test Plan ([STP](./TINF24F_3_STP.md) and aimed to verify that the implemented functionality meets the requirements specified in the Software Architecture Specification ([SAS](./TINF24F_3_SAS.md).
 
 ## 2. Scope
 The scope of this report includes the evaluation of the following subsystems:
 
-* MOD01 – File Import and Validation Subsystem
-* MOD02 – XML Viewer and Navigation Subsystem
-* MOD03 – AAS Generation and Submodel Mapping Subsystem
+* [MOD01](./MOD/MOD-UC1.md) – File Import and Validation Subsystem
+* [MOD02](./MOD/MOD-UC2.md) – XML Viewer and Navigation Subsystem
+* [MOD03](./MOD/MOD-UC3.md) – AAS Generation and Submodel Mapping Subsystem
 
 As defined in the STP, this report does not include results related to unit testing of minor code changes or internal BaSyx backend functionality.
 
@@ -67,7 +68,7 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
   <tr>
     <th style="border:1px solid black; padding:8px; text-align:center;">Found in:</th>
-    <td colspan="2" style="border:1px solid black; padding:8px; text-align:center;">/tests/utils/XMLValidator.test.ts</td>
+    <td colspan="2" style="border:1px solid black; padding:8px; text-align:center;">./tests/utils/XMLValidator.test.ts</td>
   </tr>
 </table>
 
@@ -128,7 +129,7 @@ As defined in the STP, this report does not include results related to unit test
   <tr>
     <td style="border:1px solid black; padding:8px;">1</td>
     <td style="border:1px solid black; padding:8px;">Click the "add Submodel Element (+)" button within a Submodel</td>
-    <td style="border:1px solid black; padding:8px;">A Dialog for the type of Element opens</td>
+    <td style="border:1px solid black; padding:8px;">A dialog for the type of Element opens</td>
     <td style="border:1px solid black; padding:8px;">A dialog for selecting the element type appears</td>
   </tr>
   <tr>
@@ -159,7 +160,7 @@ As defined in the STP, this report does not include results related to unit test
     <td style="border:1px solid black; padding:8px;">
       The changes are displayed
     </td>
-    <td style="border:1px solid black; padding:8px;">The Changes are displayed</td>
+    <td style="border:1px solid black; padding:8px;">The changes are displayed</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">4</td>
@@ -186,13 +187,13 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">2</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">3</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">4</td>
@@ -226,13 +227,13 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">10</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">11</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">12</td>
@@ -251,13 +252,13 @@ As defined in the STP, this report does not include results related to unit test
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">15</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:4px;">16</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
-    <td  style="border:1px solid black; padding:4px; ">No Error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
+    <td  style="border:1px solid black; padding:4px; ">No error</td>
   </tr>
   <tr>
     <td colspan="3" style="border:1px solid black; padding:8px; "></td>
@@ -377,7 +378,7 @@ As defined in the STP, this report does not include results related to unit test
       In table of contents click on the triangle next to an entry.
     </td>
     <td style="border:1px solid black; padding:8px;">
-      The inner XML structure is revealed and the XML Content does not jump to the entry.
+      The inner XML structure is revealed and the XML content does not jump to the entry.
     </td>
     <td style="border:1px solid black; padding:8px;">The inner XML structure is revealed and the XML Content does not jump to the entry.</td>
   </tr>
@@ -518,7 +519,7 @@ As defined in the STP, this report does not include results related to unit test
     <td style="border:1px solid black; padding:8px;">
       The AAS is created with the provided Information.
     </td>
-    <td style="border:1px solid black; padding:8px;">The AAS is created using the provided information.</td>
+    <td style="border:1px solid black; padding:8px;">The AAS is created using the provided Information.</td>
   </tr>
 </table>
 
@@ -591,9 +592,9 @@ The test case verifies that AAS information is correctly extracted from a given 
     Found in:
   </th>
   <td colspan="2" style="border:1px solid black; padding:8px; text-align:center;">
-  /tests/utils/KblVecUtils/KblVecDataPointTreeUtils.test.ts<br>
-  /tests/utils/KblVecUtils/KblVecRequiredFieldUtils.test.ts<br>
-  /tests/utils/KblVecUtils/KblVecSubmodelGenerationUtils.test.ts
+  ./tests/utils/KblVecUtils/KblVecDataPointTreeUtils.test.ts<br>
+  ./tests/utils/KblVecUtils/KblVecRequiredFieldUtils.test.ts<br>
+  ./tests/utils/KblVecUtils/KblVecSubmodelGenerationUtils.test.ts
   </td>
   </tr>
 
