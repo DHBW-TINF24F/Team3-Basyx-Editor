@@ -19,8 +19,8 @@
 
 ## 1. Master Usecase
 
-
-As a BaSyx user, I want to work with XML, KBL, or VEC files in the AAS environment so that I can:
+The user wants to use and process XML-based files more efficiently in the BaSyx Editor.
+More specifically, the user wants to work with XML, KBL, or VEC files in the AAS environment so that they can:
   + validate uploaded files for well-formedness and plausibility,
   + create a new AAS from KBL or VEC files and automatically extract relevant data into submodels,
   + view extracted submodels in a structured visualization with a table of contents, and
