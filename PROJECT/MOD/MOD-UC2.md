@@ -1,4 +1,4 @@
-# Module Documentation: XmlPreview Table of Contents (TOC)
+# Module Documentation: XML Viewer and Navigation Subsystem
 
 ## 1. Overview
 

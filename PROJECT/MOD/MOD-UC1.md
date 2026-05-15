@@ -1,4 +1,4 @@
-# Module Documentation: XmlValidator
+# Module Documentation: File Import and Validation Subsystem
 
 ## 1. Overview
 
@@ -400,6 +400,15 @@ MIME type used by the parser:
 text/xml
 ```
 
+Important:
+
+- `DOMParser` is browser-based.
+- Parser errors are detected via `parsererror` elements.
+
+---
+
+### MIME Type Detection and Automatic shortID Population
+
 Additional MIME types used for the supported KBL and VEC files are:
 
 ```txt
@@ -415,22 +424,13 @@ src\components\EditorComponents\InputTypes\FileInput.vue
 
 at lines `121` and `122`.
 
-Important:
-
-- `DOMParser` is browser-based.
-- Parser errors are detected via `parsererror` elements.
-
----
-
-### MIME Type Detection and Automatic shortID Population
-
 MIME type detection is implemented in:
 
 ```txt
 src\composables\AAS\SubmodelElements\File.ts
 ```
 
-This module is also responsible for automatically populating the `shortID` based on the uploaded file.
+at lines `227` to `229`.
 
 ---
 
@@ -461,6 +461,12 @@ This makes it possible to validate XML documents that use namespaces.
 Validation stops at the first error.
 
 The module does not attempt to collect all errors in a document.
+
+---
+
+### Automatic Population of ShortID
+
+This module is also responsible for automatically populating the `shortID`Field based on the uploaded filename.
 
 ---
 

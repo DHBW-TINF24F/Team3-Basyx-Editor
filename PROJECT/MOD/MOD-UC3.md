@@ -1,4 +1,4 @@
-# Module Documentation: KBL/VEC Upload to AAS
+# Module Documentation: AAS Generation and Submodel Mapping Subsystem
 
 ## 1. Overview
 
