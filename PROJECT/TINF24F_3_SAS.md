@@ -8,6 +8,7 @@
 | 1.0 | 29.10.2025 | Florian Zahn | Initialize a first draft of the SAS |
 | 1.1 | 05.11.2025 | Florian Zahn | Added Subsystem Specifications (MOD01–MOD04) derived from SRS/CRS use cases.|
 | 1.2 | 06.05.2026 | Florian Zahn | Updated Architectural Concept and Subsystem Specifications according to updated SRS/CRS|
+| 1.3 | 15.05.2026 | Florian Zahn | Updated MOD references in Subsystem Specifications |
 
 
 ## Table of Contents
@@ -187,7 +188,7 @@ The UI provides forms, trees, and visual editors for AAS structures.
 | **Service** | Provides import functionality for external model files such as KBL, VEC, XML and AML. The subsystem detects the correct MimeType, performs a plausibility check between file extension and content structure, and displays a readable error message if validation fails. After successful validation, the file is made available for further processing and can be linked in the AAS context. |
 | **Interfaces** | UI file import component; BaSyx AAS/Submodel REST API; internal `MimeTypeDetectionService`; internal `PlausibilityCheckService`; `ErrorMessageComponent` |
 | **Postcondition** | The file is validated, the MimeType is assigned, and the file can be used by later processing steps such as XML viewing or AAS generation. |
-| **Module Documentation** | [MOD01-File-Import](./MOD01-File-Import.md) |
+| **Module Documentation** | [MOD-UC1](./MOD/MOD-UC1.md) |
 
 ---
 
@@ -201,7 +202,7 @@ The UI provides forms, trees, and visual editors for AAS structures.
 | **Service** | Provides a Vue-based XML viewer component for displaying imported XML-based files such as KBL, VEC or AML. The subsystem builds a table of contents from the XML structure and allows the user to navigate to specific sections and inspect node details, attributes and IDs. |
 | **Interfaces** | UI component `XmlViewerComponent`; internal `XmlTocBuilder`; backend endpoint for retrieving file content; BaSyx AAS/Submodel REST API |
 | **Postcondition** | The XML content is displayed in a structured and navigable way. The user can inspect relevant XML sections without manually searching through the complete file. |
-| **Module Documentation** | [MOD02-XML-Viewer](./MOD02-XML-Viewer.md) |
+| **Module Documentation** | [MOD-UC2](./MOD/MOD-UC2.md) |
 
 ---
 
@@ -216,7 +217,7 @@ The UI provides forms, trees, and visual editors for AAS structures.
 | **Service** | Implements the wizard-driven generation of an Asset Administration Shell from KBL/VEC files. The user selects the relevant properties in the wizard. In the background, the client parses the KBL/VEC file and transforms the selected data into valid AAS submodels and submodel elements according to defined mapping rules. The generated structure includes the submodels `HandoverDocumentation` with the original file attached and `TechnicalData` with the extracted data points. Only validated and correctly generated submodels are sent to the backend. |
 | **Interfaces** | UI component `AasGeneratorWizard`; internal `KblVecParser`; internal `SubmodelMappingService`; REST endpoint `/aas/generate`; REST endpoint `/submodels/generate`; BaSyx AAS/Submodel REST API |
 | **Postcondition** | A new AAS is created and stored on the AAS Server. The submodels `HandoverDocumentation` and `TechnicalData` exist and contain the expected file reference and extracted data points. |
-| **Module Documentation** | [MOD03-AAS-Generation](./MOD03-AAS-Generation.md) |
+| **Module Documentation** | [MOD-UC3](./MOD/MOD-UC3.md) |
 
 ---
 
@@ -230,7 +231,7 @@ The UI provides forms, trees, and visual editors for AAS structures.
 | **Service** | Provides a backend REST API for inspecting and querying external structured files linked in the BaSyx context. The subsystem supports XML and JSON source files that are accessible via HTTP. It can inspect the internal structure of a file, such as an XML tree or JSON hierarchy, and retrieve selected elements by path, ID or field. The response payload is always returned as XML and contains only the requested element or value, not the complete source document. |
 | **Interfaces** | API endpoint `/api/inspect`; API endpoint `/api/query`; external HTTP file reference; BaSyx AAS Repository Service for resolving linked file context |
 | **Postcondition** | The requesting API client receives only the requested data point(s) as XML. Invalid file references or query paths are handled with clear client errors such as HTTP 400 or 404. |
-| **Module Documentation** | [MOD04-Data-Retrieval](./MOD04-Data-Retrieval.md) |
+| **Module Documentation** | [UC04](./UC04.md) |
 
 ---
 
