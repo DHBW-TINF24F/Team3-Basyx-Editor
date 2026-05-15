@@ -9,6 +9,7 @@
 |1.1|24.04.2026|Daniel Ziegler|Fromulating Test Cases, adding Testfiles|
 |1.2|05.05.2026|Daniel Ziegler|Linking the testcases to the right Requirements|
 |1.3|06.05.2026|Daniel Ziegler|Fixed table of contents, corrected the testfile linkage|
+|1.4|15.05.2026|Daniel Ziegler|Added external links, small format changes|
 
 ## Table of contents
 1. [Introduction](#1-introduction)
@@ -30,12 +31,12 @@
 
 ## 1. Introduction
 The purpose of this System Test Plan (STP) is to define the overall testing approach for the BaSyx Editor Extension.
-It describes the test strategy, environment, test cases, and acceptance criteria required to verify that the system fulfills the requirements specified in the Software Architecture Specification (SAS).
+It describes the test strategy, environment, test cases, and acceptance criteria required to verify that the system fulfills the requirements specified in the Software Architecture Specification ([SAS](./TINF24F_3_SAS.md)).
 ## 2. Scope
 This document covers testing of the changes planed in the BaSyx Editor Extension including:
-* MOD01 – File Import and Validation Subsystem
-* MOD02 – XML Viewer and Navigation Subsystem
-* MOD03 – AAS Generation and Submodel Mapping Subsystem
+* [MOD01](./MOD/MOD-UC1.md) – File Import and Validation Subsystem
+* [MOD02](./MOD/MOD-UC2.md) – XML Viewer and Navigation Subsystem
+* [MOD03](./MOD/MOD-UC3.md) – AAS Generation and Submodel Mapping Subsystem
 
 This document does not cover:
 * Unit testing of minor changes to existing code
@@ -54,10 +55,10 @@ This approach ensures a comprehensive, traceable, and efficient validation of th
 ### 4.2. Software Environment
 * Browser: Chrome, Firefox, Edge
 * Frontend: Vue.js application
-* Backend services:
-* BaSyx Registry
-* BaSyx AAS Repository
-* BaSyx Submodel Service
+* Backend services:<br>
+ -BaSyx Registry<br>
+ -BaSyx AAS Repository<br>
+ -BaSyx Submodel Service
 ### 4.3. Deployment Setup
 * Docker-based deployment setup
 
@@ -104,7 +105,7 @@ As an initial situation for all tests, it is assumed that the environment is fun
   </tr>
   <tr>
     <th style="border:1px solid black; padding:8px; text-align:center;">Found in:</th>
-    <td colspan="2" style="border:1px solid black; padding:8px; text-align:center;">/tests/utils/XMLValidator.test.ts</td>
+    <td colspan="2" style="border:1px solid black; padding:8px; text-align:center;">./tests/utils/XMLValidator.test.ts</td>
   </tr>
 </table>
 
@@ -148,7 +149,7 @@ As an initial situation for all tests, it is assumed that the environment is fun
   <tr>
     <td style="border:1px solid black; padding:8px;">1</td>
     <td style="border:1px solid black; padding:8px;">Click the "add Submodel Element (+)" button within a Submodel</td>
-    <td style="border:1px solid black; padding:8px;">A Dialog for the type of Element opens</td>
+    <td style="border:1px solid black; padding:8px;">A dialog for the type of Element opens</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;">2</td>
@@ -281,7 +282,7 @@ As an initial situation for all tests, it is assumed that the environment is fun
       In table of contents click on the triangle next to an entry.
     </td>
     <td style="border:1px solid black; padding:8px;">
-      The inner XML structure is revealed and the XML Content does not jump to the entry.
+      The inner XML structure is revealed and the XML content does not jump to the entry.
     </td>
   </tr>
 </table>
@@ -411,9 +412,9 @@ The test case verifies that AAS information is correctly extracted from a given 
     Found in:
   </th>
   <td colspan="2" style="border:1px solid black; padding:8px; text-align:center;">
-  /tests/utils/KblVecUtils/KblVecDataPointTreeUtils.test.ts<br>
-  /tests/utils/KblVecUtils/KblVecRequiredFieldUtils.test.ts<br>
-  /tests/utils/KblVecUtils/KblVecSubmodelGenerationUtils.test.ts
+  ./tests/utils/KblVecUtils/KblVecDataPointTreeUtils.test.ts<br>
+  ./tests/utils/KblVecUtils/KblVecRequiredFieldUtils.test.ts<br>
+  ./tests/utils/KblVecUtils/KblVecSubmodelGenerationUtils.test.ts
   </td>
   </tr>
 </table>
