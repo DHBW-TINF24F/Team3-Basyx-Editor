@@ -22,7 +22,7 @@
 
 
 ## 1. Introduction
-This System Test Report (STR) documents the results of the system testing activities conducted for the BaSyx Editor Extension. The testing process was performed in accordance with the defined System Test Plan ([STP](./TINF24F_3_STP.md) and aimed to verify that the implemented functionality meets the requirements specified in the Software Architecture Specification ([SAS](./TINF24F_3_SAS.md).
+This System Test Report (STR) documents the results of the system testing activities conducted for the BaSyx Editor Extension. The testing process was performed in accordance with the defined System Test Plan ([STP](./TINF24F_3_STP.md)) and aimed to verify that the implemented functionality meets the requirements specified in the Software Architecture Specification ([SAS](./TINF24F_3_SAS.md)).
 
 ## 2. Scope
 The scope of this report includes the evaluation of the following subsystems:
