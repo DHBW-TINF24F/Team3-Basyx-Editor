@@ -44,6 +44,12 @@ The project improves the workflow from external engineering files to AAS-based d
 - targeted backend retrieval of specific structured file data
 - clearer error handling and improved system integration
 
+The corresponding Issues we opened on the [BaSyx-Github Issues page](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues) are:
+- [\[FEATURE\] Import AAS from .KBL and .VEC files #1201](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1201)
+- [\[FEATURE\] XML Tree View with Distinguishable Node Labels and Navigation #1200](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1200)
+- [\[FEATURE\] REST API for Selective Access to Content within External XML/JSON Files #1180](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1180)
+- [\[FEATURE\] File Validation for XML, KBL, VEC #1179](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1179)
+
 ---
 
 # 🧠 Project Overview
