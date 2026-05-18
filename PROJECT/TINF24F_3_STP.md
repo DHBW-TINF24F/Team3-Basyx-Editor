@@ -89,7 +89,7 @@ As an initial situation for all tests, it is assumed that the environment is fun
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Req.-ID:</strong></td>
-    <td colspan="3" style="border:1px solid black; padding:8px;">RR.02</td>
+    <td colspan="3" style="border:1px solid black; padding:8px;">FR.02</td>
   </tr>
   <tr>
     <td style="border:1px solid black; padding:8px;"><strong>Description:</strong></td>
