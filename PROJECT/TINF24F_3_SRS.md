@@ -40,7 +40,7 @@
       - 6.2.5 [NFR.05 Compatibility](#625-nfr05-compatibility)
       - 6.2.6 [NFR.06 Error Handling](#626-nfr06-error-handling)
       - 6.2.7 [NFR.07 Availability (Demo)](#627-nfr07-availability-demo)
-
+7. [Links to submitted BaSyx Feature Issues](#7-links-to-submitted-basyx-feature-issues)
 
 ## 1. Glossary
 
@@ -330,7 +330,7 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The final functionalities must be hosted on a publicly accessible demo server and be executable. |
 | **Fit Criterion** | The Use Cases implemented in the project can be tested live by project stakeholders via a provided URL without requiring a VPN or special software installations.|
 
-## 6. Links to submitted BaSyx Feature Issues
+## 7. Links to submitted BaSyx Feature Issues
 
 The corresponding Issues we opened on the [BaSyx-Github Issues page](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues) are:
 - [\[FEATURE\] Import AAS from .KBL and .VEC files #1201](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1201)
