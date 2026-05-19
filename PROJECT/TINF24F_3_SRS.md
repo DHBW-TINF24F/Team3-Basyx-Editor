@@ -40,7 +40,7 @@
       - 6.2.5 [NFR.05 Compatibility](#625-nfr05-compatibility)
       - 6.2.6 [NFR.06 Error Handling](#626-nfr06-error-handling)
       - 6.2.7 [NFR.07 Availability (Demo)](#627-nfr07-availability-demo)
-7. [Links to submitted BaSyx Feature Issues](#7-links-to-submitted-basyx-feature-issues)
+7. [Links to submitted BaSyx Feature Issues and Pullrequest](#7-links-to-submitted-basyx-feature-issues-and-pullrequest)
 
 ## 1. Glossary
 
@@ -330,10 +330,11 @@ The requirements are described with an ID and an overview to enable the developm
 | **Overview** | The final functionalities must be hosted on a publicly accessible demo server and be executable. |
 | **Fit Criterion** | The Use Cases implemented in the project can be tested live by project stakeholders via a provided URL without requiring a VPN or special software installations.|
 
-## 7. Links to submitted BaSyx Feature Issues
+## 7. Links to submitted BaSyx Feature Issues and Pullrequest
 
 The corresponding Issues we opened on the [BaSyx-Github Issues page](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues) are:
 - [\[FEATURE\] Import AAS from .KBL and .VEC files #1201](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1201)
 - [\[FEATURE\] XML Tree View with Distinguishable Node Labels and Navigation #1200](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1200)
 - [\[FEATURE\] REST API for Selective Access to Content within External XML/JSON Files #1180](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1180)
 - [\[FEATURE\] File Validation for XML, KBL, VEC #1179](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1179)
+The Pullrequest submitting the changes according to those Feature-Issues can be found [here](https://github.com/eclipse-basyx/basyx-aas-web-ui/pull/1230).
