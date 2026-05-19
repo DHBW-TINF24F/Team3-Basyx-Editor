@@ -11,6 +11,7 @@
 |1.3|13.11.25|Federico Dibenedetto|Added Glossary, Component overview and little fixes|
 |1.4|16.04.26|Federico Dibenedetto|Changed Use Cases based on Stakeholder meeting and meeting with BaSyx developer|
 |1.5|05.05.26|Federico Dibenedetto|UC 4 and FR feature request adapted|
+|1.6|19.05.26|Federico Dibenedetto|Added links to BaSyx Feature-Issues according to Stakeholder requirements|
 
 ## Table of contents
 1. [Glossary](#1-glossary)
@@ -328,3 +329,11 @@ The requirements are described with an ID and an overview to enable the developm
 | **Requirement ID** | NFR.07 |
 | **Overview** | The final functionalities must be hosted on a publicly accessible demo server and be executable. |
 | **Fit Criterion** | The Use Cases implemented in the project can be tested live by project stakeholders via a provided URL without requiring a VPN or special software installations.|
+
+## 6. Links to submitted BaSyx Feature Issues
+
+The corresponding Issues we opened on the [BaSyx-Github Issues page](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues) are:
+- [\[FEATURE\] Import AAS from .KBL and .VEC files #1201](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1201)
+- [\[FEATURE\] XML Tree View with Distinguishable Node Labels and Navigation #1200](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1200)
+- [\[FEATURE\] REST API for Selective Access to Content within External XML/JSON Files #1180](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1180)
+- [\[FEATURE\] File Validation for XML, KBL, VEC #1179](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1179)
