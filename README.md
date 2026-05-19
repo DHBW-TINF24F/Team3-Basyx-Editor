@@ -50,6 +50,8 @@ The corresponding Issues we opened on the [BaSyx-Github Issues page](https://git
 - [\[FEATURE\] REST API for Selective Access to Content within External XML/JSON Files #1180](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1180)
 - [\[FEATURE\] File Validation for XML, KBL, VEC #1179](https://github.com/eclipse-basyx/basyx-aas-web-ui/issues/1179)
 
+The Pullrequest submitting the changes according to those Feature-Issues can be found [here](https://github.com/eclipse-basyx/basyx-aas-web-ui/pull/1230).
+
 ---
 
 # 🧠 Project Overview
